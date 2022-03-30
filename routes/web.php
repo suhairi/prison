@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\UsersController;
+use App\Http\Controllers\ProductsController;
 
 /*
 |--------------------------------------------------------------------------
@@ -15,16 +16,13 @@ use App\Http\Controllers\UsersController;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('auth.login');
 });
 
 Route::middleware(['auth'])->name('admin.')->prefix('admin')->group(function () {
 
     Route::get('/dashboard', function () {
-        if(Auth::user()->role == 'admin')
             return view('dashboard');
-        else
-            return view('dashboard-user');
     })->name('dashboard');
 
     Route::get('/register', function() {
@@ -35,7 +33,10 @@ Route::middleware(['auth'])->name('admin.')->prefix('admin')->group(function () 
 
     Route::get('/userList', [UsersController::class, 'userList'])->name('userList');
 
-    Route::get('/products', [ProductsController::class, 'index'])->name('products');
+    Route::get('/products', [ProductsController::class, 'index'])->name('products'); // list of products
+    Route::get('/registerproducts', [ProductsController::class, 'register'])->name('registerproducts');
+    Route::post('/registerproducts', [ProductsController::class, 'create'])->name('registerproducts');
+    
 
 
 });
