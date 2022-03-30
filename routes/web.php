@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\UsersController;
 
 /*
 |--------------------------------------------------------------------------
@@ -17,8 +18,30 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/dashboard', function () {
-    return view('dashboard');
-})->middleware(['auth'])->name('dashboard');
+Route::middleware(['auth'])->name('admin.')->prefix('admin')->group(function () {
+
+    Route::get('/dashboard', function () {
+        if(Auth::user()->role == 'admin')
+            return view('dashboard');
+        else
+            return view('dashboard-user');
+    })->name('dashboard');
+
+    Route::get('/register', function() {
+        return view('register');
+    })->name('register');
+
+    Route::post('/register', [UsersController::class, 'create'])->name('register');
+
+    Route::get('/userList', [UsersController::class, 'userList'])->name('userList');
+
+    Route::get('/products', [ProductsController::class, 'index'])->name('products');
+
+
+});
+
+
+// Auth::routes(['register' => false]);
+
 
 require __DIR__.'/auth.php';

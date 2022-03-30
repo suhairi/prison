@@ -19,12 +19,26 @@
                 <x-input id="name" class="block mt-1 w-full" type="text" name="name" :value="old('name')" required autofocus />
             </div>
 
-            <!-- Email Address -->
+            <!-- Username -->
             <div class="mt-4">
-                <x-label for="email" :value="__('Email')" />
+                <x-label for="username" :value="__('Username')" />
 
-                <x-input id="email" class="block mt-1 w-full" type="email" name="email" :value="old('email')" required />
+                <x-input id="username" class="block mt-1 w-full" type="text" name="username" :value="old('username')" required />
             </div>
+
+            <!-- Role -->
+            <div class="mt-4">
+                <x-label for="role" :value="__('Role')" />
+
+                <select id="role" class="block mt-1 w-full" name="role" required />
+                    <option value="">Select Role</option>
+                    <option value="user">User</option>
+                    <option value="admin">Admin</option>
+                </select>
+                
+            </div>
+
+            
 
             <!-- Password -->
             <div class="mt-4">
