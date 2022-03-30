@@ -17,22 +17,22 @@
                         <table class="min-w-full border text-center">
                           <thead class="bg-white border-b">
                             <tr>
-                              <th scope="col" class="text-sm font-medium text-gray-900 px-6 py-4 text-left  border-r">
+                              <th scope="col" class="text-sm font-bold text-gray-900 px-6 py-4 text-left  border-r">
                                 #
                               </th>
-                              <th scope="col" class="text-sm font-medium text-gray-900 px-6 py-4 text-left border-r">
+                              <th scope="col" class="text-sm font-bold text-gray-900 px-6 py-4 text-left border-r">
                                 First
                               </th>
-                              <th scope="col" class="text-sm font-medium text-gray-900 px-6 py-4 text-left border-r">
+                              <th scope="col" class="text-sm font-bold text-gray-900 px-6 py-4 text-left border-r">
                                 Last
                               </th>
-                              <th scope="col" class="text-sm font-medium text-gray-900 px-6 py-4 text-left border-r">
+                              <th scope="col" class="text-sm font-bold text-gray-900 px-6 py-4 text-left border-r">
                                 Handle
                               </th>
-                              <th scope="col" class="text-sm font-medium text-gray-900 px-6 py-4 text-left border-r">
+                              <th scope="col" class="text-sm font-bold text-gray-900 px-6 py-4 text-left border-r">
                                 Handle
                               </th>
-                              <th scope="col" class="text-sm font-medium text-gray-900 px-6 py-4 text-left border-r">
+                              <th scope="col" class="text-sm font-bold text-gray-900 px-6 py-4 text-left border-r">
                                 Handle
                               </th>
                               
