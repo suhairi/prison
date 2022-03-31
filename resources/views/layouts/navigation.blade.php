@@ -1,5 +1,5 @@
 <nav id="sidebarMenu" class="col-md-2 col-lg-2 d-md-block bg-light sidebar collapse">
-  <div class="position-sticky pt-1">    
+  <div class="position-sticky pt-4">    
 
     @if(Auth::user()->role == 'admin')
         <ul class="nav flex-column">
