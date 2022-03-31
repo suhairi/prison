@@ -16,14 +16,17 @@
                   <th>Bil</th>
                   <th>Product Name</th>
                   <th>Price</th>
-                  <th>Options</th>         
+                  <th align="center">Options</th>         
                 </thead>
                 @foreach($products as $product)
                   <tr>
-                    <td>{{ $loop->iteration }}</td>
-                    <td>{{ strtoupper($product->name) }}</td>
-                    <td>{{ number_format($product->price, 2) }}</td>
-                    <td>[ <a href="">Edit</a> ] [ <a href="">Delete</a> ]</td>
+                    <td valign="middle">{{ $loop->iteration }}</td>
+                    <td valign="middle">{{ strtoupper($product->name) }}</td>
+                    <td valign="middle">{{ number_format($product->price, 2) }}</td>
+                    <td valign="middle" align="center">
+                      <button type="button" class="btn btn-warning" href="#">Edit</button>
+                      <button type="button" class="btn btn-danger" href="#">Delete</button>
+                    </td>
                   </tr>
                 @endforeach
               </table>

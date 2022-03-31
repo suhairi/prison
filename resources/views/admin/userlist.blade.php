@@ -19,11 +19,14 @@
         </thead>
         @foreach($users as $user)
           <tr>
-            <td>{{ $loop->iteration }}</td>
-            <td>{{ strtoupper($user->name) }}</td>
-            <td>{{ $user->username }}</td>
-            <td>{{ strtoupper($user->role) }}</td>
-            <td>[ <a href="">Edit</a> ] [ <a href="">Delete</a> ]</td>
+            <td valign="middle">{{ $loop->iteration }}</td>
+            <td valign="middle">{{ strtoupper($user->name) }}</td>
+            <td valign="middle">{{ $user->username }}</td>
+            <td valign="middle">{{ strtoupper($user->role) }}</td>
+            <td valign="middle">
+              <button type="button" class="btn btn-warning" href="#">Edit</button>
+              <button type="button" class="btn btn-danger" href="#">Delete</button>
+            </td>
           </tr>
         @endforeach
       </table>

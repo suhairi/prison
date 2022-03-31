@@ -12,7 +12,7 @@
           <li class="nav-item">
             <a class="nav-link" href="{{ route('admin.register') }}">
                 <span data-feather="file"></span>
-                Register User
+                User Register
             </a>
           </li>
           <li class="nav-item">
