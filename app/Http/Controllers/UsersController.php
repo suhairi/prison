@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Illuminate\Validation\Rules;
+use Illuminate\Support\Facades\Hash;
 
 use App\Models\User;
 
@@ -11,13 +12,14 @@ class UsersController extends Controller
 {
     public function create(Request $request) {
 
-        $request->validate([
-            'name' => ['required', 'string', 'max:255'],
-            'username' => ['required', 'string', 'max:255', 'unique:users'],
-            'password' => ['required', 'confirmed', Rules\Password::defaults()],
-        ]);
+        // return $request->all();
 
-        return 'here';
+        $validator = $request->validate([
+            'name'      => ['required', 'string', 'max:255'],
+            'username'  => ['required', 'string', 'max:255', 'unique:users'],
+            'password'  => ['required', 'confirmed', Rules\Password::defaults()],
+            'role'      => ['required']
+        ]);
 
         $user = User::create([
             'name'      => $request->name,
@@ -26,7 +28,9 @@ class UsersController extends Controller
             'password'  => Hash::make($request->password),
         ]);
 
-        return view('dashboard');
+        Session::flash('success', 'Success');
+
+        return view('admin.register');
     }
 
     public function userList() {

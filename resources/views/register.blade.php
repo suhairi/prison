@@ -1,76 +1,68 @@
-<x-app-layout>
-    <x-slot name="header">
-        <h2 class="font-semibold text-xl text-gray-800 leading-tight">
-            {{ strtoupper(Auth::user()->role) }} - {{ __('Dashboard') }}
-        </h2>
-    </x-slot>
+@extends('layouts.app')
 
-    <div class="py-12">
-        <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
-            <div class="bg-white overflow-hidden shadow-sm sm:rounded-lg">
-                <div class="p-6 bg-white border-b border-gray-200">
+@section('content')
 
-                    <!-- Validation Errors -->
-                    <x-auth-validation-errors class="mb-4" :errors="$errors" />
+    <div class="row">
 
-                    <form method="POST" action="{{ route('admin.register') }}">
-                        @csrf
-
-                        <!-- Name -->
-                        <div>
-                            <x-label for="name" :value="__('Name')" />
-
-                            <x-input id="name" class="block mt-1 w-full" type="text" name="name" :value="old('name')" required autofocus />
-                        </div>
-
-                        <!-- Username -->
-                        <div class="mt-4">
-                            <x-label for="username" :value="__('Username')" />
-
-                            <x-input id="username" class="block mt-1 w-full" type="text" name="username" :value="old('username')" required />
-                        </div>
-
-                        <!-- Role -->
-                        <div class="mt-4">
-                            <x-label for="role" :value="__('Role')" />
-
-                            <select id="role" class="block mt-1 w-full" name="role" required />
-                                <option value="">Select Role</option>
-                                <option value="user">User</option>
-                                <option value="admin">Admin</option>
-                                <option value="admin">HQ</option>
-                            </select>
-                            
-                        </div>
-
-                        <!-- Password -->
-                        <div class="mt-4">
-                            <x-label for="password" :value="__('Password')" />
-
-                            <x-input id="password" class="block mt-1 w-full"
-                                            type="password"
-                                            name="password"
-                                            required autocomplete="new-password" />
-                        </div>
-
-                        <!-- Confirm Password -->
-                        <div class="mt-4">
-                            <x-label for="password_confirmation" :value="__('Confirm Password')" />
-
-                            <x-input id="password_confirmation" class="block mt-1 w-full"
-                                            type="password"
-                                            name="password_confirmation" required />
-                        </div>
-
-                        <div class="flex items-center justify-end mt-4">
-                            <x-button class="ml-4">
-                                {{ __('Register') }}
-                            </x-button>
-                        </div>
-                    </form>
-
-                </div>
+        @if ($errors->any())
+            <div class="alert alert-danger">
+                <ul>
+                    @foreach ($errors->all() as $error)
+                        <li>{{ $error }}</li>
+                    @endforeach
+                </ul>
             </div>
+        @endif
+
+        @if(Session::has('success'))
+            <div class="alert alert-success">
+                <strong>Success!</strong> Indicates a successful or positive action.
+            </div>
+        @endif
+        <h3>Register a User</h3>
+
+        <div class="row">
+            <form method="POST" action="{{ route('admin.register') }}" class="form">
+                @csrf
+                <div class="mb-3">
+                    <input type="text" class="form-control" name="name" placeholder="Fullname" required value="{{ old('name') }}">
+                </div>
+                <div class="mb-3">
+                    <input type="text" class="form-control" name="username" placeholder="Username" required value="{{ old('username') }}">
+                </div>
+                <div class="mb-3">
+                    <select id="role" class="form-control" name="role" required />
+                        <option value="">Select Role</option>
+                        <option value="user" {{ old('role') == 'user' ? 'selected' : '' }}>User</option>
+                        <option value="admin"{{ old('role') == 'admin' ? 'selected' : '' }}>Admin</option>
+                        <option value="hq"{{ old('role') == 'hq' ? 'selected' : '' }}>HQ</option>
+                    </select>
+                </div>
+                <div class="mb-3">
+                    <input class="form-control" id="password" class="form-control"
+                                    type="password"
+                                    name="password"
+                                    required 
+                                    autocomplete="new-password"
+                                    placeholder="Password" />
+                </div>
+
+                <!-- Confirm Password -->
+                <div class="mb-3">
+
+                    <input class="form-control" id="password_confirmation" class="block mt-1 w-full"
+                                    type="password"
+                                    name="password_confirmation" 
+                                    required
+                                    placeholder="Password Confirmation" />
+                </div>
+
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
         </div>
-    </div>
-</x-app-layout>
+    </div>        
+
+
+    
+
+@endsection
