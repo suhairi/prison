@@ -35,9 +35,10 @@ class UsersController extends Controller
 
     public function userList() {
 
-        $users = User::all();
+        $users = User::where('username', '!=', 'suhairi')->paginate(15);
 
-        return view('admin.userlist');
+        return view('admin.userlist')
+            ->with('users', $users);
 
 
     }

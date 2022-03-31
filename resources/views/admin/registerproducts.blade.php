@@ -1,48 +1,35 @@
-<x-app-layout>
-    <x-slot name="header">
-        <h2 class="font-semibold text-xl text-gray-800 leading-tight">
-            Products Registration
-        </h2>
-    </x-slot>
+@extends('layouts.app')
 
-    <div class="py-12">
-        <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
-            <div class="bg-white overflow-hidden shadow-sm sm:rounded-lg">
-                <div class="p-6 bg-white border-b border-gray-200">
-                    @if(Session::has('success'))
-                            <p class="alert alert-success" bgcolor="green"><font color="green">{{ Session::get('success') }}</font></p>
+@section('content')
 
-                    @endif
+    <div class="row">
+
+        @include('layouts.messages')
+
+        <div class="row">
+            <h3>Register a Grocery Product</h3>
+        </div>
+        <hr />
+
+        <div class="row">
+            <form method="POST" action="{{ route('admin.registerproducts') }}">
+                @csrf
+
+                <div class="mb-3">
+                    <input id="name" class="form-control" type="text" name="name" :value="old('name')" required autofocus placeholder="Product Name" />
                 </div>
-                <div class="p-6 bg-white border-b border-gray-200">
+                <div class="mb-3">
+                    <input id="price" class="form-control" type="number" step=0.01 name="price" :value="old('price')" required placeholder="Price" />
+                </div>             
+                <button class="btn btn-primary" type=submit>Register Product</button>
 
-                    <form method="POST" action="{{ route('admin.registerproducts') }}">
-                        @csrf
-
-                        <!-- Name -->
-                        <div>
-                            <x-label for="name" :value="__('Product Name')" />
-
-                            <x-input id="name" class="block mt-1 w-full" type="text" name="name" :value="old('name')" required autofocus />
-                        </div>
-
-                        <!-- Price -->
-                        <div class="mt-4">
-                            <x-label for="price" :value="__('Price')" />
-
-                            <x-input id="price" class="block mt-1 w-full" type="number" step=0.01 name="price" :value="old('price')" required />
-                        </div>
-                        
-                        <div class="mt-4">
-                            <x-button class="flex items-center justify-end mt-4" type=submit>
-                                    Register Product
-                            </x-button>
-                        </div>
-                    </form>
-                    
-
-                </div>
-            </div>
+            </form>
         </div>
     </div>
-</x-app-layout>
+        
+
+
+
+    
+                    
+@endsection

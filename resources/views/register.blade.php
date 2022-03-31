@@ -4,22 +4,12 @@
 
     <div class="row">
 
-        @if ($errors->any())
-            <div class="alert alert-danger">
-                <ul>
-                    @foreach ($errors->all() as $error)
-                        <li>{{ $error }}</li>
-                    @endforeach
-                </ul>
-            </div>
-        @endif
-
-        @if(Session::has('success'))
-            <div class="alert alert-success">
-                <strong>Success!</strong> Indicates a successful or positive action.
-            </div>
-        @endif
-        <h3>Register a User</h3>
+        @include('layouts.messages')
+        <div class="row">
+            <h3>Register a User</h3>            
+        </div>
+        
+        <hr />
 
         <div class="row">
             <form method="POST" action="{{ route('admin.register') }}" class="form">
