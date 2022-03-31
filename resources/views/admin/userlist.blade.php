@@ -3,8 +3,11 @@
 @section('content')
 
 <div class="row">
-  <h1>Users List</h1>
 
+  @include('layouts.messages')
+  <div class="row">
+      <h4>Users List</h4>
+  </div>
   <hr />
 
   <div class="row">

@@ -5,7 +5,10 @@
     <div class="row">
 
         @include('layouts.messages')
-        <h3>Products List</h3>
+
+        <div class="row">
+          <h4>Products List</h4>
+        </div>       
 
         <hr />
 

@@ -17,1552 +17,2219 @@ class UserSeeder extends Seeder
     public function run()
     {
 
+        // LYPOMETAL
         User::create([
-            'name' =>'HAILRWAN BIN WAN DIN', 
-            'role' => 'user', 
+            'name' => 'HAILRWAN BIN WAN DIN', 
+            'username' => '770617075311', 
             'password' => Hash::make('password1'), 
-            'username' => '770617075311'
+            'role' => 'user', 
+            'status' => 'active', 
+            'nosmpp' => '41-04-00207', 
+            'section' => 'LYPOMETAL',
         ]);
-
+        
         User::create([
-            'name' =>'MUHAMAD FAREED BIN ABDUL RAHIM', 
-            'role' => 'user', 
+            'name' => 'MUHAMAD FAREED BIN ABDUL RAHIM', 
+            'username' => '950802095021', 
             'password' => Hash::make('password1'), 
-            'username' => '950802095021'
+            'role' => 'user', 
+            'status' => 'active', 
+            'nosmpp' => '67-14-02062', 
+            'section' => 'LYPOMETAL',
         ]);
-
+        
         User::create([
-            'name' =>'MOHD MUHSINUN BIN WAHAB', 
-            'role' => 'user', 
+            'name' => 'MOHD MUHSINUN BIN WAHAB', 
+            'username' => '870110025479', 
             'password' => Hash::make('password1'), 
-            'username' => '870110025479'
+            'role' => 'user', 
+            'status' => 'active', 
+            'nosmpp' => '1-13-02340', 
+            'section' => 'LYPOMETAL',
         ]);
-
+        
         User::create([
-            'name' =>'PARAMAKUMAR A/L KUMARASAMY', 
-            'role' => 'user', 
+            'name' => 'PARAMAKUMAR A/L KUMARASAMY', 
+            'username' => '761021025167', 
             'password' => Hash::make('password1'), 
-            'username' => '761021025167'
+            'role' => 'user', 
+            'status' => 'active', 
+            'nosmpp' => '66-14-00179', 
+            'section' => 'LYPOMETAL',
         ]);
-
+        
         User::create([
-            'name' =>'ABDUL WAHAB BIN HASAN', 
-            'role' => 'user', 
+            'name' => 'ABDUL WAHAB BIN HASAN', 
+            'username' => '930402095163', 
             'password' => Hash::make('password1'), 
-            'username' => '930402095163'
+            'role' => 'user', 
+            'status' => 'active', 
+            'nosmpp' => '67-11-00711', 
+            'section' => 'LYPOMETAL',
         ]);
-
+        
         User::create([
-            'name' =>'MOHD FAIZAL BIN ISMAIL', 
-            'role' => 'user', 
+            'name' => 'MOHD FAIZAL BIN ISMAIL', 
+            'username' => '930619025393', 
             'password' => Hash::make('password1'), 
-            'username' => '930619025393'
+            'role' => 'user', 
+            'status' => 'active', 
+            'nosmpp' => '66-18-00227', 
+            'section' => 'LYPOMETAL',
         ]);
-
+        
         User::create([
-            'name' =>'MOHD ZAINODDIN BIN MD REJAB', 
-            'role' => 'user', 
+            'name' => 'MOHD ZAINODDIN BIN MD REJAB', 
+            'username' => '770402025501', 
             'password' => Hash::make('password1'), 
-            'username' => '770402025501'
+            'role' => 'user', 
+            'status' => 'active', 
+            'nosmpp' => '66-19-01321', 
+            'section' => 'LYPOMETAL',
         ]);
-
+        
         User::create([
-            'name' =>'MOHAMAD HAFIZ BIN RAMLI', 
-            'role' => 'user', 
+            'name' => 'MOHAMAD HAFIZ BIN RAMLI', 
+            'username' => '870115095249', 
             'password' => Hash::make('password1'), 
-            'username' => '870115095249'
+            'role' => 'user', 
+            'status' => 'active', 
+            'nosmpp' => '66-14-01481', 
+            'section' => 'LYPOMETAL',
         ]);
-
+        
         User::create([
-            'name' =>'MOHAMAD ZULKARNAIN BIN ZAKARIA', 
-            'role' => 'user', 
+            'name' => 'MOHAMAD ZULKARNAIN BIN ZAKARIA', 
+            'username' => '930929025735', 
             'password' => Hash::make('password1'), 
-            'username' => '930929025735'
+            'role' => 'user', 
+            'status' => 'active', 
+            'nosmpp' => '68-19-01141', 
+            'section' => 'LYPOMETAL',
         ]);
-
+        
         User::create([
-            'name' =>'TEOH HENG SOON', 
-            'role' => 'user', 
+            'name' => 'TEOH HENG SOON', 
+            'username' => '751128025141', 
             'password' => Hash::make('password1'), 
-            'username' => '751128025141'
+            'role' => 'user', 
+            'status' => 'active', 
+            'nosmpp' => '66-15-00557', 
+            'section' => 'LYPOMETAL',
         ]);
-
+        
         User::create([
-            'name' =>'SABRI BIN ISHAK', 
-            'role' => 'user', 
+            'name' => 'SABRI BIN ISHAK', 
+            'username' => '870916355581', 
             'password' => Hash::make('password1'), 
-            'username' => '870916355581'
+            'role' => 'user', 
+            'status' => 'active', 
+            'nosmpp' => '41-15-00465', 
+            'section' => 'LYPOMETAL',
         ]);
-
+        
         User::create([
-            'name' =>'MAHAMAD FAIRUUHSHAHLIZAN BIN MAHAMAD DAUD', 
-            'role' => 'user', 
+            'name' => 'MAHAMAD FAIRUUHSHAHLIZAN BIN MAHAMAD DAUD', 
+            'username' => '870117295017', 
             'password' => Hash::make('password1'), 
-            'username' => '870117295017'
+            'role' => 'user', 
+            'status' => 'active', 
+            'nosmpp' => '66-12-02054', 
+            'section' => 'LYPOMETAL',
         ]);
-
+        
         User::create([
-            'name' =>'ABD GHANI BIN ISMAIL', 
-            'role' => 'user', 
+            'name' => 'ABD GHANI BIN ISMAIL', 
+            'username' => '701004025099', 
             'password' => Hash::make('password1'), 
-            'username' => '701004025099'
+            'role' => 'user', 
+            'status' => 'active', 
+            'nosmpp' => '66-15-00851', 
+            'section' => 'LYPOMETAL',
         ]);
-
+        
         User::create([
-            'name' =>'SATHES A/L CHANDRAN', 
-            'role' => 'user', 
+            'name' => 'SATHES A/L CHANDRAN', 
+            'username' => '921009146281', 
             'password' => Hash::make('password1'), 
-            'username' => '921009146281'
+            'role' => 'user', 
+            'status' => 'active', 
+            'nosmpp' => '13-13-00013', 
+            'section' => 'LYPOMETAL',
         ]);
-
+        
         User::create([
-            'name' =>'ABU BAKAR B ABDUL RASHID', 
-            'role' => 'user', 
+            'name' => 'ABU BAKAR B ABDUL RASHID', 
+            'username' => '840812026081', 
             'password' => Hash::make('password1'), 
-            'username' => '840812026081'
+            'role' => 'user', 
+            'status' => 'active', 
+            'nosmpp' => '66-10-00446', 
+            'section' => 'LYPOMETAL',
         ]);
-
+        
         User::create([
-            'name' =>'HERMANKUMAR A/L SUBRAMANIAM', 
-            'role' => 'user', 
+            'name' => 'HERMANKUMAR A/L SUBRAMANIAM', 
+            'username' => '841114065715', 
             'password' => Hash::make('password1'), 
-            'username' => '841114065715'
+            'role' => 'user', 
+            'status' => 'active', 
+            'nosmpp' => '66-13-02305', 
+            'section' => 'LYPOMETAL',
         ]);
-
+        
         User::create([
-            'name' =>'ZULKIFLY B HASSAN', 
-            'role' => 'user', 
+            'name' => 'ZULKIFLY B HASSAN', 
+            'username' => '990524027681', 
             'password' => Hash::make('password1'), 
-            'username' => '990524027681'
+            'role' => 'user', 
+            'status' => 'active', 
+            'nosmpp' => '23-15-00092', 
+            'section' => 'LYPOMETAL',
         ]);
-
+        
         User::create([
-            'name' =>'TAN ENG CHOON', 
-            'role' => 'user', 
+            'name' => 'TAN ENG CHOON', 
+            'username' => '661210075587', 
             'password' => Hash::make('password1'), 
-            'username' => '661210075587'
+            'role' => 'user', 
+            'status' => 'active', 
+            'nosmpp' => '15-16-02347', 
+            'section' => 'LYPOMETAL',
         ]);
-
+        
         User::create([
-            'name' =>'MOHD FAIZAL B ZAINOL', 
-            'role' => 'user', 
+            'name' => 'MOHD FAIZAL B ZAINOL', 
+            'username' => '870707025535', 
             'password' => Hash::make('password1'), 
-            'username' => '870707025535'
+            'role' => 'user', 
+            'status' => 'active', 
+            'nosmpp' => '62-10-02364', 
+            'section' => 'LYPOMETAL',
         ]);
-
+        
         User::create([
-            'name' =>'ABDULLAH B HASHIM', 
-            'role' => 'user', 
+            'name' => 'ABDULLAH B HASHIM', 
+            'username' => '810929026301', 
             'password' => Hash::make('password1'), 
-            'username' => '810929026301'
+            'role' => 'user', 
+            'status' => 'active', 
+            'nosmpp' => '94-19-01025', 
+            'section' => 'LYPOMETAL',
         ]);
-
+        
         User::create([
-            'name' =>'MUHAMMAD NIZAM B YUSUF', 
-            'role' => 'user', 
+            'name' => 'MUHAMMAD NIZAM B YUSUF', 
+            'username' => '910318086135', 
             'password' => Hash::make('password1'), 
-            'username' => '910318086135'
+            'role' => 'user', 
+            'status' => 'active', 
+            'nosmpp' => '7-19-01556', 
+            'section' => 'LYPOMETAL',
         ]);
-
+        
         User::create([
-            'name' =>'MOHAMAD ZAIDI B ABD KADIR', 
-            'role' => 'user', 
+            'name' => 'MOHAMAD ZAIDI B ABD KADIR', 
+            'username' => '920204026029', 
             'password' => Hash::make('password1'), 
-            'username' => '920204026029'
+            'role' => 'user', 
+            'status' => 'active', 
+            'nosmpp' => '94-15-00456', 
+            'section' => 'LYPOMETAL',
         ]);
-
+        
         User::create([
-            'name' =>'SHAIFUL FAREZZUAN B RAMLI', 
-            'role' => 'user', 
+            'name' => 'SHAIFUL FAREZZUAN B RAMLI', 
+            'username' => '930407075583', 
             'password' => Hash::make('password1'), 
-            'username' => '930407075583'
+            'role' => 'user', 
+            'status' => 'active', 
+            'nosmpp' => '42-16-01083', 
+            'section' => 'LYPOMETAL',
         ]);
-
+        
         User::create([
-            'name' =>'MOHD IZWAN BIN BAHARI', 
-            'role' => 'user', 
+            'name' => 'MOHD IZWAN BIN BAHARI', 
+            'username' => '880811025091', 
             'password' => Hash::make('password1'), 
-            'username' => '880811025091'
+            'role' => 'user', 
+            'status' => 'active', 
+            'nosmpp' => '67-20-01208', 
+            'section' => 'LYPOMETAL',
         ]);
-
+        
         User::create([
-            'name' =>'RAMLI BIN MUSA', 
-            'role' => 'user', 
+            'name' => 'RAMLI BIN MUSA', 
+            'username' => '950116026181', 
             'password' => Hash::make('password1'), 
-            'username' => '950116026181'
+            'role' => 'user', 
+            'status' => 'active', 
+            'nosmpp' => '67-14-00847', 
+            'section' => 'LYPOMETAL',
         ]);
-
+        
         User::create([
-            'name' =>'ABU BAKAR BIN ABD. GAIS', 
-            'role' => 'user', 
+            'name' => 'ABU BAKAR BIN ABD. GAIS', 
+            'username' => '860803496645', 
             'password' => Hash::make('password1'), 
-            'username' => '860803496645'
+            'role' => 'user', 
+            'status' => 'active', 
+            'nosmpp' => '87-17-00919', 
+            'section' => 'LYPOMETAL',
         ]);
-
+        
         User::create([
-            'name' =>'MUHAMAD HAFIZ BIN JOHARI', 
-            'role' => 'user', 
+            'name' => 'MUHAMAD HAFIZ BIN JOHARI', 
+            'username' => '990108028837', 
             'password' => Hash::make('password1'), 
-            'username' => '990108028837'
+            'role' => 'user', 
+            'status' => 'active', 
+            'nosmpp' => '67-20-01105', 
+            'section' => 'LYPOMETAL',
         ]);
-
+        
         User::create([
-            'name' =>'VICNESWARAN A/L VIJAYAN', 
-            'role' => 'user', 
+            'name' => 'VICNESWARAN A/L VIJAYAN', 
+            'username' => '900108085821', 
             'password' => Hash::make('password1'), 
-            'username' => '900108085821'
+            'role' => 'user', 
+            'status' => 'active', 
+            'nosmpp' => '1-08-03569', 
+            'section' => 'LYPOMETAL',
         ]);
-
+        
         User::create([
-            'name' =>'JAYKUMAR A/L LOGANATHAN', 
-            'role' => 'user', 
+            'name' => 'JAYKUMAR A/L LOGANATHAN', 
+            'username' => '890610025537', 
             'password' => Hash::make('password1'), 
-            'username' => '890610025537'
+            'role' => 'user', 
+            'status' => 'active', 
+            'nosmpp' => '66-13-02733', 
+            'section' => 'LYPOMETAL',
         ]);
-
+        
         User::create([
-            'name' =>'CHEAH BOON DEE', 
-            'role' => 'user', 
+            'name' => 'CHEAH BOON DEE', 
+            'username' => '940607075229', 
             'password' => Hash::make('password1'), 
-            'username' => '940607075229'
+            'role' => 'user', 
+            'status' => 'active', 
+            'nosmpp' => '41-16-00933', 
+            'section' => 'LYPOMETAL',
         ]);
-
+        
         User::create([
-            'name' =>'MUHAMMAD AMIRUL ASRAF BIN DAHLAN', 
-            'role' => 'user', 
+            'name' => 'MUHAMMAD AMIRUL ASRAF BIN DAHLAN', 
+            'username' => '970308065511', 
             'password' => Hash::make('password1'), 
-            'username' => '970308065511'
+            'role' => 'user', 
+            'status' => 'active', 
+            'nosmpp' => '67-17-00991', 
+            'section' => 'LYPOMETAL',
         ]);
-
+        
         User::create([
-            'name' =>'MUHAMMAD RAIS BIN YAAKOB', 
-            'role' => 'user', 
+            'name' => 'MUHAMMAD RAIS BIN YAAKOB', 
+            'username' => '900509025811', 
             'password' => Hash::make('password1'), 
-            'username' => '900509025811'
+            'role' => 'user', 
+            'status' => 'active', 
+            'nosmpp' => '66-19-00396', 
+            'section' => 'LYPOMETAL',
         ]);
-
+        
         User::create([
-            'name' =>'MOHD ZAREEM BIN ABD. AZIS', 
-            'role' => 'user', 
+            'name' => 'MOHD ZAREEM BIN ABD. AZIS', 
+            'username' => '971105025055', 
             'password' => Hash::make('password1'), 
-            'username' => '971105025055'
+            'role' => 'user', 
+            'status' => 'active', 
+            'nosmpp' => '94-19-00031', 
+            'section' => 'LYPOMETAL',
         ]);
+        
 
 
-        // Stamping
+        //Stamping
         User::create([
-            'name' =>'AZMAN BIN MD RAZAK', 
-            'role' => 'user', 
+            'name' => 'AZMAN BIN MD RAZAK', 
+            'username' => '851003075573', 
             'password' => Hash::make('password1'), 
-            'username' => '851003075573'
+            'role' => 'user', 
+            'status' => 'active', 
+            'nosmpp' => '66-18-00659', 
+            'section' => 'STAMPING',
         ]);
-
+        
         User::create([
-            'name' =>'LIM PENG TIAN', 
-            'role' => 'user', 
+            'name' => 'LIM PENG TIAN', 
+            'username' => '831027025409', 
             'password' => Hash::make('password1'), 
-            'username' => '831027025409'
+            'role' => 'user', 
+            'status' => 'active', 
+            'nosmpp' => '68-19-01314', 
+            'section' => 'STAMPING',
         ]);
-
+        
         User::create([
-            'name' =>'SURISRAU A/L SUBRAMANIAM', 
-            'role' => 'user', 
+            'name' => 'SURISRAU A/L SUBRAMANIAM', 
+            'username' => '820801025237', 
             'password' => Hash::make('password1'), 
-            'username' => '820801025237'
+            'role' => 'user', 
+            'status' => 'active', 
+            'nosmpp' => '66-18-00105', 
+            'section' => 'STAMPING',
         ]);
-
+        
         User::create([
-            'name' =>'MUHAMAD SABUDIN BIN AZIZ', 
-            'role' => 'user', 
+            'name' => 'MUHAMAD SABUDIN BIN AZIZ', 
+            'username' => '770611025081', 
             'password' => Hash::make('password1'), 
-            'username' => '770611025081'
+            'role' => 'user', 
+            'status' => 'active', 
+            'nosmpp' => '66-19-02391', 
+            'section' => 'STAMPING',
         ]);
-
+        
         User::create([
-            'name' =>'MUHAMMAD IKHWAN BIN ZAKARIA', 
-            'role' => 'user', 
+            'name' => 'MUHAMMAD IKHWAN BIN ZAKARIA', 
+            'username' => '881112085911', 
             'password' => Hash::make('password1'), 
-            'username' => '881112085911'
+            'role' => 'user', 
+            'status' => 'active', 
+            'nosmpp' => '7-15-01630', 
+            'section' => 'STAMPING',
         ]);
-
+        
         User::create([
-            'name' =>'MUHAMMAD BURHAN BIN YUSOFF', 
-            'role' => 'user', 
+            'name' => 'MUHAMMAD BURHAN BIN YUSOFF', 
+            'username' => '910108025633', 
             'password' => Hash::make('password1'), 
-            'username' => '910108025633'
+            'role' => 'user', 
+            'status' => 'active', 
+            'nosmpp' => '66-18-00018', 
+            'section' => 'STAMPING',
         ]);
-
+        
         User::create([
-            'name' =>'MOHD ANAS BIN MOHD ZOLKIFLI', 
-            'role' => 'user', 
+            'name' => 'MOHD ANAS BIN MOHD ZOLKIFLI', 
+            'username' => '821222025413', 
             'password' => Hash::make('password1'), 
-            'username' => '821222025413'
+            'role' => 'user', 
+            'status' => 'active', 
+            'nosmpp' => '66-04-01748', 
+            'section' => 'STAMPING',
         ]);
-
+        
         User::create([
-            'name' =>'ZOLHISSAN BIN OTHMAN', 
-            'role' => 'user', 
+            'name' => 'ZOLHISSAN BIN OTHMAN', 
+            'username' => '730430025721', 
             'password' => Hash::make('password1'), 
-            'username' => '730430025721'
+            'role' => 'user', 
+            'status' => 'active', 
+            'nosmpp' => '9-06-00078', 
+            'section' => 'STAMPING',
         ]);
-
+        
         User::create([
-            'name' =>'MUHAMMAD FARHAN BIN IBRAHIM', 
-            'role' => 'user', 
+            'name' => 'MUHAMMAD FARHAN BIN IBRAHIM', 
+            'username' => '921212035537', 
             'password' => Hash::make('password1'), 
-            'username' => '921212035537'
+            'role' => 'user', 
+            'status' => 'active', 
+            'nosmpp' => '8-16-04601', 
+            'section' => 'STAMPING',
         ]);
-
+        
         User::create([
-            'name' =>'MOHD FAIZAL BIN NAWI', 
-            'role' => 'user', 
+            'name' => 'MOHD FAIZAL BIN NAWI', 
+            'username' => '910212035575', 
             'password' => Hash::make('password1'), 
-            'username' => '910212035575'
+            'role' => 'user', 
+            'status' => 'active', 
+            'nosmpp' => '8-09-03421', 
+            'section' => 'STAMPING',
         ]);
-
+        
         User::create([
-            'name' =>'SHAMSUL AMRI BIN OMAR', 
-            'role' => 'user', 
+            'name' => 'SHAMSUL AMRI BIN OMAR', 
+            'username' => '780823075979', 
             'password' => Hash::make('password1'), 
-            'username' => '780823075979'
+            'role' => 'user', 
+            'status' => 'active', 
+            'nosmpp' => '41-05-00234', 
+            'section' => 'STAMPING',
         ]);
-
+        
         User::create([
-            'name' =>'MOHD ZUKHI BIN RAMLI', 
-            'role' => 'user', 
+            'name' => 'MOHD ZUKHI BIN RAMLI', 
+            'username' => '731018025345', 
             'password' => Hash::make('password1'), 
-            'username' => '731018025345'
+            'role' => 'user', 
+            'status' => 'active', 
+            'nosmpp' => '7-97-00007', 
+            'section' => 'STAMPING',
         ]);
-
+        
         User::create([
-            'name' =>'MOHD KHAIRUL AZMIL BIN ABD LATIF', 
-            'role' => 'user', 
+            'name' => 'MOHD KHAIRUL AZMIL BIN ABD LATIF', 
+            'username' => '880622065641', 
             'password' => Hash::make('password1'), 
-            'username' => '880622065641'
+            'role' => 'user', 
+            'status' => 'active', 
+            'nosmpp' => '66-10-01413', 
+            'section' => 'STAMPING',
         ]);
-
+        
         User::create([
-            'name' =>'MOHD IZWAN BIN MOHD MARZUKI', 
-            'role' => 'user', 
+            'name' => 'MOHD IZWAN BIN MOHD MARZUKI', 
+            'username' => '920617075267', 
             'password' => Hash::make('password1'), 
-            'username' => '920617075267'
+            'role' => 'user', 
+            'status' => 'active', 
+            'nosmpp' => '68-17-00087', 
+            'section' => 'STAMPING',
         ]);
-
+        
         User::create([
-            'name' =>'WAN MUHAMMAD HANIS BIN HARON', 
-            'role' => 'user', 
+            'name' => 'WAN MUHAMMAD HANIS BIN HARON', 
+            'username' => '930502075645', 
             'password' => Hash::make('password1'), 
-            'username' => '930502075645'
+            'role' => 'user', 
+            'status' => 'active', 
+            'nosmpp' => '41-17-01823', 
+            'section' => 'STAMPING',
         ]);
-
+        
         User::create([
-            'name' =>'SHOHAIMI BIN ABD. RAHMAN', 
-            'role' => 'user', 
+            'name' => 'SHOHAIMI BIN ABD. RAHMAN', 
+            'username' => '680826025389', 
             'password' => Hash::make('password1'), 
-            'username' => '680826025389'
+            'role' => 'user', 
+            'status' => 'active', 
+            'nosmpp' => '41-19-00319', 
+            'section' => 'STAMPING',
         ]);
-
+        
         User::create([
-            'name' =>'MOHAMAD IRMAN BIN MOHD RADZI', 
-            'role' => 'user', 
+            'name' => 'MOHAMAD IRMAN BIN MOHD RADZI', 
+            'username' => '980226075571', 
             'password' => Hash::make('password1'), 
-            'username' => '980226075571'
+            'role' => 'user', 
+            'status' => 'active', 
+            'nosmpp' => '41-19-01377', 
+            'section' => 'STAMPING',
         ]);
-
+        
         User::create([
-            'name' =>'JOHASLIN BIN MD. KASSAH', 
-            'role' => 'user', 
+            'name' => 'JOHASLIN BIN MD. KASSAH', 
+            'username' => '900119075637', 
             'password' => Hash::make('password1'), 
-            'username' => '900119075637'
+            'role' => 'user', 
+            'status' => 'active', 
+            'nosmpp' => '41-12-00175', 
+            'section' => 'STAMPING',
         ]);
-
+        
         User::create([
-            'name' =>'NASRI BIN AZIZAN', 
-            'role' => 'user', 
+            'name' => 'NASRI BIN AZIZAN', 
+            'username' => '800902025561', 
             'password' => Hash::make('password1'), 
-            'username' => '800902025561'
+            'role' => 'user', 
+            'status' => 'active', 
+            'nosmpp' => '66-07-00936', 
+            'section' => 'STAMPING',
         ]);
-
+        
         User::create([
-            'name' =>'MUHAMAD FAZRIN BIN HASHIM', 
-            'role' => 'user', 
+            'name' => 'MUHAMAD FAZRIN BIN HASHIM', 
+            'username' => '871122355349', 
             'password' => Hash::make('password1'), 
-            'username' => '871122355349'
+            'role' => 'user', 
+            'status' => 'active', 
+            'nosmpp' => '41-14-02134', 
+            'section' => 'STAMPING',
         ]);
-
+        
         User::create([
-            'name' =>'ARAVAANAN A/L SINNASAMY', 
-            'role' => 'user', 
+            'name' => 'ARAVAANAN A/L SINNASAMY', 
+            'username' => '871108075033', 
             'password' => Hash::make('password1'), 
-            'username' => '871108075033'
+            'role' => 'user', 
+            'status' => 'active', 
+            'nosmpp' => '3-09-04175', 
+            'section' => 'STAMPING',
         ]);
-
+        
         User::create([
-            'name' =>'ROSDI B MAT DESA', 
-            'role' => 'user', 
+            'name' => 'ROSDI B MAT DESA', 
+            'username' => '790314086177', 
             'password' => Hash::make('password1'), 
-            'username' => '790314086177'
+            'role' => 'user', 
+            'status' => 'active', 
+            'nosmpp' => '7-18-01521', 
+            'section' => 'STAMPING',
         ]);
-
+        
         User::create([
-            'name' =>'MOHD FAIZAL B SAIDIN', 
-            'role' => 'user', 
+            'name' => 'MOHD FAIZAL B SAIDIN', 
+            'username' => '850508026035', 
             'password' => Hash::make('password1'), 
-            'username' => '850508026035'
+            'role' => 'user', 
+            'status' => 'active', 
+            'nosmpp' => '67-05-00123', 
+            'section' => 'STAMPING',
         ]);
-
+        
         User::create([
-            'name' =>'SATHISH A/L RAMAKRISHNAN', 
-            'role' => 'user', 
+            'name' => 'SATHISH A/L RAMAKRISHNAN', 
+            'username' => '941218065253', 
             'password' => Hash::make('password1'), 
-            'username' => '941218065253'
+            'role' => 'user', 
+            'status' => 'active', 
+            'nosmpp' => '1-15-07520', 
+            'section' => 'STAMPING',
         ]);
-
+        
         User::create([
-            'name' =>'MOHD SOFI B AZIZAN', 
-            'role' => 'user', 
+            'name' => 'MOHD SOFI B AZIZAN', 
+            'username' => '981021026711', 
             'password' => Hash::make('password1'), 
-            'username' => '981021026711'
+            'role' => 'user', 
+            'status' => 'active', 
+            'nosmpp' => '66-20-00781', 
+            'section' => 'STAMPING',
         ]);
-
+        
         User::create([
-            'name' =>'UMAR BIN RAMLI', 
-            'role' => 'user', 
+            'name' => 'UMAR BIN RAMLI', 
+            'username' => '961105026219', 
             'password' => Hash::make('password1'), 
-            'username' => '961105026219'
+            'role' => 'user', 
+            'status' => 'active', 
+            'nosmpp' => '67-15-01771', 
+            'section' => 'STAMPING',
         ]);
-
+        
         User::create([
-            'name' =>'MOHD FAUZI BIN MAJID', 
-            'role' => 'user', 
+            'name' => 'MOHD FAUZI BIN MAJID', 
+            'username' => '810219025179', 
             'password' => Hash::make('password1'), 
-            'username' => '810219025179'
+            'role' => 'user', 
+            'status' => 'active', 
+            'nosmpp' => '66-20-01490', 
+            'section' => 'STAMPING',
         ]);
-
+        
         User::create([
-            'name' =>'MOHD NORHAN BIN MD NOOR', 
-            'role' => 'user', 
+            'name' => 'MOHD NORHAN BIN MD NOOR', 
+            'username' => '960415025321', 
             'password' => Hash::make('password1'), 
-            'username' => '960415025321'
+            'role' => 'user', 
+            'status' => 'active', 
+            'nosmpp' => '1-20-00237', 
+            'section' => 'STAMPING',
         ]);
-
+        
         User::create([
-            'name' =>'MUHAMMAD FARHAN IKQWAN BIN SYUKUR', 
-            'role' => 'user', 
+            'name' => 'MUHAMMAD FARHAN IKQWAN BIN SYUKUR', 
+            'username' => '970524106197', 
             'password' => Hash::make('password1'), 
-            'username' => '970524106197'
+            'role' => 'user', 
+            'status' => 'active', 
+            'nosmpp' => '3-19-08148', 
+            'section' => 'STAMPING',
         ]);
-
+        
         User::create([
-            'name' =>'MUHAMMAD RIDHWAN BIN ABDULLAH', 
-            'role' => 'user', 
+            'name' => 'MUHAMMAD RIDHWAN BIN ABDULLAH', 
+            'username' => '851121075101', 
             'password' => Hash::make('password1'), 
-            'username' => '851121075101'
+            'role' => 'user', 
+            'status' => 'active', 
+            'nosmpp' => '42-21-00261', 
+            'section' => 'STAMPING',
         ]);
-
+        
         User::create([
-            'name' =>'MOHD FIRDAUS BIN ABD. RAZAK', 
-            'role' => 'user', 
+            'name' => 'MOHD FIRDAUS BIN ABD. RAZAK', 
+            'username' => '870525355525', 
             'password' => Hash::make('password1'), 
-            'username' => '870525355525'
+            'role' => 'user', 
+            'status' => 'active', 
+            'nosmpp' => '3-12-01338', 
+            'section' => 'STAMPING',
         ]);
-
+        
         User::create([
-            'name' =>'MOHD KAMIL MAULA BIN OMAR', 
-            'role' => 'user', 
+            'name' => 'MOHD KAMIL MAULA BIN OMAR', 
+            'username' => '960522075287', 
             'password' => Hash::make('password1'), 
-            'username' => '960522075287'
+            'role' => 'user', 
+            'status' => 'active', 
+            'nosmpp' => '41-18-00549', 
+            'section' => 'STAMPING',
         ]);
-
+        
         User::create([
-            'name' =>'MOHAMAD SABRI BIN ZAINON', 
-            'role' => 'user', 
+            'name' => 'MOHAMAD SABRI BIN ZAINON', 
+            'username' => '680825025571', 
             'password' => Hash::make('password1'), 
-            'username' => '680825025571'
+            'role' => 'user', 
+            'status' => 'active', 
+            'nosmpp' => '42-20-01229', 
+            'section' => 'STAMPING',
         ]);
-
+        
         User::create([
-            'name' =>'MUHAMMAD SYUKOR BIN ABDULLAH', 
-            'role' => 'user', 
+            'name' => 'MUHAMMAD SYUKOR BIN ABDULLAH', 
+            'username' => '961212075163', 
             'password' => Hash::make('password1'), 
-            'username' => '961212075163'
+            'role' => 'user', 
+            'status' => 'active', 
+            'nosmpp' => '67-16-00264', 
+            'section' => 'STAMPING',
         ]);
-
+        
         User::create([
-            'name' =>'HUSEN BIN MAT NAYAN', 
-            'role' => 'user', 
+            'name' => 'HUSEN BIN MAT NAYAN', 
+            'username' => '820405065077', 
             'password' => Hash::make('password1'), 
-            'username' => '820405065077'
+            'role' => 'user', 
+            'status' => 'active', 
+            'nosmpp' => '41-09-00511', 
+            'section' => 'STAMPING',
         ]);
-
+        
         User::create([
-            'name' =>'MOHD NAZRUL HISYAM BIN ABD. KARIM', 
-            'role' => 'user', 
+            'name' => 'MOHD NAZRUL HISYAM BIN ABD. KARIM', 
+            'username' => '940303125039', 
             'password' => Hash::make('password1'), 
-            'username' => '940303125039'
+            'role' => 'user', 
+            'status' => 'active', 
+            'nosmpp' => '84-15-00647', 
+            'section' => 'STAMPING',
         ]);
-
+        
         User::create([
-            'name' =>'MOHD FAIZAL BIN ABD. WAHAB', 
-            'role' => 'user', 
+            'name' => 'MOHD FAIZAL BIN ABD. WAHAB', 
+            'username' => '730930016709', 
             'password' => Hash::make('password1'), 
-            'username' => '730930016709'
+            'role' => 'user', 
+            'status' => 'active', 
+            'nosmpp' => '7-05-01146', 
+            'section' => 'STAMPING',
         ]);
-
+        
         User::create([
-            'name' =>'TAN ENG TAT', 
-            'role' => 'user', 
+            'name' => 'TAN ENG TAT', 
+            'username' => '790826025263', 
             'password' => Hash::make('password1'), 
-            'username' => '790826025263'
+            'role' => 'user', 
+            'status' => 'active', 
+            'nosmpp' => '94-17-00026', 
+            'section' => 'STAMPING',
         ]);
-
+        
         User::create([
-            'name' =>'THIAGU A/L MANOGARAN', 
-            'role' => 'user', 
+            'name' => 'THIAGU A/L MANOGARAN', 
+            'username' => '810129075017', 
             'password' => Hash::make('password1'), 
-            'username' => '810129075017'
+            'role' => 'user', 
+            'status' => 'active', 
+            'nosmpp' => '41-08-02470', 
+            'section' => 'STAMPING',
         ]);
-
+        
         User::create([
-            'name' =>'KALAIVENTHAN A/L BALAKRISHNAN', 
-            'role' => 'user', 
+            'name' => 'KALAIVENTHAN A/L BALAKRISHNAN', 
+            'username' => '861216355703', 
             'password' => Hash::make('password1'), 
-            'username' => '861216355703'
+            'role' => 'user', 
+            'status' => 'active', 
+            'nosmpp' => '41-17-00994', 
+            'section' => 'STAMPING',
         ]);
-
+        
 
-        // Finishing
+        // PECKER
         User::create([
-            'name' =>'ISHAM BIN ISMAIL', 
-            'role' => 'user', 
+            'name' => 'MUHAMMAD JAMALI BIN ABDULLAH', 
+            'username' => '810910017069', 
             'password' => Hash::make('password1'), 
-            'username' => '790526025819'
+            'role' => 'user', 
+            'status' => 'active', 
+            'nosmpp' => '71-17-02334', 
+            'section' => 'PECKER',
         ]);
-
+        
         User::create([
-            'name' =>'MUHAMMAD FIRDAUS BIN RAMLE', 
-            'role' => 'user', 
+            'name' => 'MOHD FAIZUL BIN RAZALI', 
+            'username' => '800423115105', 
             'password' => Hash::make('password1'), 
-            'username' => '910630025783'
+            'role' => 'user', 
+            'status' => 'active', 
+            'nosmpp' => '71-08-01722', 
+            'section' => 'PECKER',
         ]);
-
+        
         User::create([
-            'name' =>'MOHD HELMI BIN ABD HALIM', 
-            'role' => 'user', 
+            'name' => 'ABDUL RASHID BIN ABD AZIZ', 
+            'username' => '930313036305', 
             'password' => Hash::make('password1'), 
-            'username' => '970514025633'
+            'role' => 'user', 
+            'status' => 'active', 
+            'nosmpp' => '8-11-02554', 
+            'section' => 'PECKER',
         ]);
-
+        
         User::create([
-            'name' =>'YUSRI BIN AHMAD', 
-            'role' => 'user', 
+            'name' => 'ROSDI BIN DAUD', 
+            'username' => '751002035459', 
             'password' => Hash::make('password1'), 
-            'username' => '850524026369'
+            'role' => 'user', 
+            'status' => 'active', 
+            'nosmpp' => '8-11-00270', 
+            'section' => 'PECKER',
         ]);
-
+        
         User::create([
-            'name' =>'MOHAMMAD SAFUAN BIN NOOR RAZALI', 
-            'role' => 'user', 
+            'name' => 'KHAIRUL AZWAR BIN ZIZI', 
+            'username' => '780922035235', 
             'password' => Hash::make('password1'), 
-            'username' => '931029026147'
+            'role' => 'user', 
+            'status' => 'active', 
+            'nosmpp' => '8-15-01435', 
+            'section' => 'PECKER',
         ]);
-
+        
         User::create([
-            'name' =>'THAMILARASU A/L GANESON', 
-            'role' => 'user', 
+            'name' => 'MUHAMAD AZRUL BIN AZLAM', 
+            'username' => '820910035311', 
             'password' => Hash::make('password1'), 
-            'username' => '931220145937'
+            'role' => 'user', 
+            'status' => 'active', 
+            'nosmpp' => '82-16-00649', 
+            'section' => 'PECKER',
         ]);
-
+        
         User::create([
-            'name' =>'SYED ALWI BIN SYED ABDUL WAHAB', 
-            'role' => 'user', 
+            'name' => 'MOHAMAD HANIFF BIN MAT SARIFF', 
+            'username' => '960903035895', 
             'password' => Hash::make('password1'), 
-            'username' => '780406025831'
+            'role' => 'user', 
+            'status' => 'active', 
+            'nosmpp' => '8-17-02229', 
+            'section' => 'PECKER',
         ]);
-
+        
         User::create([
-            'name' =>'KUMAR A/L TANNIMALAI', 
-            'role' => 'user', 
+            'name' => 'HARUDIN B HARON', 
+            'username' => '861130265205', 
             'password' => Hash::make('password1'), 
-            'username' => '890429025567'
+            'role' => 'user', 
+            'status' => 'active', 
+            'nosmpp' => '67-06-01193', 
+            'section' => 'PECKER',
         ]);
-
+        
         User::create([
-            'name' =>'JUSNIZAN BIN JUDIN', 
-            'role' => 'user', 
+            'name' => 'MD NAJIB B BAKAR', 
+            'username' => '771009025489', 
             'password' => Hash::make('password1'), 
-            'username' => '800705025837'
+            'role' => 'user', 
+            'status' => 'active', 
+            'nosmpp' => '66-19-00161', 
+            'section' => 'PECKER',
         ]);
-
+        
         User::create([
-            'name' =>'AYOB BIN MOHAMAD', 
-            'role' => 'user', 
+            'name' => 'MOHD SHUKRI B MOHD SOFI', 
+            'username' => '960319025911', 
             'password' => Hash::make('password1'), 
-            'username' => '750325026835'
+            'role' => 'user', 
+            'status' => 'active', 
+            'nosmpp' => '67-17-00192', 
+            'section' => 'PECKER',
         ]);
-
+        
         User::create([
-            'name' =>'MOHD ROSLI BIN ISMAIL', 
-            'role' => 'user', 
+            'name' => 'MOHD AMER KHUSAIRI B MOHD NASIR', 
+            'username' => '931202025691', 
             'password' => Hash::make('password1'), 
-            'username' => '800806025043'
+            'role' => 'user', 
+            'status' => 'active', 
+            'nosmpp' => '94-18-00269', 
+            'section' => 'PECKER',
         ]);
-
+        
         User::create([
-            'name' =>'MOHD SHAHREL BIN MAT ESA', 
-            'role' => 'user', 
+            'name' => 'MOHD ZAIRUL B ZAINAL RASHID', 
+            'username' => '951114025809', 
             'password' => Hash::make('password1'), 
-            'username' => '850211036267'
+            'role' => 'user', 
+            'status' => 'active', 
+            'nosmpp' => '67-14-01036', 
+            'section' => 'PECKER',
         ]);
+        
 
+        // FINISHING
         User::create([
-            'name' =>'MUHAMMAD AFFIQ BIN SUYUTI', 
-            'role' => 'user', 
+            'name' => 'ISHAM BIN ISMAIL', 
+            'username' => '790526025819', 
             'password' => Hash::make('password1'), 
-            'username' => '981104035103'
+            'role' => 'user', 
+            'status' => 'active', 
+            'nosmpp' => '66-17-00111', 
+            'section' => 'FINISHING',
         ]);
-
+        
         User::create([
-            'name' =>'MOHD ZAIRI AMRY BIN IBRAHIM', 
-            'role' => 'user', 
+            'name' => 'MUHAMMAD FIRDAUS BIN RAMLE', 
+            'username' => '910630025783', 
             'password' => Hash::make('password1'), 
-            'username' => '850103035945'
-        ]);
-
-        User::create([
-            'name' =>'MOHD IZROL HASBULLAH BIN ABD AZIZ', 
             'role' => 'user', 
-            'password' => Hash::make('password1'), 
-            'username' => '960803025841'
+            'status' => 'active', 
+            'nosmpp' => '66-19-02105', 
+            'section' => 'FINISHING',
         ]);
-
+        
         User::create([
-            'name' =>'MOHD SHAHRUL FIKRI BIN AZMI', 
-            'role' => 'user', 
+            'name' => 'MOHD HELMI BIN ABD HALIM', 
+            'username' => '970514025633', 
             'password' => Hash::make('password1'), 
-            'username' => '970427025117'
-        ]);
-
-        User::create([
-            'name' =>'WAN MOHD FAZEHAN BIN PAK WAN CHIK', 
             'role' => 'user', 
-            'password' => Hash::make('password1'), 
-            'username' => '821025085249'
+            'status' => 'active', 
+            'nosmpp' => '67-16-01696', 
+            'section' => 'FINISHING',
         ]);
-
+        
         User::create([
-            'name' =>'MOHD REDZUAN BIN ISMAIL', 
-            'role' => 'user', 
+            'name' => 'YUSRI BIN AHMAD', 
+            'username' => '850524026369', 
             'password' => Hash::make('password1'), 
-            'username' => '870702305087'
-        ]);
-
-        User::create([
-            'name' =>'ANAN BIN ABD. LATIF', 
             'role' => 'user', 
-            'password' => Hash::make('password1'), 
-            'username' => '770114075985'
+            'status' => 'active', 
+            'nosmpp' => '94-19-00844', 
+            'section' => 'FINISHING',
         ]);
-
+        
         User::create([
-            'name' =>'ADAM DANIAL BIN ABD. JALIL', 
-            'role' => 'user', 
+            'name' => 'MOHAMMAD SAFUAN BIN NOOR RAZALI', 
+            'username' => '931029026147', 
             'password' => Hash::make('password1'), 
-            'username' => '930817075607'
-        ]);
-
-        User::create([
-            'name' =>'SUHARDDY BIN RAMLI', 
             'role' => 'user', 
-            'password' => Hash::make('password1'), 
-            'username' => '760224025699'
+            'status' => 'active', 
+            'nosmpp' => '68-20-00885', 
+            'section' => 'FINISHING',
         ]);
-
+        
         User::create([
-            'name' =>'AZMI BIN KHALID', 
-            'role' => 'user', 
+            'name' => 'THAMILARASU A/L GANESON', 
+            'username' => '931220145937', 
             'password' => Hash::make('password1'), 
-            'username' => '930130086481'
+            'role' => 'user', 
+            'status' => 'active', 
+            'nosmpp' => '1-13-04590', 
+            'section' => 'FINISHING',
         ]);
-
+        
         User::create([
-            'name' =>'MOHAMAD HAFIS BIN RAJIHAN', 
-            'role' => 'user', 
+            'name' => 'SYED ALWI BIN SYED ABDUL WAHAB', 
+            'username' => '780406025831', 
             'password' => Hash::make('password1'), 
-            'username' => '991128026323'
+            'role' => 'user', 
+            'status' => 'active', 
+            'nosmpp' => '66-07-00988', 
+            'section' => 'FINISHING',
         ]);
-
+        
         User::create([
-            'name' =>'MOHD SHARINIZAL BIN MOHD SHARIFF', 
-            'role' => 'user', 
+            'name' => 'KUMAR A/L TANNIMALAI', 
+            'username' => '890429025567', 
             'password' => Hash::make('password1'), 
-            'username' => '740207026341'
+            'role' => 'user', 
+            'status' => 'active', 
+            'nosmpp' => '3-10-02017', 
+            'section' => 'FINISHING',
         ]);
-
-
-        // Warehouse
+        
         User::create([
-            'name' =>'NURHAFISZAN BIN FARIZAL', 
-            'role' => 'user', 
+            'name' => 'JUSNIZAN BIN JUDIN', 
+            'username' => '800705025837', 
             'password' => Hash::make('password1'), 
-            'username' => '960701025381'
+            'role' => 'user', 
+            'status' => 'active', 
+            'nosmpp' => '41-11-00624', 
+            'section' => 'FINISHING',
         ]);
-
+        
         User::create([
-            'name' =>'JOHARI BIN OSMAN', 
-            'role' => 'user', 
+            'name' => 'AYOB BIN MOHAMAD', 
+            'username' => '750325026835', 
             'password' => Hash::make('password1'), 
-            'username' => '860903025023'
+            'role' => 'user', 
+            'status' => 'active', 
+            'nosmpp' => '94-15-00058', 
+            'section' => 'FINISHING',
         ]);
-
+        
         User::create([
-            'name' =>'LATIFF BIN IBRAHIM', 
-            'role' => 'user', 
+            'name' => 'MOHD ROSLI BIN ISMAIL', 
+            'username' => '800806025043', 
             'password' => Hash::make('password1'), 
-            'username' => '821026055201'
+            'role' => 'user', 
+            'status' => 'active', 
+            'nosmpp' => '68-15-00639', 
+            'section' => 'FINISHING',
         ]);
-
+        
         User::create([
-            'name' =>'MOHD FAIEZ FIRDAUS BIN BAHAROM', 
-            'role' => 'user', 
+            'name' => 'MOHD SHAHREL BIN MAT ESA', 
+            'username' => '850211036267', 
             'password' => Hash::make('password1'), 
-            'username' => '920108025325'
+            'role' => 'user', 
+            'status' => 'active', 
+            'nosmpp' => '8-13-03559', 
+            'section' => 'FINISHING',
         ]);
-
+        
         User::create([
-            'name' =>'LOKMAN HAKIM BIN AHMAD DZUKI', 
-            'role' => 'user', 
+            'name' => 'MUHAMMAD AFFIQ BIN SUYUTI', 
+            'username' => '981104035103', 
             'password' => Hash::make('password1'), 
-            'username' => '970412265177'
+            'role' => 'user', 
+            'status' => 'active', 
+            'nosmpp' => '8-17-03978', 
+            'section' => 'FINISHING',
         ]);
-
+        
         User::create([
-            'name' =>'HAZLAMIE BIN CHE HALIM', 
-            'role' => 'user', 
+            'name' => 'MOHD ZAIRI AMRY BIN IBRAHIM', 
+            'username' => '850103035945', 
             'password' => Hash::make('password1'), 
-            'username' => '891023026089'
+            'role' => 'user', 
+            'status' => 'active', 
+            'nosmpp' => '8-13-01194', 
+            'section' => 'FINISHING',
         ]);
-
+        
         User::create([
-            'name' =>'VIGNES A/L THAMBIRAJA', 
-            'role' => 'user', 
+            'name' => 'MOHD IZROL HASBULLAH BIN ABD AZIZ', 
+            'username' => '960803025841', 
             'password' => Hash::make('password1'), 
-            'username' => '950423086053'
+            'role' => 'user', 
+            'status' => 'active', 
+            'nosmpp' => '66-20-00159', 
+            'section' => 'FINISHING',
         ]);
-
+        
         User::create([
-            'name' =>'MOHD RIDZUAN BIN ABDULLAH', 
-            'role' => 'user', 
+            'name' => 'MOHD SHAHRUL FIKRI BIN AZMI', 
+            'username' => '970427025117', 
             'password' => Hash::make('password1'), 
-            'username' => '920229095055'
+            'role' => 'user', 
+            'status' => 'active', 
+            'nosmpp' => '67-15-01924', 
+            'section' => 'FINISHING',
         ]);
-
+        
         User::create([
-            'name' =>'MASSRI BIN ABD MANAF', 
-            'role' => 'user', 
+            'name' => 'WAN MOHD FAZEHAN BIN PAK WAN CHIK', 
+            'username' => '821025085249', 
             'password' => Hash::make('password1'), 
-            'username' => '790503075485'
+            'role' => 'user', 
+            'status' => 'active', 
+            'nosmpp' => '41-09-00856', 
+            'section' => 'FINISHING',
         ]);
-
+        
         User::create([
-            'name' =>'KAMARUL HAZLI BIN TAN', 
-            'role' => 'user', 
+            'name' => 'MOHD REDZUAN BIN ISMAIL', 
+            'username' => '870702305087', 
             'password' => Hash::make('password1'), 
-            'username' => '820908086419'
+            'role' => 'user', 
+            'status' => 'active', 
+            'nosmpp' => '62-13-00185', 
+            'section' => 'FINISHING',
         ]);
-
+        
         User::create([
-            'name' =>'MUHAMAD ZAINI BIN AZIZAN', 
-            'role' => 'user', 
+            'name' => 'ANAN BIN ABD. LATIF', 
+            'username' => '770114075985', 
             'password' => Hash::make('password1'), 
-            'username' => '881203025877'
+            'role' => 'user', 
+            'status' => 'active', 
+            'nosmpp' => '41-11-00225', 
+            'section' => 'FINISHING',
         ]);
-
+        
         User::create([
-            'name' =>'ANZANEE BIN MD ZAKI', 
-            'role' => 'user', 
+            'name' => 'ADAM DANIAL BIN ABD. JALIL', 
+            'username' => '930817075607', 
             'password' => Hash::make('password1'), 
-            'username' => '780207075801'
+            'role' => 'user', 
+            'status' => 'active', 
+            'nosmpp' => '10-15-00029', 
+            'section' => 'FINISHING',
         ]);
-
+        
         User::create([
-            'name' =>'VEKINESWARAN A/L THARMA THURAI', 
-            'role' => 'user', 
+            'name' => 'SUHARDDY BIN RAMLI', 
+            'username' => '760224025699', 
             'password' => Hash::make('password1'), 
-            'username' => '990128016825'
+            'role' => 'user', 
+            'status' => 'active', 
+            'nosmpp' => '66-16-01123', 
+            'section' => 'FINISHING',
         ]);
-
+        
         User::create([
-            'name' =>'MOHAMAD YASIN BIN ISMAIL', 
-            'role' => 'user', 
+            'name' => 'AZMI BIN KHALID', 
+            'username' => '930130086481', 
             'password' => Hash::make('password1'), 
-            'username' => '900126035633'
+            'role' => 'user', 
+            'status' => 'active', 
+            'nosmpp' => '42-18-01785', 
+            'section' => 'FINISHING',
         ]);
-
+        
         User::create([
-            'name' =>'MOHD RIDZUAN BIN MOHD NOOR', 
-            'role' => 'user', 
+            'name' => 'MOHAMAD HAFIS BIN RAJIHAN', 
+            'username' => '991128026323', 
             'password' => Hash::make('password1'), 
-            'username' => '921225036175'
+            'role' => 'user', 
+            'status' => 'active', 
+            'nosmpp' => '67-21-00322', 
+            'section' => 'FINISHING',
         ]);
-
+        
         User::create([
-            'name' =>'MUHAMAD HISYAM BIN ABD RAHIM', 
-            'role' => 'user', 
+            'name' => 'MOHD SHARINIZAL BIN MOHD SHARIFF', 
+            'username' => '740207026341', 
             'password' => Hash::make('password1'), 
-            'username' => '880914035241'
+            'role' => 'user', 
+            'status' => 'active', 
+            'nosmpp' => '66-17-02089', 
+            'section' => 'FINISHING',
         ]);
+        
 
+        // AUTO SPRAY
         User::create([
-            'name' =>'MUHAMMAD ZULFIKRI BIN ZAINAL', 
-            'role' => 'user', 
+            'name' => 'MOHD NIZAM BIN YAAKUB', 
+            'username' => '881106265131', 
             'password' => Hash::make('password1'), 
-            'username' => '910814035599'
-        ]);
-
+            'role' => 'user', 
+            'status' => 'active', 
+            'nosmpp' => '66-19-02404', 
+            'section' => 'AUTO S
+            PRAY',]);
+        
         User::create([
-            'name' =>'MOHD ZAHARI BIN MOHD ZAID', 
+            'name' => 'MOHD HAMIRUL ZAIMIE BIN ZAINON', 
+            'username' => '851111145233', 
+            'password' => Hash::make('password1'), 
             'role' => 'user', 
+            'status' => 'active', 
+            'nosmpp' => '66-09-00455', 
+            'section' => 'AUTO S
+            PRAY',]);
+        
+        User::create([
+            'name' => 'MOHAMMAD FARIS BIN MAT ESA', 
+            'username' => '910118035413', 
             'password' => Hash::make('password1'), 
-            'username' => '920831115979'
-        ]);
-
+            'role' => 'user', 
+            'status' => 'active', 
+            'nosmpp' => '8-18-00895', 
+            'section' => 'AUTO S
+            PRAY',]);
+        
         User::create([
-            'name' =>'MUHAMMAD KHALIL BIN ALWI', 
+            'name' => 'ABDULLAH BIN AHMAD', 
+            'username' => '860102035723', 
+            'password' => Hash::make('password1'), 
             'role' => 'user', 
+            'status' => 'active', 
+            'nosmpp' => '8-11-04186', 
+            'section' => 'AUTO S
+            PRAY',]);
+        
+        User::create([
+            'name' => 'WAN ZAMRI BIN WAN ALI', 
+            'username' => '801105035809', 
             'password' => Hash::make('password1'), 
-            'username' => '900227035683'
-        ]);
-
+            'role' => 'user', 
+            'status' => 'active', 
+            'nosmpp' => '8-09-00027', 
+            'section' => 'AUTO S
+            PRAY',]);
+        
         User::create([
-            'name' =>'MUHAMAD NUR SHAFIQ BIN MUHD NUR', 
+            'name' => 'SHEIFUL HELMI BIN AHMAD SUHAIMI', 
+            'username' => '890721035957', 
+            'password' => Hash::make('password1'), 
             'role' => 'user', 
+            'status' => 'active', 
+            'nosmpp' => '8-11-02753', 
+            'section' => 'AUTO S
+            PRAY',]);
+        
+        User::create([
+            'name' => 'MUHAMMAD FARID BIN ABD. RAHIM', 
+            'username' => '871206025937', 
             'password' => Hash::make('password1'), 
-            'username' => '911125035643'
-        ]);
-
+            'role' => 'user', 
+            'status' => 'active', 
+            'nosmpp' => '66-17-00905', 
+            'section' => 'AUTO S
+            PRAY',]);
+        
         User::create([
-            'name' =>'MOHD ZAIWAN BIN AB RAHMAN', 
+            'name' => 'AHMAD ADILAS B SULAIMAN', 
+            'username' => '810615075397', 
+            'password' => Hash::make('password1'), 
             'role' => 'user', 
+            'status' => 'active', 
+            'nosmpp' => '41-17-00147', 
+            'section' => 'AUTO S
+            PRAY',]);
+        
+        User::create([
+            'name' => 'MOHD HANIF BIN SAAD', 
+            'username' => '911025026037', 
             'password' => Hash::make('password1'), 
-            'username' => '820613036051'
-        ]);
+            'role' => 'user', 
+            'status' => 'active', 
+            'nosmpp' => '66-17-01986', 
+            'section' => 'AUTO S
+            PRAY',]);
+        
 
+        // ROBO SPRAY
         User::create([
-            'name' =>'MOHD RIZUAN BIN AHMAD ROZI', 
-            'role' => 'user', 
+            'name' => 'MOHAMAD ZHARIFF BIN ZAINOL', 
+            'username' => '880710355251', 
             'password' => Hash::make('password1'), 
-            'username' => '880913035821'
+            'role' => 'user', 
+            'status' => 'active', 
+            'nosmpp' => '66-16-00431', 
+            'section' => 'ROBOSPRAY',
         ]);
-
+        
         User::create([
-            'name' =>'ARIMAN BIN MOHAMAD', 
-            'role' => 'user', 
+            'name' => 'BOON PRAK SERT A/L ERON', 
+            'username' => '960908095037', 
             'password' => Hash::make('password1'), 
-            'username' => '800403115749'
+            'role' => 'user', 
+            'status' => 'active', 
+            'nosmpp' => '94-20-00193', 
+            'section' => 'ROBOSPRAY',
         ]);
-
+        
         User::create([
-            'name' =>'MOGAN A/ L SUBRAMANIAM', 
-            'role' => 'user', 
+            'name' => 'ZULHAFISSAM BIN ZULKIFLI', 
+            'username' => '920818035843', 
             'password' => Hash::make('password1'), 
-            'username' => '630306107043'
+            'role' => 'user', 
+            'status' => 'active', 
+            'nosmpp' => '8-15-02875', 
+            'section' => 'ROBOSPRAY',
         ]);
-
+        
         User::create([
-            'name' =>'SURINARAINAN A/L RAGAVAN', 
-            'role' => 'user', 
+            'name' => 'MOHD HANIFI BIN HAMZAH', 
+            'username' => '870711295431', 
             'password' => Hash::make('password1'), 
-            'username' => '770302026689'
+            'role' => 'user', 
+            'status' => 'active', 
+            'nosmpp' => '8-12-02609', 
+            'section' => 'ROBOSPRAY',
         ]);
-
+        
         User::create([
-            'name' =>'SATIASIVAN A/L GANAPATI', 
-            'role' => 'user', 
+            'name' => 'MUHD ROOFEZA BIN DOLLAH @ ABDULLAH', 
+            'username' => '820813035379', 
             'password' => Hash::make('password1'), 
-            'username' => '760427075629'
+            'role' => 'user', 
+            'status' => 'active', 
+            'nosmpp' => '8-12-00741', 
+            'section' => 'ROBOSPRAY',
         ]);
-
+        
         User::create([
-            'name' =>'MOHAMMAD RUSLI BIN ABDULLAH', 
-            'role' => 'user', 
+            'name' => 'MUHAMMAD SAIFUL BAHRI BIN ABDULLAH', 
+            'username' => '980228115557', 
             'password' => Hash::make('password1'), 
-            'username' => '820127025365'
+            'role' => 'user', 
+            'status' => 'active', 
+            'nosmpp' => '8-19-03942', 
+            'section' => 'ROBOSPRAY',
         ]);
-
+        
         User::create([
-            'name' =>'SHUID BIN HAMID', 
-            'role' => 'user', 
+            'name' => 'ABDUL HADI BIN MOHAMAD', 
+            'username' => '940412035171', 
             'password' => Hash::make('password1'), 
-            'username' => '761109025719'
+            'role' => 'user', 
+            'status' => 'active', 
+            'nosmpp' => '8-14-02466', 
+            'section' => 'ROBOSPRAY',
         ]);
-
+        
         User::create([
-            'name' =>'SHAHRUL RADZI BIN ABDUL GHANI', 
-            'role' => 'user', 
+            'name' => 'MUHAMMAD SYAHRIZAN BIN MD. NOH', 
+            'username' => '930211026173', 
             'password' => Hash::make('password1'), 
-            'username' => '840105085356'
+            'role' => 'user', 
+            'status' => 'active', 
+            'nosmpp' => '66-14-01162', 
+            'section' => 'ROBOSPRAY',
         ]);
-
+        
         User::create([
-            'name' =>'MOHAMMAD KHUZAIRI BIN SOFIAN', 
-            'role' => 'user', 
+            'name' => 'KHAIRUL IZUAN BIN ABDULLAH', 
+            'username' => '870604355355', 
             'password' => Hash::make('password1'), 
-            'username' => '900304025957'
+            'role' => 'user', 
+            'status' => 'active', 
+            'nosmpp' => '62-12-00333', 
+            'section' => 'ROBOSPRAY',
         ]);
-
+        
         User::create([
-            'name' =>'MOHD FAIS BIN ISMAIL', 
-            'role' => 'user', 
+            'name' => 'MOHD NIZAL BIN MOHD NASIR', 
+            'username' => '891011025759', 
             'password' => Hash::make('password1'), 
-            'username' => '920225026001'
+            'role' => 'user', 
+            'status' => 'active', 
+            'nosmpp' => '68-17-01240', 
+            'section' => 'ROBOSPRAY',
         ]);
-
+        
         User::create([
-            'name' =>'MUHAMMAD KHAIRUL FAHMI BIN WAHAB', 
-            'role' => 'user', 
+            'name' => 'MANATHAVAN A/L RAJAN', 
+            'username' => '830811025475', 
             'password' => Hash::make('password1'), 
-            'username' => '951024025485'
+            'role' => 'user', 
+            'status' => 'active', 
+            'nosmpp' => '41-08-02083', 
+            'section' => 'ROBOSPRAY',
         ]);
-
+        
         User::create([
-            'name' =>'MOHAMMAD RIZAL BIN ABD. RAZAK', 
-            'role' => 'user', 
+            'name' => 'SHAHRIZAN BIN YUSOF', 
+            'username' => '860314266013', 
             'password' => Hash::make('password1'), 
-            'username' => '920528075871'
+            'role' => 'user', 
+            'status' => 'active', 
+            'nosmpp' => '66-10-00067', 
+            'section' => 'ROBOSPRAY',
         ]);
-
+        
         User::create([
-            'name' =>'JAMIL BIN BAKAR', 
-            'role' => 'user', 
+            'name' => 'SHUKRI BIN MD. ALI', 
+            'username' => '740726025957', 
             'password' => Hash::make('password1'), 
-            'username' => '700205075637'
+            'role' => 'user', 
+            'status' => 'active', 
+            'nosmpp' => '66-20-00304', 
+            'section' => 'ROBOSPRAY',
         ]);
-
+        
         User::create([
-            'name' =>'MOHD JASNI HERYANTO BIN MOHD REDHOWAN', 
-            'role' => 'user', 
+            'name' => 'MOHD AKMARUL FITRI BIN ISMAIL', 
+            'username' => '900131025587', 
             'password' => Hash::make('password1'), 
-            'username' => '841008075055'
+            'role' => 'user', 
+            'status' => 'active', 
+            'nosmpp' => '67-09-00671', 
+            'section' => 'ROBOSPRAY',
         ]);
-
+        
         User::create([
-            'name' =>'MOHD AZLY BIN MOHD ROZI', 
-            'role' => 'user', 
+            'name' => 'MOHD AKMAL BIN MAT ISA', 
+            'username' => '900407025749', 
             'password' => Hash::make('password1'), 
-            'username' => '970425075321'
+            'role' => 'user', 
+            'status' => 'active', 
+            'nosmpp' => '66-12-00656', 
+            'section' => 'ROBOSPRAY',
         ]);
-
+        
         User::create([
-            'name' =>'MOHD SHAHRIDAN BIN ABDUL HALIM', 
-            'role' => 'user', 
+            'name' => 'PRAKASH A/L YUVARAJAN', 
+            'username' => '921026075761', 
             'password' => Hash::make('password1'), 
-            'username' => '970127086049'
+            'role' => 'user', 
+            'status' => 'active', 
+            'nosmpp' => '41-15-01187', 
+            'section' => 'ROBOSPRAY',
         ]);
-
+        
         User::create([
-            'name' =>'MOHAMAD SHUKRI BIN ALI', 
-            'role' => 'user', 
+            'name' => 'WAN FAIZAL BIN NIK LLAH', 
+            'username' => '900917146647', 
             'password' => Hash::make('password1'), 
-            'username' => '820322025619'
+            'role' => 'user', 
+            'status' => 'active', 
+            'nosmpp' => '1-07-06787', 
+            'section' => 'ROBOSPRAY',
         ]);
-
+        
         User::create([
-            'name' =>'MOHAMAD SAFWAN BIN MUSTAFFA', 
-            'role' => 'user', 
+            'name' => 'SHAHNIZAN B MD SALLEH', 
+            'username' => '870310235905', 
             'password' => Hash::make('password1'), 
-            'username' => '901022026155'
+            'role' => 'user', 
+            'status' => 'active', 
+            'nosmpp' => '41-05-00528', 
+            'section' => 'ROBOSPRAY',
         ]);
-
+        
         User::create([
-            'name' =>'MOHAMMAD YASSIN BIN UMAR', 
-            'role' => 'user', 
+            'name' => 'NUR MOHD IZWAN B ISMAIL', 
+            'username' => '870920385089', 
             'password' => Hash::make('password1'), 
-            'username' => '881226265179'
+            'role' => 'user', 
+            'status' => 'active', 
+            'nosmpp' => '52-07-00220', 
+            'section' => 'ROBOSPRAY',
         ]);
-
-
-        // Autospray
+        
         User::create([
-            'name' =>'MOHD NIZAM BIN YAAKUB', 
-            'role' => 'user', 
+            'name' => 'MOHD FARID B AZIZAN', 
+            'username' => '770726075185', 
             'password' => Hash::make('password1'), 
-            'username' => '881106265131'
+            'role' => 'user', 
+            'status' => 'active', 
+            'nosmpp' => '41-15-01560', 
+            'section' => 'ROBOSPRAY',
         ]);
-
+        
         User::create([
-            'name' =>'MOHD HAMIRUL ZAIMIE BIN ZAINON', 
-            'role' => 'user', 
+            'name' => 'SOMKIT A/L CHOO BOON NAM', 
+            'username' => '820927095169', 
             'password' => Hash::make('password1'), 
-            'username' => '851111145233'
+            'role' => 'user', 
+            'status' => 'active', 
+            'nosmpp' => '94-16-00411', 
+            'section' => 'ROBOSPRAY',
         ]);
-
+        
         User::create([
-            'name' =>'MOHAMMAD FARIS BIN MAT ESA', 
-            'role' => 'user', 
+            'name' => 'MANSOR BIN SAIDIN', 
+            'username' => '870709095043', 
             'password' => Hash::make('password1'), 
-            'username' => '910118035413'
+            'role' => 'user', 
+            'status' => 'active', 
+            'nosmpp' => '67-06-01069', 
+            'section' => 'ROBOSPRAY',
         ]);
-
+        
         User::create([
-            'name' =>'ABDULLAH BIN AHMAD', 
-            'role' => 'user', 
+            'name' => 'IDRUS BIN MAT ISA', 
+            'username' => '820708095249', 
             'password' => Hash::make('password1'), 
-            'username' => '860102035723'
+            'role' => 'user', 
+            'status' => 'active', 
+            'nosmpp' => '66-11-01724', 
+            'section' => 'ROBOSPRAY',
         ]);
+        
 
+        // WAREHOUSE
         User::create([
-            'name' =>'WAN ZAMRI BIN WAN ALI', 
-            'role' => 'user', 
+            'name' => 'NURHAFISZAN BIN FARIZAL', 
+            'username' => '960701025381', 
             'password' => Hash::make('password1'), 
-            'username' => '801105035809'
+            'role' => 'user', 
+            'status' => 'active', 
+            'nosmpp' => '94-20-00053', 
+            'section' => 'WAREHOUSE',
         ]);
-
+        
         User::create([
-            'name' =>'SHEIFUL HELMI BIN AHMAD SUHAIMI', 
-            'role' => 'user', 
+            'name' => 'JOHARI BIN OSMAN', 
+            'username' => '860903025023', 
             'password' => Hash::make('password1'), 
-            'username' => '890721035957'
+            'role' => 'user', 
+            'status' => 'active', 
+            'nosmpp' => '66-11-01804', 
+            'section' => 'WAREHOUSE',
         ]);
-
+        
         User::create([
-            'name' =>'MUHAMMAD FARID BIN ABD. RAHIM', 
-            'role' => 'user', 
+            'name' => 'LATIFF BIN IBRAHIM', 
+            'username' => '821026055201', 
             'password' => Hash::make('password1'), 
-            'username' => '871206025937'
+            'role' => 'user', 
+            'status' => 'active', 
+            'nosmpp' => '66-11-01846', 
+            'section' => 'WAREHOUSE',
         ]);
-
+        
         User::create([
-            'name' =>'AHMAD ADILAS B SULAIMAN', 
-            'role' => 'user', 
+            'name' => 'MOHD FAIEZ FIRDAUS BIN BAHAROM', 
+            'username' => '920108025325', 
             'password' => Hash::make('password1'), 
-            'username' => '810615075397'
+            'role' => 'user', 
+            'status' => 'active', 
+            'nosmpp' => '67-10-00087', 
+            'section' => 'WAREHOUSE',
         ]);
-
+        
         User::create([
-            'name' =>'MOHD HANIF BIN SAAD', 
-            'role' => 'user', 
+            'name' => 'LOKMAN HAKIM BIN AHMAD DZUKI', 
+            'username' => '970412265177', 
             'password' => Hash::make('password1'), 
-            'username' => '911025026037'
+            'role' => 'user', 
+            'status' => 'active', 
+            'nosmpp' => '1-19-05282', 
+            'section' => 'WAREHOUSE',
         ]);
-
-
-        // Robospray
+        
         User::create([
-            'name' =>'MOHAMAD ZHARIFF BIN ZAINOL', 
-            'role' => 'user', 
+            'name' => 'HAZLAMIE BIN CHE HALIM', 
+            'username' => '891023026089', 
             'password' => Hash::make('password1'), 
-            'username' => '880710355251'
+            'role' => 'user', 
+            'status' => 'active', 
+            'nosmpp' => '68-20-00900', 
+            'section' => 'WAREHOUSE',
         ]);
-
+        
         User::create([
-            'name' =>'BOON PRAK SERT A/L ERON', 
-            'role' => 'user', 
+            'name' => 'VIGNES A/L THAMBIRAJA', 
+            'username' => '950423086053', 
             'password' => Hash::make('password1'), 
-            'username' => '960908095037'
+            'role' => 'user', 
+            'status' => 'active', 
+            'nosmpp' => '7-16-01149', 
+            'section' => 'WAREHOUSE',
         ]);
-
+        
         User::create([
-            'name' =>'ZULHAFISSAM BIN ZULKIFLI', 
-            'role' => 'user', 
+            'name' => 'MOHD RIDZUAN BIN ABDULLAH', 
+            'username' => '920229095055', 
             'password' => Hash::make('password1'), 
-            'username' => '920818035843'
+            'role' => 'user', 
+            'status' => 'active', 
+            'nosmpp' => '94-20-00247', 
+            'section' => 'WAREHOUSE',
         ]);
-
+        
         User::create([
-            'name' =>'MOHD HANIFI BIN HAMZAH', 
-            'role' => 'user', 
+            'name' => 'MASSRI BIN ABD MANAF', 
+            'username' => '790503075485', 
             'password' => Hash::make('password1'), 
-            'username' => '870711295431'
+            'role' => 'user', 
+            'status' => 'active', 
+            'nosmpp' => '41-14-02205', 
+            'section' => 'WAREHOUSE',
         ]);
-
+        
         User::create([
-            'name' =>'MUHD ROOFEZA BIN DOLLAH @ ABDULLAH', 
-            'role' => 'user', 
+            'name' => 'KAMARUL HAZLI BIN TAN', 
+            'username' => '820908086419', 
             'password' => Hash::make('password1'), 
-            'username' => '820813035379'
+            'role' => 'user', 
+            'status' => 'active', 
+            'nosmpp' => '7-15-01326', 
+            'section' => 'WAREHOUSE',
         ]);
-
+        
         User::create([
-            'name' =>'MUHAMMAD SAIFUL BAHRI BIN ABDULLAH', 
-            'role' => 'user', 
+            'name' => 'MUHAMAD ZAINI BIN AZIZAN', 
+            'username' => '881203025877', 
             'password' => Hash::make('password1'), 
-            'username' => '980228115557'
+            'role' => 'user', 
+            'status' => 'active', 
+            'nosmpp' => '41-16-00434', 
+            'section' => 'WAREHOUSE',
         ]);
-
+        
         User::create([
-            'name' =>'ABDUL HADI BIN MOHAMAD', 
-            'role' => 'user', 
+            'name' => 'ANZANEE BIN MD ZAKI', 
+            'username' => '780207075801', 
             'password' => Hash::make('password1'), 
-            'username' => '940412035171'
+            'role' => 'user', 
+            'status' => 'active', 
+            'nosmpp' => '41-16-01670', 
+            'section' => 'WAREHOUSE',
         ]);
-
+        
         User::create([
-            'name' =>'MUHAMMAD SYAHRIZAN BIN MD. NOH', 
-            'role' => 'user', 
+            'name' => 'VEKINESWARAN A/L THARMA THURAI', 
+            'username' => '990128016825', 
             'password' => Hash::make('password1'), 
-            'username' => '930211026173'
+            'role' => 'user', 
+            'status' => 'active', 
+            'nosmpp' => '67-16-00003', 
+            'section' => 'WAREHOUSE',
         ]);
-
+        
         User::create([
-            'name' =>'KHAIRUL IZUAN BIN ABDULLAH', 
-            'role' => 'user', 
+            'name' => 'MOHAMAD YASIN BIN ISMAIL', 
+            'username' => '900126035633', 
             'password' => Hash::make('password1'), 
-            'username' => '870604355355'
+            'role' => 'user', 
+            'status' => 'active', 
+            'nosmpp' => '8-18-02625', 
+            'section' => 'WAREHOUSE',
         ]);
-
+        
         User::create([
-            'name' =>'MOHD NIZAL BIN MOHD NASIR', 
-            'role' => 'user', 
+            'name' => 'MOHD RIDZUAN BIN MOHD NOOR', 
+            'username' => '921225036175', 
             'password' => Hash::make('password1'), 
-            'username' => '891011025759'
+            'role' => 'user', 
+            'status' => 'active', 
+            'nosmpp' => '8-15-04375', 
+            'section' => 'WAREHOUSE',
         ]);
-
+        
         User::create([
-            'name' =>'MANATHAVAN A/L RAJAN', 
-            'role' => 'user', 
+            'name' => 'MUHAMAD HISYAM BIN ABD RAHIM', 
+            'username' => '880914035241', 
             'password' => Hash::make('password1'), 
-            'username' => '830811025475'
+            'role' => 'user', 
+            'status' => 'active', 
+            'nosmpp' => '8-17-02756', 
+            'section' => 'WAREHOUSE',
         ]);
-
+        
         User::create([
-            'name' =>'SHAHRIZAN BIN YUSOF', 
-            'role' => 'user', 
+            'name' => 'MUHAMMAD ZULFIKRI BIN ZAINAL', 
+            'username' => '910814035599', 
             'password' => Hash::make('password1'), 
-            'username' => '860314266013'
+            'role' => 'user', 
+            'status' => 'active', 
+            'nosmpp' => '82-19-00270', 
+            'section' => 'WAREHOUSE',
         ]);
-
+        
         User::create([
-            'name' =>'SHUKRI BIN MD. ALI', 
-            'role' => 'user', 
+            'name' => 'MOHD ZAHARI BIN MOHD ZAID', 
+            'username' => '920831115979', 
             'password' => Hash::make('password1'), 
-            'username' => '740726025957'
+            'role' => 'user', 
+            'status' => 'active', 
+            'nosmpp' => '1-14-09960', 
+            'section' => 'WAREHOUSE',
         ]);
-
+        
         User::create([
-            'name' =>'MOHD AKMARUL FITRI BIN ISMAIL', 
-            'role' => 'user', 
+            'name' => 'MUHAMMAD KHALIL BIN ALWI', 
+            'username' => '900227035683', 
             'password' => Hash::make('password1'), 
-            'username' => '900131025587'
+            'role' => 'user', 
+            'status' => 'active', 
+            'nosmpp' => '8-16-03363', 
+            'section' => 'WAREHOUSE',
         ]);
-
+        
         User::create([
-            'name' =>'MOHD AKMAL BIN MAT ISA', 
-            'role' => 'user', 
+            'name' => 'MUHAMAD NUR SHAFIQ BIN MUHD NUR', 
+            'username' => '911125035643', 
             'password' => Hash::make('password1'), 
-            'username' => '900407025749'
+            'role' => 'user', 
+            'status' => 'active', 
+            'nosmpp' => '71-11-01611', 
+            'section' => 'WAREHOUSE',
         ]);
-
+        
         User::create([
-            'name' =>'PRAKASH A/L YUVARAJAN', 
-            'role' => 'user', 
+            'name' => 'MOHD ZAIWAN BIN AB RAHMAN', 
+            'username' => '820613036051', 
             'password' => Hash::make('password1'), 
-            'username' => '921026075761'
+            'role' => 'user', 
+            'status' => 'active', 
+            'nosmpp' => '8-11-04517', 
+            'section' => 'WAREHOUSE',
         ]);
-
+        
         User::create([
-            'name' =>'WAN FAIZAL BIN NIK LLAH', 
-            'role' => 'user', 
+            'name' => 'MOHD RIZUAN BIN AHMAD ROZI', 
+            'username' => '880913035821', 
             'password' => Hash::make('password1'), 
-            'username' => '900917146647'
+            'role' => 'user', 
+            'status' => 'active', 
+            'nosmpp' => '8-12-02086', 
+            'section' => 'WAREHOUSE',
         ]);
-
+        
         User::create([
-            'name' =>'SHAHNIZAN B MD SALLEH', 
-            'role' => 'user', 
+            'name' => 'ARIMAN BIN MOHAMAD', 
+            'username' => '800403115749', 
             'password' => Hash::make('password1'), 
-            'username' => '870310235905'
+            'role' => 'user', 
+            'status' => 'active', 
+            'nosmpp' => '71-10-02943', 
+            'section' => 'WAREHOUSE',
         ]);
-
+        
         User::create([
-            'name' =>'NUR MOHD IZWAN B ISMAIL', 
-            'role' => 'user', 
+            'name' => 'MOGAN A/ L SUBRAMANIAM', 
+            'username' => '630306107043', 
             'password' => Hash::make('password1'), 
-            'username' => '870920385089'
+            'role' => 'user', 
+            'status' => 'active', 
+            'nosmpp' => '3-03-12264', 
+            'section' => 'WAREHOUSE',
         ]);
-
+        
         User::create([
-            'name' =>'MOHD FARID B AZIZAN', 
-            'role' => 'user', 
+            'name' => 'SURINARAINAN A/L RAGAVAN', 
+            'username' => '770302026689', 
             'password' => Hash::make('password1'), 
-            'username' => '770726075185'
+            'role' => 'user', 
+            'status' => 'active', 
+            'nosmpp' => '41-05-02282', 
+            'section' => 'WAREHOUSE',
         ]);
-
+        
         User::create([
-            'name' =>'SOMKIT A/L CHOO BOON NAM', 
-            'role' => 'user', 
+            'name' => 'SATIASIVAN A/L GANAPATI', 
+            'username' => '760427075629', 
             'password' => Hash::make('password1'), 
-            'username' => '820927095169'
+            'role' => 'user', 
+            'status' => 'active', 
+            'nosmpp' => '41-09-02774', 
+            'section' => 'WAREHOUSE',
         ]);
-
+        
         User::create([
-            'name' =>'MANSOR BIN SAIDIN', 
-            'role' => 'user', 
+            'name' => 'MOHAMMAD RUSLI BIN ABDULLAH', 
+            'username' => '820127025365', 
             'password' => Hash::make('password1'), 
-            'username' => '870709095043'
+            'role' => 'user', 
+            'status' => 'active', 
+            'nosmpp' => '66-06-00804', 
+            'section' => 'WAREHOUSE',
         ]);
-
+        
         User::create([
-            'name' =>'IDRUS BIN MAT ISA', 
-            'role' => 'user', 
+            'name' => 'SHUID BIN HAMID', 
+            'username' => '761109025719', 
             'password' => Hash::make('password1'), 
-            'username' => '820708095249'
+            'role' => 'user', 
+            'status' => 'active', 
+            'nosmpp' => '66-08-01061', 
+            'section' => 'WAREHOUSE',
         ]);
-
-
-        // RiderTech
+        
         User::create([
-            'name' =>'MOHAMMAD FAUDZI BIN SAID', 
-            'role' => 'user', 
+            'name' => 'SHAHRUL RADZI BIN ABDUL GHANI', 
+            'username' => '840105085356', 
             'password' => Hash::make('password1'), 
-            'username' => '690817025271'
+            'role' => 'user', 
+            'status' => 'active', 
+            'nosmpp' => '66-07-02077', 
+            'section' => 'WAREHOUSE',
         ]);
-
+        
         User::create([
-            'name' =>'S MANIMARAN A/L SUBRAMANIAM', 
-            'role' => 'user', 
+            'name' => 'MOHAMMAD KHUZAIRI BIN SOFIAN', 
+            'username' => '900304025957', 
             'password' => Hash::make('password1'), 
-            'username' => '730205055051'
+            'role' => 'user', 
+            'status' => 'active', 
+            'nosmpp' => '67-09-00741', 
+            'section' => 'WAREHOUSE',
         ]);
-
+        
         User::create([
-            'name' =>'MOHD NASIR BIN ISHAK', 
-            'role' => 'user', 
+            'name' => 'MOHD FAIS BIN ISMAIL', 
+            'username' => '920225026001', 
             'password' => Hash::make('password1'), 
-            'username' => '761207025827'
+            'role' => 'user', 
+            'status' => 'active', 
+            'nosmpp' => '94-20-00774', 
+            'section' => 'WAREHOUSE',
         ]);
-
+        
         User::create([
-            'name' =>'MUHAMAD FAIZUAN BIN MOHD ALI', 
-            'role' => 'user', 
+            'name' => 'MUHAMMAD KHAIRUL FAHMI BIN WAHAB', 
+            'username' => '951024025485', 
             'password' => Hash::make('password1'), 
-            'username' => '930923025005'
+            'role' => 'user', 
+            'status' => 'active', 
+            'nosmpp' => '66-19-01195', 
+            'section' => 'WAREHOUSE',
         ]);
-
+        
         User::create([
-            'name' =>'ABDUL SUKOR BIN JUSOH', 
-            'role' => 'user', 
+            'name' => 'MOHAMMAD RIZAL BIN ABD. RAZAK', 
+            'username' => '920528075871', 
             'password' => Hash::make('password1'), 
-            'username' => '901110025427'
+            'role' => 'user', 
+            'status' => 'active', 
+            'nosmpp' => '62-14-00002', 
+            'section' => 'WAREHOUSE',
         ]);
-
+        
         User::create([
-            'name' =>'DEVAN RAJ A/L MURUGIAH', 
-            'role' => 'user', 
+            'name' => 'JAMIL BIN BAKAR', 
+            'username' => '700205075637', 
             'password' => Hash::make('password1'), 
-            'username' => '971125095077'
+            'role' => 'user', 
+            'status' => 'active', 
+            'nosmpp' => '42-10-00175', 
+            'section' => 'WAREHOUSE',
         ]);
-
+        
         User::create([
-            'name' =>'MOHAMAD ALIFF BIN ROZI', 
-            'role' => 'user', 
+            'name' => 'MOHD JASNI HERYANTO BIN MOHD REDHOWAN', 
+            'username' => '841008075055', 
             'password' => Hash::make('password1'), 
-            'username' => '951110015531'
+            'role' => 'user', 
+            'status' => 'active', 
+            'nosmpp' => '41-10-01214', 
+            'section' => 'WAREHOUSE',
         ]);
-
+        
         User::create([
-            'name' =>'MUHAMMAD KAMILI BIN AB MANAF', 
-            'role' => 'user', 
+            'name' => 'MOHD AZLY BIN MOHD ROZI', 
+            'username' => '970425075321', 
             'password' => Hash::make('password1'), 
-            'username' => '951103035841'
+            'role' => 'user', 
+            'status' => 'active', 
+            'nosmpp' => '67-16-01014', 
+            'section' => 'WAREHOUSE',
         ]);
-
+        
         User::create([
-            'name' =>'MOHD KHAIRUL ANUAR BIN NORIHAN', 
-            'role' => 'user', 
+            'name' => 'MOHD SHAHRIDAN BIN ABDUL HALIM', 
+            'username' => '970127086049', 
             'password' => Hash::make('password1'), 
-            'username' => '830808015321'
+            'role' => 'user', 
+            'status' => 'active', 
+            'nosmpp' => '67-16-00893', 
+            'section' => 'WAREHOUSE',
         ]);
-
+        
         User::create([
-            'name' =>'ZULFAKRI BIN MOHAMAD', 
-            'role' => 'user', 
+            'name' => 'MOHAMAD SHUKRI BIN ALI', 
+            'username' => '820322025619', 
             'password' => Hash::make('password1'), 
-            'username' => '790319035213'
+            'role' => 'user', 
+            'status' => 'active', 
+            'nosmpp' => '68-19-01424', 
+            'section' => 'WAREHOUSE',
         ]);
-
+        
         User::create([
-            'name' =>'MOHAMMAD AMIR BIN MOHD AZAHAR', 
-            'role' => 'user', 
+            'name' => 'MOHAMAD SAFWAN BIN MUSTAFFA', 
+            'username' => '901022026155', 
             'password' => Hash::make('password1'), 
-            'username' => '920709115609'
+            'role' => 'user', 
+            'status' => 'active', 
+            'nosmpp' => '66-13-00634', 
+            'section' => 'WAREHOUSE',
         ]);
-
+        
         User::create([
-            'name' =>'MOHD AFIQ FARHAN BIN CHE AHMAD', 
-            'role' => 'user', 
+            'name' => 'MOHAMMAD YASSIN BIN UMAR', 
+            'username' => '881226265179', 
             'password' => Hash::make('password1'), 
-            'username' => '910509036499'
+            'role' => 'user', 
+            'status' => 'active', 
+            'nosmpp' => '66-20-01453', 
+            'section' => 'WAREHOUSE',
         ]);
+        
 
+        //RIDERTECH
         User::create([
-            'name' =>'MUHAMMAD EZLY AZZIRUL BIN HAIDI', 
-            'role' => 'user', 
+            'name' => 'MOHAMMAD FAUDZI BIN SAID', 
+            'username' => '690817025271', 
             'password' => Hash::make('password1'), 
-            'username' => '910818025865'
+            'role' => 'user', 
+            'status' => 'active', 
+            'nosmpp' => '66-05-02660', 
+            'section' => 'RIDERTECH',
         ]);
-
+        
         User::create([
-            'name' =>'MOHAMAD SYAFIQ BIN MOHD SOKORI', 
-            'role' => 'user', 
+            'name' => 'S MANIMARAN A/L SUBRAMANIAM', 
+            'username' => '730205055051', 
             'password' => Hash::make('password1'), 
-            'username' => '920717025697'
+            'role' => 'user', 
+            'status' => 'active', 
+            'nosmpp' => '3-08-03968', 
+            'section' => 'RIDERTECH',
         ]);
-
+        
         User::create([
-            'name' =>'BADRI BIN AHMAD', 
-            'role' => 'user', 
+            'name' => 'MOHD NASIR BIN ISHAK', 
+            'username' => '761207025827', 
             'password' => Hash::make('password1'), 
-            'username' => '891009025151'
+            'role' => 'user', 
+            'status' => 'active', 
+            'nosmpp' => '7-03-02811', 
+            'section' => 'RIDERTECH',
         ]);
-
+        
         User::create([
-            'name' =>'JENAL BIN MOHAMAD YATIM', 
-            'role' => 'user', 
+            'name' => 'MUHAMAD FAIZUAN BIN MOHD ALI', 
+            'username' => '930923025005', 
             'password' => Hash::make('password1'), 
-            'username' => '900222065269'
+            'role' => 'user', 
+            'status' => 'active', 
+            'nosmpp' => '66-19-02391', 
+            'section' => 'RIDERTECH',
         ]);
-
+        
         User::create([
-            'name' =>'MUHAMMAD FAIZ BIN NOOR AZMI', 
-            'role' => 'user', 
+            'name' => 'ABDUL SUKOR BIN JUSOH', 
+            'username' => '901110025427', 
             'password' => Hash::make('password1'), 
-            'username' => '950502025363'
+            'role' => 'user', 
+            'status' => 'active', 
+            'nosmpp' => '66-16-01325', 
+            'section' => 'RIDERTECH',
         ]);
-
+        
         User::create([
-            'name' =>'MOHAMAD YUSRI BIN RAZALI', 
-            'role' => 'user', 
+            'name' => 'DEVAN RAJ A/L MURUGIAH', 
+            'username' => '971125095077', 
             'password' => Hash::make('password1'), 
-            'username' => '891109026063'
+            'role' => 'user', 
+            'status' => 'active', 
+            'nosmpp' => '94-18-00641', 
+            'section' => 'RIDERTECH',
         ]);
-
+        
         User::create([
-            'name' =>'MOHD HAZRIN IZWAN BIN MOHD SHARIFF', 
-            'role' => 'user', 
+            'name' => 'MOHAMAD ALIFF BIN ROZI', 
+            'username' => '951110015531', 
             'password' => Hash::make('password1'), 
-            'username' => '870422025435'
+            'role' => 'user', 
+            'status' => 'active', 
+            'nosmpp' => '10-15-00031', 
+            'section' => 'RIDERTECH',
         ]);
-
+        
         User::create([
-            'name' =>'ZULHILMI BIN MD ZAIN', 
-            'role' => 'user', 
+            'name' => 'MUHAMMAD KAMILI BIN AB MANAF', 
+            'username' => '951103035841', 
             'password' => Hash::make('password1'), 
-            'username' => '901016025383'
+            'role' => 'user', 
+            'status' => 'active', 
+            'nosmpp' => '8-16-00022', 
+            'section' => 'RIDERTECH',
         ]);
-
+        
         User::create([
-            'name' =>'MOHD ZAIDI BIN M. IDRIS', 
-            'role' => 'user', 
+            'name' => 'MOHD KHAIRUL ANUAR BIN NORIHAN', 
+            'username' => '830808015321', 
             'password' => Hash::make('password1'), 
-            'username' => '861111355037'
+            'role' => 'user', 
+            'status' => 'active', 
+            'nosmpp' => '71-11-00022', 
+            'section' => 'RIDERTECH',
         ]);
-
+        
         User::create([
-            'name' =>'MOHD FIRDAUS BIN HAMIM', 
-            'role' => 'user', 
+            'name' => 'ZULFAKRI BIN MOHAMAD', 
+            'username' => '790319035213', 
             'password' => Hash::make('password1'), 
-            'username' => '950907065339'
+            'role' => 'user', 
+            'status' => 'active', 
+            'nosmpp' => '8-06-00349', 
+            'section' => 'RIDERTECH',
         ]);
-
+        
         User::create([
-            'name' =>'MOHAMAD ZAMBRI BIN AHMAD', 
-            'role' => 'user', 
+            'name' => 'MOHAMMAD AMIR BIN MOHD AZAHAR', 
+            'username' => '920709115609', 
             'password' => Hash::make('password1'), 
-            'username' => '910602095055'
+            'role' => 'user', 
+            'status' => 'active', 
+            'nosmpp' => '71-08-01405', 
+            'section' => 'RIDERTECH',
         ]);
-
+        
         User::create([
-            'name' =>'MAHADZIR BIN AWANG', 
-            'role' => 'user', 
+            'name' => 'MOHD AFIQ FARHAN BIN CHE AHMAD', 
+            'username' => '910509036499', 
             'password' => Hash::make('password1'), 
-            'username' => '740824025037'
+            'role' => 'user', 
+            'status' => 'active', 
+            'nosmpp' => '94-15-00164', 
+            'section' => 'RIDERTECH',
         ]);
-
+        
         User::create([
-            'name' =>'MUHAMMAD BIN ROSMAN', 
-            'role' => 'user', 
+            'name' => 'MUHAMMAD EZLY AZZIRUL BIN HAIDI', 
+            'username' => '910818025865', 
             'password' => Hash::make('password1'), 
-            'username' => '971114355347'
+            'role' => 'user', 
+            'status' => 'active', 
+            'nosmpp' => '68-17-00311', 
+            'section' => 'RIDERTECH',
         ]);
-
+        
         User::create([
-            'name' =>'MUHAMAD NORHAKIME BIN ARSHAD', 
-            'role' => 'user', 
+            'name' => 'MOHAMAD SYAFIQ BIN MOHD SOKORI', 
+            'username' => '920717025697', 
             'password' => Hash::make('password1'), 
-            'username' => '991210075917'
+            'role' => 'user', 
+            'status' => 'active', 
+            'nosmpp' => '66-18-00259', 
+            'section' => 'RIDERTECH',
         ]);
-
+        
         User::create([
-            'name' =>'AZLI BIN SHAARI', 
-            'role' => 'user', 
+            'name' => 'BADRI BIN AHMAD', 
+            'username' => '891009025151', 
             'password' => Hash::make('password1'), 
-            'username' => '890617025089'
+            'role' => 'user', 
+            'status' => 'active', 
+            'nosmpp' => '66-14-02646', 
+            'section' => 'RIDERTECH',
         ]);
-
+        
         User::create([
-            'name' =>'VIJAYKUMAR A/L SHANMUGANATHAN', 
-            'role' => 'user', 
+            'name' => 'JENAL BIN MOHAMAD YATIM', 
+            'username' => '900222065269', 
             'password' => Hash::make('password1'), 
-            'username' => '800728075335'
+            'role' => 'user', 
+            'status' => 'active', 
+            'nosmpp' => '41-15-01222', 
+            'section' => 'RIDERTECH',
         ]);
-
+        
         User::create([
-            'name' =>'NAGERAJAN A/L BALAKRISHNAN', 
-            'role' => 'user', 
+            'name' => 'MUHAMMAD FAIZ BIN NOOR AZMI', 
+            'username' => '950502025363', 
             'password' => Hash::make('password1'), 
-            'username' => '820723075297'
+            'role' => 'user', 
+            'status' => 'active', 
+            'nosmpp' => '67-15-00726', 
+            'section' => 'RIDERTECH',
         ]);
-
+        
         User::create([
-            'name' =>'MOHD HELMEY BIN OSMAN', 
-            'role' => 'user', 
+            'name' => 'MOHAMAD YUSRI BIN RAZALI', 
+            'username' => '891109026063', 
             'password' => Hash::make('password1'), 
-            'username' => '910726085633'
+            'role' => 'user', 
+            'status' => 'active', 
+            'nosmpp' => '68-14-02837', 
+            'section' => 'RIDERTECH',
         ]);
-
+        
         User::create([
-            'name' =>'JAMALUDIN BIN IDRIS', 
-            'role' => 'user', 
+            'name' => 'MOHD HAZRIN IZWAN BIN MOHD SHARIFF', 
+            'username' => '870422025435', 
             'password' => Hash::make('password1'), 
-            'username' => '760614025901'
+            'role' => 'user', 
+            'status' => 'active', 
+            'nosmpp' => '66-12-01049', 
+            'section' => 'RIDERTECH',
         ]);
-
+        
         User::create([
-            'name' =>'MOHD FAUZI BIN JUHARI', 
-            'role' => 'user', 
+            'name' => 'ZULHILMI BIN MD ZAIN', 
+            'username' => '901016025383', 
             'password' => Hash::make('password1'), 
-            'username' => '830413085181'
+            'role' => 'user', 
+            'status' => 'active', 
+            'nosmpp' => '66-13-01578', 
+            'section' => 'RIDERTECH',
         ]);
-
+        
         User::create([
-            'name' =>'MOHAMAD FAZIL BIN SAMSUDIN', 
-            'role' => 'user', 
+            'name' => 'MOHD ZAIDI BIN M. IDRIS', 
+            'username' => '861111355037', 
             'password' => Hash::make('password1'), 
-            'username' => '841018075825'
+            'role' => 'user', 
+            'status' => 'active', 
+            'nosmpp' => '66-12-00402', 
+            'section' => 'RIDERTECH',
         ]);
-
+        
         User::create([
-            'name' =>'ARFIZAL BIN SHAABAN', 
-            'role' => 'user', 
+            'name' => 'MOHD FIRDAUS BIN HAMIM', 
+            'username' => '950907065339', 
             'password' => Hash::make('password1'), 
-            'username' => '820926026065'
+            'role' => 'user', 
+            'status' => 'active', 
+            'nosmpp' => '94-17-00621', 
+            'section' => 'RIDERTECH',
         ]);
-
+        
         User::create([
-            'name' =>'NAZRY BIN HASSAN', 
-            'role' => 'user', 
+            'name' => 'MOHAMAD ZAMBRI BIN AHMAD', 
+            'username' => '910602095055', 
             'password' => Hash::make('password1'), 
-            'username' => '840708025281'
+            'role' => 'user', 
+            'status' => 'active', 
+            'nosmpp' => '94-14-00446', 
+            'section' => 'RIDERTECH',
         ]);
-
+        
         User::create([
-            'name' =>'MOHAMAD AZRULLAH BIN MOHD RODZI', 
-            'role' => 'user', 
+            'name' => 'MAHADZIR BIN AWANG', 
+            'username' => '740824025037', 
             'password' => Hash::make('password1'), 
-            'username' => '870409075235'
+            'role' => 'user', 
+            'status' => 'active', 
+            'nosmpp' => '41-06-02053', 
+            'section' => 'RIDERTECH',
         ]);
-
+        
         User::create([
-            'name' =>'ALI YUSMAN BIN BUSAERI', 
-            'role' => 'user', 
+            'name' => 'MUHAMMAD BIN ROSMAN', 
+            'username' => '971114355347', 
             'password' => Hash::make('password1'), 
-            'username' => '860128075301'
+            'role' => 'user', 
+            'status' => 'active', 
+            'nosmpp' => '67-16-01684', 
+            'section' => 'RIDERTECH',
         ]);
-
+        
         User::create([
-            'name' =>'MUHAMAD SHAHRIL IZAIROL BIN MOHAMAD ROSLAN', 
-            'role' => 'user', 
+            'name' => 'MUHAMAD NORHAKIME BIN ARSHAD', 
+            'username' => '991210075917', 
             'password' => Hash::make('password1'), 
-            'username' => '910615086959'
+            'role' => 'user', 
+            'status' => 'active', 
+            'nosmpp' => '42-21-00270', 
+            'section' => 'RIDERTECH',
         ]);
-
-
-        // Pecker
+        
         User::create([
-            'name' =>'MUHAMMAD JAMALI BIN ABDULLAH', 
-            'role' => 'user', 
+            'name' => 'AZLI BIN SHAARI', 
+            'username' => '890617025089', 
             'password' => Hash::make('password1'), 
-            'username' => '810910017069'
+            'role' => 'user', 
+            'status' => 'active', 
+            'nosmpp' => '66-16-01216', 
+            'section' => 'RIDERTECH',
         ]);
-
+        
         User::create([
-            'name' =>'MOHD FAIZUL BIN RAZALI', 
-            'role' => 'user', 
+            'name' => 'VIJAYKUMAR A/L SHANMUGANATHAN', 
+            'username' => '800728075335', 
             'password' => Hash::make('password1'), 
-            'username' => '800423115105'
+            'role' => 'user', 
+            'status' => 'active', 
+            'nosmpp' => '41-09-01439', 
+            'section' => 'RIDERTECH',
         ]);
-
+        
         User::create([
-            'name' =>'ABDUL RASHID BIN ABD AZIZ', 
-            'role' => 'user', 
+            'name' => 'NAGERAJAN A/L BALAKRISHNAN', 
+            'username' => '820723075297', 
             'password' => Hash::make('password1'), 
-            'username' => '930313036305'
+            'role' => 'user', 
+            'status' => 'active', 
+            'nosmpp' => '41-06-01121', 
+            'section' => 'RIDERTECH',
         ]);
-
+        
         User::create([
-            'name' =>'ROSDI BIN DAUD', 
-            'role' => 'user', 
+            'name' => 'MOHD HELMEY BIN OSMAN', 
+            'username' => '910726085633', 
             'password' => Hash::make('password1'), 
-            'username' => '751002035459'
+            'role' => 'user', 
+            'status' => 'active', 
+            'nosmpp' => '41-16-00630', 
+            'section' => 'RIDERTECH',
         ]);
-
+        
         User::create([
-            'name' =>'KHAIRUL AZWAR BIN ZIZI', 
-            'role' => 'user', 
+            'name' => 'JAMALUDIN BIN IDRIS', 
+            'username' => '760614025901', 
             'password' => Hash::make('password1'), 
-            'username' => '780922035235'
+            'role' => 'user', 
+            'status' => 'active', 
+            'nosmpp' => '3-03-14080', 
+            'section' => 'RIDERTECH',
         ]);
-
+        
         User::create([
-            'name' =>'MUHAMAD AZRUL BIN AZLAM', 
-            'role' => 'user', 
+            'name' => 'MOHD FAUZI BIN JUHARI', 
+            'username' => '830413085181', 
             'password' => Hash::make('password1'), 
-            'username' => '820910035311'
+            'role' => 'user', 
+            'status' => 'active', 
+            'nosmpp' => '41-19-01522', 
+            'section' => 'RIDERTECH',
         ]);
-
+        
         User::create([
-            'name' =>'MOHAMAD HANIFF BIN MAT SARIFF', 
-            'role' => 'user', 
+            'name' => 'MOHAMAD FAZIL BIN SAMSUDIN', 
+            'username' => '841018075825', 
             'password' => Hash::make('password1'), 
-            'username' => '960903035895'
+            'role' => 'user', 
+            'status' => 'active', 
+            'nosmpp' => '41-05-03389', 
+            'section' => 'RIDERTECH',
         ]);
-
+        
         User::create([
-            'name' =>'HARUDIN B HARON', 
-            'role' => 'user', 
+            'name' => 'ARFIZAL BIN SHAABAN', 
+            'username' => '820926026065', 
             'password' => Hash::make('password1'), 
-            'username' => '861130265205'
+            'role' => 'user', 
+            'status' => 'active', 
+            'nosmpp' => '66-13-00644', 
+            'section' => 'RIDERTECH',
         ]);
-
+        
         User::create([
-            'name' =>'MD NAJIB B BAKAR', 
-            'role' => 'user', 
+            'name' => 'NAZRY BIN HASSAN', 
+            'username' => '840708025281', 
             'password' => Hash::make('password1'), 
-            'username' => '771009025489'
+            'role' => 'user', 
+            'status' => 'active', 
+            'nosmpp' => '66-09-00276', 
+            'section' => 'RIDERTECH',
         ]);
-
+        
         User::create([
-            'name' =>'MOHD SHUKRI B MOHD SOFI', 
-            'role' => 'user', 
+            'name' => 'MOHAMAD AZRULLAH BIN MOHD RODZI', 
+            'username' => '870409075235', 
             'password' => Hash::make('password1'), 
-            'username' => '960319025911'
+            'role' => 'user', 
+            'status' => 'active', 
+            'nosmpp' => '41-08-00869', 
+            'section' => 'RIDERTECH',
         ]);
-
+        
         User::create([
-            'name' =>'MOHD AMER KHUSAIRI B MOHD NASIR', 
-            'role' => 'user', 
+            'name' => 'ALI YUSMAN BIN BUSAERI', 
+            'username' => '860128075301', 
             'password' => Hash::make('password1'), 
-            'username' => '931202025691'
+            'role' => 'user', 
+            'status' => 'active', 
+            'nosmpp' => '42-20-00334', 
+            'section' => 'RIDERTECH',
         ]);
-
+        
         User::create([
-            'name' =>'MOHD ZAIRUL B ZAINAL RASHID', 
-            'role' => 'user', 
+            'name' => 'MUHAMAD SHAHRIL IZAIROL BIN MOHAMAD ROSLAN', 
+            'username' => '910615086959', 
             'password' => Hash::make('password1'), 
-            'username' => '951114025809'
+            'role' => 'user', 
+            'status' => 'active', 
+            'nosmpp' => '7-14-01621', 
+            'section' => 'RIDERTECH',
         ]);
+        
+
+
+
+
+
+
+
 
 
 

@@ -42,7 +42,4 @@ Route::middleware(['auth'])->name('admin.')->prefix('admin')->group(function () 
 });
 
 
-// Auth::routes(['register' => false]);
-
-
 require __DIR__.'/auth.php';
