@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\UsersController;
 use App\Http\Controllers\ProductsController;
+use App\Http\Controllers\OrderController;
 
 /*
 |--------------------------------------------------------------------------
@@ -37,7 +38,12 @@ Route::middleware(['auth'])->name('admin.')->prefix('admin')->group(function () 
     Route::get('/registerproducts', [ProductsController::class, 'register'])->name('registerproducts');
     Route::post('/registerproducts', [ProductsController::class, 'create'])->name('registerproducts');
     
+});
 
+Route::middleware(['auth'])->name('user.')->prefix('user')->group(function () {
+
+    Route::get('/order', [OrderController::class, 'index'])->name('order');
+    Route::post('/order', [OrderController::class, 'create'])->name('order');
 
 });
 

@@ -46,7 +46,10 @@
                                 placeholder="Password Confirmation" />
             </div>
 
-            <button type="submit" class="btn btn-primary btn-sm">Register User</button>
+            <button type="submit" class="btn btn-primary btn-sm">
+                <span data-feather="user-plus"></span> 
+                Register User
+            </button>
         </form>
     </div>
 </div>        

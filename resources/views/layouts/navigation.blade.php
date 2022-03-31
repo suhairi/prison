@@ -1,5 +1,5 @@
-<nav id="sidebarMenu" class="col-md-3 col-lg-2 d-md-block bg-light sidebar collapse">
-  <div class="position-sticky pt-3">    
+<nav id="sidebarMenu" class="col-md-2 col-lg-2 d-md-block bg-light sidebar collapse">
+  <div class="position-sticky pt-1">    
 
     @if(Auth::user()->role == 'admin')
         <ul class="nav flex-column">
@@ -33,6 +33,7 @@
                 Products Lists
             </a>
           </li>
+
           <li class="nav-item">
             <a class="nav-link" href="#">
               <span data-feather="layers"></span>
@@ -51,7 +52,7 @@
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">
+            <a class="nav-link" href="{{ route('user.order') }}">
                 <span data-feather="file"></span>
                 Order
             </a>
@@ -76,7 +77,7 @@
           <li class="nav-item">
             <a class="nav-link" href="#">
                 <span data-feather="file"></span>
-                Order
+                Order List
             </a>
           </li>
           <li class="nav-item">
@@ -89,7 +90,7 @@
     @endif
 
     
-
+    <hr />
     <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
       <span>Saved reports</span>
       <a class="link-secondary" href="#" aria-label="Add a new report">
@@ -123,11 +124,16 @@
       </li>
     </ul>
 
+    <hr />
+
     <ul class="nav flex-column mb-2>
-    <li class="nav-item">
-        <a class="nav-link" href="#">
-          <span data-feather="log-out"></span>
-          Sign Out
+      <li class="nav-item">
+
+        <form method="POST" action="{{ route('logout') }}" id="logout-form">
+          @csrf          
+        </form>
+        <a class="nav-link" href="{{ route('logout') }}" onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
+            <span data-feather="log-out"></span>Logout
         </a>
       </li>
     </ul>
