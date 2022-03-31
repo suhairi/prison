@@ -11,25 +11,25 @@
           </li>
           <li class="nav-item">
             <a class="nav-link" href="{{ route('admin.register') }}">
-                <span data-feather="file"></span>
+                <span data-feather="user-plus"></span>
                 User Register
             </a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="{{ route('admin.userList') }}">
-                <span data-feather="shopping-cart"></span>
+                <span data-feather="users"></span>
                 Users List
             </a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="{{ route('admin.registerproducts') }}">
-                <span data-feather="users"></span>
+                <span data-feather="file-plus"></span>
                 Product Register
             </a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="{{ route('admin.products') }}">
-                <span data-feather="bar-chart-2"></span>
+                <span data-feather="tablet"></span>
                 Products Lists
             </a>
           </li>
@@ -119,6 +119,15 @@
         <a class="nav-link" href="#">
           <span data-feather="file-text"></span>
           Year-end sale
+        </a>
+      </li>
+    </ul>
+
+    <ul class="nav flex-column mb-2>
+    <li class="nav-item">
+        <a class="nav-link" href="#">
+          <span data-feather="log-out"></span>
+          Sign Out
         </a>
       </li>
     </ul>
