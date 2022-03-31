@@ -24,8 +24,8 @@
             <td valign="middle">{{ $user->username }}</td>
             <td valign="middle">{{ strtoupper($user->role) }}</td>
             <td valign="middle">
-              <button type="button" class="btn btn-warning" href="#">Edit</button>
-              <button type="button" class="btn btn-danger" href="#">Delete</button>
+              <button type="button" class="btn btn-warning btn-sm" href="#">Edit</button>
+              <button type="button" class="btn btn-danger btn-sm" href="#">Delete</button>
             </td>
           </tr>
         @endforeach

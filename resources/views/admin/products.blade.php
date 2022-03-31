@@ -24,8 +24,8 @@
                     <td valign="middle">{{ strtoupper($product->name) }}</td>
                     <td valign="middle">{{ number_format($product->price, 2) }}</td>
                     <td valign="middle" align="center">
-                      <button type="button" class="btn btn-warning" href="#">Edit</button>
-                      <button type="button" class="btn btn-danger" href="#">Delete</button>
+                      <button type="button" class="btn btn-warning btn-sm" href="#">Edit</button>
+                      <button type="button" class="btn btn-danger btn-sm" href="#">Delete</button>
                     </td>
                   </tr>
                 @endforeach
