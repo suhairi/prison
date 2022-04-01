@@ -3,41 +3,57 @@
 $(document).ready(function () {
   "use strict";
 
-  var grandTotal = 0;
+  var $tblrows = $("#tblProducts tbody tr");
+  
+  $tblrows.each(function (index) {
+    var $tblrow = $(this);
+  
+    $tblrow.find('.qty').on('change', function () {
+
+      var qty = $tblrow.find("[name=qty]").val();
+      var price = $tblrow.find("[name=price]").val();
+      var subTotal = parseInt(qty, 10) * parseFloat(price);
+
+
+      if (!isNaN(subTotal)) {
+
+        $tblrow.find('.subtot').val(subTotal.toFixed(2));
+        var grandTotal = 0;
+        var gt = 0;
+
+        // loop through each subtotal
+        $(".subtot").each(function () {
+            var stval = parseFloat($(this).val());
+            // grandTotal += isNaN(stval) ? 0 : stval;
+            grandTotal += isNaN(stval) ? 0 : stval;
+
+            if(grandTotal > 100) {
+              console.log("Amount excedeed RM 100. Please adjust your order.");
+              grandTotal -= stval;
+              resetQty();
+            }
 
 
 
+            
+        });
 
-  $("table").on("change", "input", function() {
-    // var row = $(this).closest("tr");
-    // var qty = parseFloat(row.find(".qty").val());
-    // var price = parseFloat(row.find(".price").val());
-    // var total = qty * price;
-    // row.find(".total").val(isNaN(total) ? "" : total);
+        function resetQty() {
+          $tblrow.find("[name=qty]").val(0);
+          $tblrow.find('.subtot').val(0);        
+          
+        }
 
-    $("tr").each(function() {
-      var price = parseFloat($(this).find("input.price").val());
-      var qty   = parseFloat($(this).find("input.qty").val());
-      var total = price * qty;
+        $('.grdtot').val(grandTotal.toFixed(2));
 
-      grandTotal += total;
-      console.log(total);
+      }
+
+      
     });
-
-    // grandTotal += total;
-
-    // if(grandTotal > 100) {
-    //   alert('Total exceeded RM 100');
-    //   row.find(".qty").val(0)
-    //   // console.log("grandTotal : " + grandTotal);
-    //   grandTotal = grandTotal - total;
-    // }
-
-    // $(".grandTotal").val(parseFloat(grandTotal).toFixed(2) - total);
 
   });
 
-
+    
 
 });
 
