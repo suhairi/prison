@@ -33,11 +33,10 @@
                 Products Lists
             </a>
           </li>
-
           <li class="nav-item">
-            <a class="nav-link" href="#">
+            <a class="nav-link" href="{{ route('admin.usernotorderlist') }}">
               <span data-feather="layers"></span>
-              Reports
+              Report Not Order
             </a>
           </li>
         </ul>

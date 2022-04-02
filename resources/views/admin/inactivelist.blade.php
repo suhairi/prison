@@ -6,7 +6,7 @@
 
   @include('layouts.messages')
   <div class="row">
-      <h4>Active Users List</h4>
+      <h4>Inactive Users List</h4>
   </div>
   <hr />
 
@@ -45,7 +45,7 @@
             <td valign="middle">{{ strtoupper($user->role) }}</td>
             <td valign="middle">
               <button type="button" class="btn btn-warning btn-sm" href="#">Edit</button>
-              <a href="{{ route('admin.setInactive', ['id' => $user->id]) }}"><button type="button" class="btn btn-danger btn-sm">Inactive</button></a>
+              <a href="{{ route('admin.setActive', ['id' => $user->id]) }}"><button type="button" class="btn btn-success btn-sm">Activate</button></a>
             </td>
           </tr>
         @endforeach

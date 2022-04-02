@@ -23,7 +23,7 @@ class UserSeeder extends Seeder
             'username' => '770617075311', 
             'password' => Hash::make('password1'), 
             'role' => 'user', 
-            'status' => 'aktif', 
+            'status' => 'active', 
             'nosmpp' => '41-04-00207', 
             'section' => 'LYPOMETAL',
         ]);
@@ -33,7 +33,7 @@ class UserSeeder extends Seeder
             'username' => '950802095021', 
             'password' => Hash::make('password1'), 
             'role' => 'user', 
-            'status' => 'aktif', 
+            'status' => 'active', 
             'nosmpp' => '67-14-02062', 
             'section' => 'LYPOMETAL',
         ]);
@@ -43,7 +43,7 @@ class UserSeeder extends Seeder
             'username' => '870110025479', 
             'password' => Hash::make('password1'), 
             'role' => 'user', 
-            'status' => 'aktif', 
+            'status' => 'active', 
             'nosmpp' => '1-13-02340', 
             'section' => 'LYPOMETAL',
         ]);
@@ -53,7 +53,7 @@ class UserSeeder extends Seeder
             'username' => '761021025167', 
             'password' => Hash::make('password1'), 
             'role' => 'user', 
-            'status' => 'aktif', 
+            'status' => 'active', 
             'nosmpp' => '66-14-00179', 
             'section' => 'LYPOMETAL',
         ]);
@@ -63,7 +63,7 @@ class UserSeeder extends Seeder
             'username' => '930402095163', 
             'password' => Hash::make('password1'), 
             'role' => 'user', 
-            'status' => 'aktif', 
+            'status' => 'active', 
             'nosmpp' => '67-11-00711', 
             'section' => 'LYPOMETAL',
         ]);
@@ -73,7 +73,7 @@ class UserSeeder extends Seeder
             'username' => '930619025393', 
             'password' => Hash::make('password1'), 
             'role' => 'user', 
-            'status' => 'aktif', 
+            'status' => 'active', 
             'nosmpp' => '66-18-00227', 
             'section' => 'LYPOMETAL',
         ]);
@@ -83,7 +83,7 @@ class UserSeeder extends Seeder
             'username' => '770402025501', 
             'password' => Hash::make('password1'), 
             'role' => 'user', 
-            'status' => 'aktif', 
+            'status' => 'active', 
             'nosmpp' => '66-19-01321', 
             'section' => 'LYPOMETAL',
         ]);
@@ -93,7 +93,7 @@ class UserSeeder extends Seeder
             'username' => '870115095249', 
             'password' => Hash::make('password1'), 
             'role' => 'user', 
-            'status' => 'aktif', 
+            'status' => 'active', 
             'nosmpp' => '66-14-01481', 
             'section' => 'LYPOMETAL',
         ]);
@@ -103,7 +103,7 @@ class UserSeeder extends Seeder
             'username' => '930929025735', 
             'password' => Hash::make('password1'), 
             'role' => 'user', 
-            'status' => 'aktif', 
+            'status' => 'active', 
             'nosmpp' => '68-19-01141', 
             'section' => 'LYPOMETAL',
         ]);
@@ -113,7 +113,7 @@ class UserSeeder extends Seeder
             'username' => '751128025141', 
             'password' => Hash::make('password1'), 
             'role' => 'user', 
-            'status' => 'aktif', 
+            'status' => 'active', 
             'nosmpp' => '66-15-00557', 
             'section' => 'LYPOMETAL',
         ]);
@@ -123,7 +123,7 @@ class UserSeeder extends Seeder
             'username' => '870916355581', 
             'password' => Hash::make('password1'), 
             'role' => 'user', 
-            'status' => 'aktif', 
+            'status' => 'active', 
             'nosmpp' => '41-15-00465', 
             'section' => 'LYPOMETAL',
         ]);
@@ -133,7 +133,7 @@ class UserSeeder extends Seeder
             'username' => '870117295017', 
             'password' => Hash::make('password1'), 
             'role' => 'user', 
-            'status' => 'aktif', 
+            'status' => 'active', 
             'nosmpp' => '66-12-02054', 
             'section' => 'LYPOMETAL',
         ]);
@@ -143,7 +143,7 @@ class UserSeeder extends Seeder
             'username' => '701004025099', 
             'password' => Hash::make('password1'), 
             'role' => 'user', 
-            'status' => 'aktif', 
+            'status' => 'active', 
             'nosmpp' => '66-15-00851', 
             'section' => 'LYPOMETAL',
         ]);
@@ -153,7 +153,7 @@ class UserSeeder extends Seeder
             'username' => '921009146281', 
             'password' => Hash::make('password1'), 
             'role' => 'user', 
-            'status' => 'aktif', 
+            'status' => 'active', 
             'nosmpp' => '13-13-00013', 
             'section' => 'LYPOMETAL',
         ]);
@@ -163,7 +163,7 @@ class UserSeeder extends Seeder
             'username' => '840812026081', 
             'password' => Hash::make('password1'), 
             'role' => 'user', 
-            'status' => 'aktif', 
+            'status' => 'active', 
             'nosmpp' => '66-10-00446', 
             'section' => 'LYPOMETAL',
         ]);
@@ -173,7 +173,7 @@ class UserSeeder extends Seeder
             'username' => '841114065715', 
             'password' => Hash::make('password1'), 
             'role' => 'user', 
-            'status' => 'aktif', 
+            'status' => 'active', 
             'nosmpp' => '66-13-02305', 
             'section' => 'LYPOMETAL',
         ]);
@@ -183,7 +183,7 @@ class UserSeeder extends Seeder
             'username' => '990524027681', 
             'password' => Hash::make('password1'), 
             'role' => 'user', 
-            'status' => 'aktif', 
+            'status' => 'active', 
             'nosmpp' => '23-15-00092', 
             'section' => 'LYPOMETAL',
         ]);
@@ -193,7 +193,7 @@ class UserSeeder extends Seeder
             'username' => '661210075587', 
             'password' => Hash::make('password1'), 
             'role' => 'user', 
-            'status' => 'aktif', 
+            'status' => 'active', 
             'nosmpp' => '15-16-02347', 
             'section' => 'LYPOMETAL',
         ]);
@@ -203,7 +203,7 @@ class UserSeeder extends Seeder
             'username' => '870707025535', 
             'password' => Hash::make('password1'), 
             'role' => 'user', 
-            'status' => 'aktif', 
+            'status' => 'active', 
             'nosmpp' => '62-10-02364', 
             'section' => 'LYPOMETAL',
         ]);
@@ -213,7 +213,7 @@ class UserSeeder extends Seeder
             'username' => '810929026301', 
             'password' => Hash::make('password1'), 
             'role' => 'user', 
-            'status' => 'aktif', 
+            'status' => 'active', 
             'nosmpp' => '94-19-01025', 
             'section' => 'LYPOMETAL',
         ]);
@@ -223,7 +223,7 @@ class UserSeeder extends Seeder
             'username' => '910318086135', 
             'password' => Hash::make('password1'), 
             'role' => 'user', 
-            'status' => 'aktif', 
+            'status' => 'active', 
             'nosmpp' => '7-19-01556', 
             'section' => 'LYPOMETAL',
         ]);
@@ -233,7 +233,7 @@ class UserSeeder extends Seeder
             'username' => '920204026029', 
             'password' => Hash::make('password1'), 
             'role' => 'user', 
-            'status' => 'aktif', 
+            'status' => 'active', 
             'nosmpp' => '94-15-00456', 
             'section' => 'LYPOMETAL',
         ]);
@@ -243,7 +243,7 @@ class UserSeeder extends Seeder
             'username' => '930407075583', 
             'password' => Hash::make('password1'), 
             'role' => 'user', 
-            'status' => 'aktif', 
+            'status' => 'active', 
             'nosmpp' => '42-16-01083', 
             'section' => 'LYPOMETAL',
         ]);
@@ -253,7 +253,7 @@ class UserSeeder extends Seeder
             'username' => '880811025091', 
             'password' => Hash::make('password1'), 
             'role' => 'user', 
-            'status' => 'aktif', 
+            'status' => 'active', 
             'nosmpp' => '67-20-01208', 
             'section' => 'LYPOMETAL',
         ]);
@@ -263,7 +263,7 @@ class UserSeeder extends Seeder
             'username' => '950116026181', 
             'password' => Hash::make('password1'), 
             'role' => 'user', 
-            'status' => 'aktif', 
+            'status' => 'active', 
             'nosmpp' => '67-14-00847', 
             'section' => 'LYPOMETAL',
         ]);
@@ -273,7 +273,7 @@ class UserSeeder extends Seeder
             'username' => '860803496645', 
             'password' => Hash::make('password1'), 
             'role' => 'user', 
-            'status' => 'aktif', 
+            'status' => 'active', 
             'nosmpp' => '87-17-00919', 
             'section' => 'LYPOMETAL',
         ]);
@@ -283,7 +283,7 @@ class UserSeeder extends Seeder
             'username' => '990108028837', 
             'password' => Hash::make('password1'), 
             'role' => 'user', 
-            'status' => 'aktif', 
+            'status' => 'active', 
             'nosmpp' => '67-20-01105', 
             'section' => 'LYPOMETAL',
         ]);
@@ -293,7 +293,7 @@ class UserSeeder extends Seeder
             'username' => '900108085821', 
             'password' => Hash::make('password1'), 
             'role' => 'user', 
-            'status' => 'aktif', 
+            'status' => 'active', 
             'nosmpp' => '1-08-03569', 
             'section' => 'LYPOMETAL',
         ]);
@@ -303,7 +303,7 @@ class UserSeeder extends Seeder
             'username' => '890610025537', 
             'password' => Hash::make('password1'), 
             'role' => 'user', 
-            'status' => 'aktif', 
+            'status' => 'active', 
             'nosmpp' => '66-13-02733', 
             'section' => 'LYPOMETAL',
         ]);
@@ -313,7 +313,7 @@ class UserSeeder extends Seeder
             'username' => '940607075229', 
             'password' => Hash::make('password1'), 
             'role' => 'user', 
-            'status' => 'aktif', 
+            'status' => 'active', 
             'nosmpp' => '41-16-00933', 
             'section' => 'LYPOMETAL',
         ]);
@@ -323,7 +323,7 @@ class UserSeeder extends Seeder
             'username' => '970308065511', 
             'password' => Hash::make('password1'), 
             'role' => 'user', 
-            'status' => 'aktif', 
+            'status' => 'active', 
             'nosmpp' => '67-17-00991', 
             'section' => 'LYPOMETAL',
         ]);
@@ -333,7 +333,7 @@ class UserSeeder extends Seeder
             'username' => '900509025811', 
             'password' => Hash::make('password1'), 
             'role' => 'user', 
-            'status' => 'aktif', 
+            'status' => 'active', 
             'nosmpp' => '66-19-00396', 
             'section' => 'LYPOMETAL',
         ]);
@@ -343,7 +343,7 @@ class UserSeeder extends Seeder
             'username' => '971105025055', 
             'password' => Hash::make('password1'), 
             'role' => 'user', 
-            'status' => 'aktif', 
+            'status' => 'active', 
             'nosmpp' => '94-19-00031', 
             'section' => 'LYPOMETAL',
         ]);
@@ -356,7 +356,7 @@ class UserSeeder extends Seeder
             'username' => '851003075573', 
             'password' => Hash::make('password1'), 
             'role' => 'user', 
-            'status' => 'aktif', 
+            'status' => 'active', 
             'nosmpp' => '66-18-00659', 
             'section' => 'STAMPING',
         ]);
@@ -366,7 +366,7 @@ class UserSeeder extends Seeder
             'username' => '831027025409', 
             'password' => Hash::make('password1'), 
             'role' => 'user', 
-            'status' => 'aktif', 
+            'status' => 'active', 
             'nosmpp' => '68-19-01314', 
             'section' => 'STAMPING',
         ]);
@@ -376,7 +376,7 @@ class UserSeeder extends Seeder
             'username' => '820801025237', 
             'password' => Hash::make('password1'), 
             'role' => 'user', 
-            'status' => 'aktif', 
+            'status' => 'active', 
             'nosmpp' => '66-18-00105', 
             'section' => 'STAMPING',
         ]);
@@ -386,7 +386,7 @@ class UserSeeder extends Seeder
             'username' => '770611025081', 
             'password' => Hash::make('password1'), 
             'role' => 'user', 
-            'status' => 'aktif', 
+            'status' => 'active', 
             'nosmpp' => '66-19-02391', 
             'section' => 'STAMPING',
         ]);
@@ -396,7 +396,7 @@ class UserSeeder extends Seeder
             'username' => '881112085911', 
             'password' => Hash::make('password1'), 
             'role' => 'user', 
-            'status' => 'aktif', 
+            'status' => 'active', 
             'nosmpp' => '7-15-01630', 
             'section' => 'STAMPING',
         ]);
@@ -406,7 +406,7 @@ class UserSeeder extends Seeder
             'username' => '910108025633', 
             'password' => Hash::make('password1'), 
             'role' => 'user', 
-            'status' => 'aktif', 
+            'status' => 'active', 
             'nosmpp' => '66-18-00018', 
             'section' => 'STAMPING',
         ]);
@@ -416,7 +416,7 @@ class UserSeeder extends Seeder
             'username' => '821222025413', 
             'password' => Hash::make('password1'), 
             'role' => 'user', 
-            'status' => 'aktif', 
+            'status' => 'active', 
             'nosmpp' => '66-04-01748', 
             'section' => 'STAMPING',
         ]);
@@ -426,7 +426,7 @@ class UserSeeder extends Seeder
             'username' => '730430025721', 
             'password' => Hash::make('password1'), 
             'role' => 'user', 
-            'status' => 'aktif', 
+            'status' => 'active', 
             'nosmpp' => '9-06-00078', 
             'section' => 'STAMPING',
         ]);
@@ -436,7 +436,7 @@ class UserSeeder extends Seeder
             'username' => '921212035537', 
             'password' => Hash::make('password1'), 
             'role' => 'user', 
-            'status' => 'aktif', 
+            'status' => 'active', 
             'nosmpp' => '8-16-04601', 
             'section' => 'STAMPING',
         ]);
@@ -446,7 +446,7 @@ class UserSeeder extends Seeder
             'username' => '910212035575', 
             'password' => Hash::make('password1'), 
             'role' => 'user', 
-            'status' => 'aktif', 
+            'status' => 'active', 
             'nosmpp' => '8-09-03421', 
             'section' => 'STAMPING',
         ]);
@@ -456,7 +456,7 @@ class UserSeeder extends Seeder
             'username' => '780823075979', 
             'password' => Hash::make('password1'), 
             'role' => 'user', 
-            'status' => 'aktif', 
+            'status' => 'active', 
             'nosmpp' => '41-05-00234', 
             'section' => 'STAMPING',
         ]);
@@ -466,7 +466,7 @@ class UserSeeder extends Seeder
             'username' => '731018025345', 
             'password' => Hash::make('password1'), 
             'role' => 'user', 
-            'status' => 'aktif', 
+            'status' => 'active', 
             'nosmpp' => '7-97-00007', 
             'section' => 'STAMPING',
         ]);
@@ -476,7 +476,7 @@ class UserSeeder extends Seeder
             'username' => '880622065641', 
             'password' => Hash::make('password1'), 
             'role' => 'user', 
-            'status' => 'aktif', 
+            'status' => 'active', 
             'nosmpp' => '66-10-01413', 
             'section' => 'STAMPING',
         ]);
@@ -486,7 +486,7 @@ class UserSeeder extends Seeder
             'username' => '920617075267', 
             'password' => Hash::make('password1'), 
             'role' => 'user', 
-            'status' => 'aktif', 
+            'status' => 'active', 
             'nosmpp' => '68-17-00087', 
             'section' => 'STAMPING',
         ]);
@@ -496,7 +496,7 @@ class UserSeeder extends Seeder
             'username' => '930502075645', 
             'password' => Hash::make('password1'), 
             'role' => 'user', 
-            'status' => 'aktif', 
+            'status' => 'active', 
             'nosmpp' => '41-17-01823', 
             'section' => 'STAMPING',
         ]);
@@ -506,7 +506,7 @@ class UserSeeder extends Seeder
             'username' => '680826025389', 
             'password' => Hash::make('password1'), 
             'role' => 'user', 
-            'status' => 'aktif', 
+            'status' => 'active', 
             'nosmpp' => '41-19-00319', 
             'section' => 'STAMPING',
         ]);
@@ -516,7 +516,7 @@ class UserSeeder extends Seeder
             'username' => '980226075571', 
             'password' => Hash::make('password1'), 
             'role' => 'user', 
-            'status' => 'aktif', 
+            'status' => 'active', 
             'nosmpp' => '41-19-01377', 
             'section' => 'STAMPING',
         ]);
@@ -526,7 +526,7 @@ class UserSeeder extends Seeder
             'username' => '900119075637', 
             'password' => Hash::make('password1'), 
             'role' => 'user', 
-            'status' => 'aktif', 
+            'status' => 'active', 
             'nosmpp' => '41-12-00175', 
             'section' => 'STAMPING',
         ]);
@@ -536,7 +536,7 @@ class UserSeeder extends Seeder
             'username' => '800902025561', 
             'password' => Hash::make('password1'), 
             'role' => 'user', 
-            'status' => 'aktif', 
+            'status' => 'active', 
             'nosmpp' => '66-07-00936', 
             'section' => 'STAMPING',
         ]);
@@ -546,7 +546,7 @@ class UserSeeder extends Seeder
             'username' => '871122355349', 
             'password' => Hash::make('password1'), 
             'role' => 'user', 
-            'status' => 'aktif', 
+            'status' => 'active', 
             'nosmpp' => '41-14-02134', 
             'section' => 'STAMPING',
         ]);
@@ -556,7 +556,7 @@ class UserSeeder extends Seeder
             'username' => '871108075033', 
             'password' => Hash::make('password1'), 
             'role' => 'user', 
-            'status' => 'aktif', 
+            'status' => 'active', 
             'nosmpp' => '3-09-04175', 
             'section' => 'STAMPING',
         ]);
@@ -566,7 +566,7 @@ class UserSeeder extends Seeder
             'username' => '790314086177', 
             'password' => Hash::make('password1'), 
             'role' => 'user', 
-            'status' => 'aktif', 
+            'status' => 'active', 
             'nosmpp' => '7-18-01521', 
             'section' => 'STAMPING',
         ]);
@@ -576,7 +576,7 @@ class UserSeeder extends Seeder
             'username' => '850508026035', 
             'password' => Hash::make('password1'), 
             'role' => 'user', 
-            'status' => 'aktif', 
+            'status' => 'active', 
             'nosmpp' => '67-05-00123', 
             'section' => 'STAMPING',
         ]);
@@ -586,7 +586,7 @@ class UserSeeder extends Seeder
             'username' => '941218065253', 
             'password' => Hash::make('password1'), 
             'role' => 'user', 
-            'status' => 'aktif', 
+            'status' => 'active', 
             'nosmpp' => '1-15-07520', 
             'section' => 'STAMPING',
         ]);
@@ -596,7 +596,7 @@ class UserSeeder extends Seeder
             'username' => '981021026711', 
             'password' => Hash::make('password1'), 
             'role' => 'user', 
-            'status' => 'aktif', 
+            'status' => 'active', 
             'nosmpp' => '66-20-00781', 
             'section' => 'STAMPING',
         ]);
@@ -606,7 +606,7 @@ class UserSeeder extends Seeder
             'username' => '961105026219', 
             'password' => Hash::make('password1'), 
             'role' => 'user', 
-            'status' => 'aktif', 
+            'status' => 'active', 
             'nosmpp' => '67-15-01771', 
             'section' => 'STAMPING',
         ]);
@@ -616,7 +616,7 @@ class UserSeeder extends Seeder
             'username' => '810219025179', 
             'password' => Hash::make('password1'), 
             'role' => 'user', 
-            'status' => 'aktif', 
+            'status' => 'active', 
             'nosmpp' => '66-20-01490', 
             'section' => 'STAMPING',
         ]);
@@ -626,7 +626,7 @@ class UserSeeder extends Seeder
             'username' => '960415025321', 
             'password' => Hash::make('password1'), 
             'role' => 'user', 
-            'status' => 'aktif', 
+            'status' => 'active', 
             'nosmpp' => '1-20-00237', 
             'section' => 'STAMPING',
         ]);
@@ -636,7 +636,7 @@ class UserSeeder extends Seeder
             'username' => '970524106197', 
             'password' => Hash::make('password1'), 
             'role' => 'user', 
-            'status' => 'aktif', 
+            'status' => 'active', 
             'nosmpp' => '3-19-08148', 
             'section' => 'STAMPING',
         ]);
@@ -646,7 +646,7 @@ class UserSeeder extends Seeder
             'username' => '851121075101', 
             'password' => Hash::make('password1'), 
             'role' => 'user', 
-            'status' => 'aktif', 
+            'status' => 'active', 
             'nosmpp' => '42-21-00261', 
             'section' => 'STAMPING',
         ]);
@@ -656,7 +656,7 @@ class UserSeeder extends Seeder
             'username' => '870525355525', 
             'password' => Hash::make('password1'), 
             'role' => 'user', 
-            'status' => 'aktif', 
+            'status' => 'active', 
             'nosmpp' => '3-12-01338', 
             'section' => 'STAMPING',
         ]);
@@ -666,7 +666,7 @@ class UserSeeder extends Seeder
             'username' => '960522075287', 
             'password' => Hash::make('password1'), 
             'role' => 'user', 
-            'status' => 'aktif', 
+            'status' => 'active', 
             'nosmpp' => '41-18-00549', 
             'section' => 'STAMPING',
         ]);
@@ -676,7 +676,7 @@ class UserSeeder extends Seeder
             'username' => '680825025571', 
             'password' => Hash::make('password1'), 
             'role' => 'user', 
-            'status' => 'aktif', 
+            'status' => 'active', 
             'nosmpp' => '42-20-01229', 
             'section' => 'STAMPING',
         ]);
@@ -686,7 +686,7 @@ class UserSeeder extends Seeder
             'username' => '961212075163', 
             'password' => Hash::make('password1'), 
             'role' => 'user', 
-            'status' => 'aktif', 
+            'status' => 'active', 
             'nosmpp' => '67-16-00264', 
             'section' => 'STAMPING',
         ]);
@@ -696,7 +696,7 @@ class UserSeeder extends Seeder
             'username' => '820405065077', 
             'password' => Hash::make('password1'), 
             'role' => 'user', 
-            'status' => 'aktif', 
+            'status' => 'active', 
             'nosmpp' => '41-09-00511', 
             'section' => 'STAMPING',
         ]);
@@ -706,7 +706,7 @@ class UserSeeder extends Seeder
             'username' => '940303125039', 
             'password' => Hash::make('password1'), 
             'role' => 'user', 
-            'status' => 'aktif', 
+            'status' => 'active', 
             'nosmpp' => '84-15-00647', 
             'section' => 'STAMPING',
         ]);
@@ -716,7 +716,7 @@ class UserSeeder extends Seeder
             'username' => '730930016709', 
             'password' => Hash::make('password1'), 
             'role' => 'user', 
-            'status' => 'aktif', 
+            'status' => 'active', 
             'nosmpp' => '7-05-01146', 
             'section' => 'STAMPING',
         ]);
@@ -726,7 +726,7 @@ class UserSeeder extends Seeder
             'username' => '790826025263', 
             'password' => Hash::make('password1'), 
             'role' => 'user', 
-            'status' => 'aktif', 
+            'status' => 'active', 
             'nosmpp' => '94-17-00026', 
             'section' => 'STAMPING',
         ]);
@@ -736,7 +736,7 @@ class UserSeeder extends Seeder
             'username' => '810129075017', 
             'password' => Hash::make('password1'), 
             'role' => 'user', 
-            'status' => 'aktif', 
+            'status' => 'active', 
             'nosmpp' => '41-08-02470', 
             'section' => 'STAMPING',
         ]);
@@ -746,7 +746,7 @@ class UserSeeder extends Seeder
             'username' => '861216355703', 
             'password' => Hash::make('password1'), 
             'role' => 'user', 
-            'status' => 'aktif', 
+            'status' => 'active', 
             'nosmpp' => '41-17-00994', 
             'section' => 'STAMPING',
         ]);
@@ -758,7 +758,7 @@ class UserSeeder extends Seeder
             'username' => '810910017069', 
             'password' => Hash::make('password1'), 
             'role' => 'user', 
-            'status' => 'aktif', 
+            'status' => 'active', 
             'nosmpp' => '71-17-02334', 
             'section' => 'PECKER',
         ]);
@@ -768,7 +768,7 @@ class UserSeeder extends Seeder
             'username' => '800423115105', 
             'password' => Hash::make('password1'), 
             'role' => 'user', 
-            'status' => 'aktif', 
+            'status' => 'active', 
             'nosmpp' => '71-08-01722', 
             'section' => 'PECKER',
         ]);
@@ -778,7 +778,7 @@ class UserSeeder extends Seeder
             'username' => '930313036305', 
             'password' => Hash::make('password1'), 
             'role' => 'user', 
-            'status' => 'aktif', 
+            'status' => 'active', 
             'nosmpp' => '8-11-02554', 
             'section' => 'PECKER',
         ]);
@@ -788,7 +788,7 @@ class UserSeeder extends Seeder
             'username' => '751002035459', 
             'password' => Hash::make('password1'), 
             'role' => 'user', 
-            'status' => 'aktif', 
+            'status' => 'active', 
             'nosmpp' => '8-11-00270', 
             'section' => 'PECKER',
         ]);
@@ -798,7 +798,7 @@ class UserSeeder extends Seeder
             'username' => '780922035235', 
             'password' => Hash::make('password1'), 
             'role' => 'user', 
-            'status' => 'aktif', 
+            'status' => 'active', 
             'nosmpp' => '8-15-01435', 
             'section' => 'PECKER',
         ]);
@@ -808,7 +808,7 @@ class UserSeeder extends Seeder
             'username' => '820910035311', 
             'password' => Hash::make('password1'), 
             'role' => 'user', 
-            'status' => 'aktif', 
+            'status' => 'active', 
             'nosmpp' => '82-16-00649', 
             'section' => 'PECKER',
         ]);
@@ -818,7 +818,7 @@ class UserSeeder extends Seeder
             'username' => '960903035895', 
             'password' => Hash::make('password1'), 
             'role' => 'user', 
-            'status' => 'aktif', 
+            'status' => 'active', 
             'nosmpp' => '8-17-02229', 
             'section' => 'PECKER',
         ]);
@@ -828,7 +828,7 @@ class UserSeeder extends Seeder
             'username' => '861130265205', 
             'password' => Hash::make('password1'), 
             'role' => 'user', 
-            'status' => 'aktif', 
+            'status' => 'active', 
             'nosmpp' => '67-06-01193', 
             'section' => 'PECKER',
         ]);
@@ -838,7 +838,7 @@ class UserSeeder extends Seeder
             'username' => '771009025489', 
             'password' => Hash::make('password1'), 
             'role' => 'user', 
-            'status' => 'aktif', 
+            'status' => 'active', 
             'nosmpp' => '66-19-00161', 
             'section' => 'PECKER',
         ]);
@@ -848,7 +848,7 @@ class UserSeeder extends Seeder
             'username' => '960319025911', 
             'password' => Hash::make('password1'), 
             'role' => 'user', 
-            'status' => 'aktif', 
+            'status' => 'active', 
             'nosmpp' => '67-17-00192', 
             'section' => 'PECKER',
         ]);
@@ -858,7 +858,7 @@ class UserSeeder extends Seeder
             'username' => '931202025691', 
             'password' => Hash::make('password1'), 
             'role' => 'user', 
-            'status' => 'aktif', 
+            'status' => 'active', 
             'nosmpp' => '94-18-00269', 
             'section' => 'PECKER',
         ]);
@@ -868,7 +868,7 @@ class UserSeeder extends Seeder
             'username' => '951114025809', 
             'password' => Hash::make('password1'), 
             'role' => 'user', 
-            'status' => 'aktif', 
+            'status' => 'active', 
             'nosmpp' => '67-14-01036', 
             'section' => 'PECKER',
         ]);
@@ -880,7 +880,7 @@ class UserSeeder extends Seeder
             'username' => '790526025819', 
             'password' => Hash::make('password1'), 
             'role' => 'user', 
-            'status' => 'aktif', 
+            'status' => 'active', 
             'nosmpp' => '66-17-00111', 
             'section' => 'FINISHING',
         ]);
@@ -890,7 +890,7 @@ class UserSeeder extends Seeder
             'username' => '910630025783', 
             'password' => Hash::make('password1'), 
             'role' => 'user', 
-            'status' => 'aktif', 
+            'status' => 'active', 
             'nosmpp' => '66-19-02105', 
             'section' => 'FINISHING',
         ]);
@@ -900,7 +900,7 @@ class UserSeeder extends Seeder
             'username' => '970514025633', 
             'password' => Hash::make('password1'), 
             'role' => 'user', 
-            'status' => 'aktif', 
+            'status' => 'active', 
             'nosmpp' => '67-16-01696', 
             'section' => 'FINISHING',
         ]);
@@ -910,7 +910,7 @@ class UserSeeder extends Seeder
             'username' => '850524026369', 
             'password' => Hash::make('password1'), 
             'role' => 'user', 
-            'status' => 'aktif', 
+            'status' => 'active', 
             'nosmpp' => '94-19-00844', 
             'section' => 'FINISHING',
         ]);
@@ -920,7 +920,7 @@ class UserSeeder extends Seeder
             'username' => '931029026147', 
             'password' => Hash::make('password1'), 
             'role' => 'user', 
-            'status' => 'aktif', 
+            'status' => 'active', 
             'nosmpp' => '68-20-00885', 
             'section' => 'FINISHING',
         ]);
@@ -930,7 +930,7 @@ class UserSeeder extends Seeder
             'username' => '931220145937', 
             'password' => Hash::make('password1'), 
             'role' => 'user', 
-            'status' => 'aktif', 
+            'status' => 'active', 
             'nosmpp' => '1-13-04590', 
             'section' => 'FINISHING',
         ]);
@@ -940,7 +940,7 @@ class UserSeeder extends Seeder
             'username' => '780406025831', 
             'password' => Hash::make('password1'), 
             'role' => 'user', 
-            'status' => 'aktif', 
+            'status' => 'active', 
             'nosmpp' => '66-07-00988', 
             'section' => 'FINISHING',
         ]);
@@ -950,7 +950,7 @@ class UserSeeder extends Seeder
             'username' => '890429025567', 
             'password' => Hash::make('password1'), 
             'role' => 'user', 
-            'status' => 'aktif', 
+            'status' => 'active', 
             'nosmpp' => '3-10-02017', 
             'section' => 'FINISHING',
         ]);
@@ -960,7 +960,7 @@ class UserSeeder extends Seeder
             'username' => '800705025837', 
             'password' => Hash::make('password1'), 
             'role' => 'user', 
-            'status' => 'aktif', 
+            'status' => 'active', 
             'nosmpp' => '41-11-00624', 
             'section' => 'FINISHING',
         ]);
@@ -970,7 +970,7 @@ class UserSeeder extends Seeder
             'username' => '750325026835', 
             'password' => Hash::make('password1'), 
             'role' => 'user', 
-            'status' => 'aktif', 
+            'status' => 'active', 
             'nosmpp' => '94-15-00058', 
             'section' => 'FINISHING',
         ]);
@@ -980,7 +980,7 @@ class UserSeeder extends Seeder
             'username' => '800806025043', 
             'password' => Hash::make('password1'), 
             'role' => 'user', 
-            'status' => 'aktif', 
+            'status' => 'active', 
             'nosmpp' => '68-15-00639', 
             'section' => 'FINISHING',
         ]);
@@ -990,7 +990,7 @@ class UserSeeder extends Seeder
             'username' => '850211036267', 
             'password' => Hash::make('password1'), 
             'role' => 'user', 
-            'status' => 'aktif', 
+            'status' => 'active', 
             'nosmpp' => '8-13-03559', 
             'section' => 'FINISHING',
         ]);
@@ -1000,7 +1000,7 @@ class UserSeeder extends Seeder
             'username' => '981104035103', 
             'password' => Hash::make('password1'), 
             'role' => 'user', 
-            'status' => 'aktif', 
+            'status' => 'active', 
             'nosmpp' => '8-17-03978', 
             'section' => 'FINISHING',
         ]);
@@ -1010,7 +1010,7 @@ class UserSeeder extends Seeder
             'username' => '850103035945', 
             'password' => Hash::make('password1'), 
             'role' => 'user', 
-            'status' => 'aktif', 
+            'status' => 'active', 
             'nosmpp' => '8-13-01194', 
             'section' => 'FINISHING',
         ]);
@@ -1020,7 +1020,7 @@ class UserSeeder extends Seeder
             'username' => '960803025841', 
             'password' => Hash::make('password1'), 
             'role' => 'user', 
-            'status' => 'aktif', 
+            'status' => 'active', 
             'nosmpp' => '66-20-00159', 
             'section' => 'FINISHING',
         ]);
@@ -1030,7 +1030,7 @@ class UserSeeder extends Seeder
             'username' => '970427025117', 
             'password' => Hash::make('password1'), 
             'role' => 'user', 
-            'status' => 'aktif', 
+            'status' => 'active', 
             'nosmpp' => '67-15-01924', 
             'section' => 'FINISHING',
         ]);
@@ -1040,7 +1040,7 @@ class UserSeeder extends Seeder
             'username' => '821025085249', 
             'password' => Hash::make('password1'), 
             'role' => 'user', 
-            'status' => 'aktif', 
+            'status' => 'active', 
             'nosmpp' => '41-09-00856', 
             'section' => 'FINISHING',
         ]);
@@ -1050,7 +1050,7 @@ class UserSeeder extends Seeder
             'username' => '870702305087', 
             'password' => Hash::make('password1'), 
             'role' => 'user', 
-            'status' => 'aktif', 
+            'status' => 'active', 
             'nosmpp' => '62-13-00185', 
             'section' => 'FINISHING',
         ]);
@@ -1060,7 +1060,7 @@ class UserSeeder extends Seeder
             'username' => '770114075985', 
             'password' => Hash::make('password1'), 
             'role' => 'user', 
-            'status' => 'aktif', 
+            'status' => 'active', 
             'nosmpp' => '41-11-00225', 
             'section' => 'FINISHING',
         ]);
@@ -1070,7 +1070,7 @@ class UserSeeder extends Seeder
             'username' => '930817075607', 
             'password' => Hash::make('password1'), 
             'role' => 'user', 
-            'status' => 'aktif', 
+            'status' => 'active', 
             'nosmpp' => '10-15-00029', 
             'section' => 'FINISHING',
         ]);
@@ -1080,7 +1080,7 @@ class UserSeeder extends Seeder
             'username' => '760224025699', 
             'password' => Hash::make('password1'), 
             'role' => 'user', 
-            'status' => 'aktif', 
+            'status' => 'active', 
             'nosmpp' => '66-16-01123', 
             'section' => 'FINISHING',
         ]);
@@ -1090,7 +1090,7 @@ class UserSeeder extends Seeder
             'username' => '930130086481', 
             'password' => Hash::make('password1'), 
             'role' => 'user', 
-            'status' => 'aktif', 
+            'status' => 'active', 
             'nosmpp' => '42-18-01785', 
             'section' => 'FINISHING',
         ]);
@@ -1100,7 +1100,7 @@ class UserSeeder extends Seeder
             'username' => '991128026323', 
             'password' => Hash::make('password1'), 
             'role' => 'user', 
-            'status' => 'aktif', 
+            'status' => 'active', 
             'nosmpp' => '67-21-00322', 
             'section' => 'FINISHING',
         ]);
@@ -1110,7 +1110,7 @@ class UserSeeder extends Seeder
             'username' => '740207026341', 
             'password' => Hash::make('password1'), 
             'role' => 'user', 
-            'status' => 'aktif', 
+            'status' => 'active', 
             'nosmpp' => '66-17-02089', 
             'section' => 'FINISHING',
         ]);
@@ -1122,7 +1122,7 @@ class UserSeeder extends Seeder
             'username' => '881106265131', 
             'password' => Hash::make('password1'), 
             'role' => 'user', 
-            'status' => 'aktif', 
+            'status' => 'active', 
             'nosmpp' => '66-19-02404', 
             'section' => 'AUTO S
             PRAY',]);
@@ -1132,7 +1132,7 @@ class UserSeeder extends Seeder
             'username' => '851111145233', 
             'password' => Hash::make('password1'), 
             'role' => 'user', 
-            'status' => 'aktif', 
+            'status' => 'active', 
             'nosmpp' => '66-09-00455', 
             'section' => 'AUTO S
             PRAY',]);
@@ -1142,7 +1142,7 @@ class UserSeeder extends Seeder
             'username' => '910118035413', 
             'password' => Hash::make('password1'), 
             'role' => 'user', 
-            'status' => 'aktif', 
+            'status' => 'active', 
             'nosmpp' => '8-18-00895', 
             'section' => 'AUTO S
             PRAY',]);
@@ -1152,7 +1152,7 @@ class UserSeeder extends Seeder
             'username' => '860102035723', 
             'password' => Hash::make('password1'), 
             'role' => 'user', 
-            'status' => 'aktif', 
+            'status' => 'active', 
             'nosmpp' => '8-11-04186', 
             'section' => 'AUTO S
             PRAY',]);
@@ -1162,7 +1162,7 @@ class UserSeeder extends Seeder
             'username' => '801105035809', 
             'password' => Hash::make('password1'), 
             'role' => 'user', 
-            'status' => 'aktif', 
+            'status' => 'active', 
             'nosmpp' => '8-09-00027', 
             'section' => 'AUTO S
             PRAY',]);
@@ -1172,7 +1172,7 @@ class UserSeeder extends Seeder
             'username' => '890721035957', 
             'password' => Hash::make('password1'), 
             'role' => 'user', 
-            'status' => 'aktif', 
+            'status' => 'active', 
             'nosmpp' => '8-11-02753', 
             'section' => 'AUTO S
             PRAY',]);
@@ -1182,7 +1182,7 @@ class UserSeeder extends Seeder
             'username' => '871206025937', 
             'password' => Hash::make('password1'), 
             'role' => 'user', 
-            'status' => 'aktif', 
+            'status' => 'active', 
             'nosmpp' => '66-17-00905', 
             'section' => 'AUTO S
             PRAY',]);
@@ -1192,7 +1192,7 @@ class UserSeeder extends Seeder
             'username' => '810615075397', 
             'password' => Hash::make('password1'), 
             'role' => 'user', 
-            'status' => 'aktif', 
+            'status' => 'active', 
             'nosmpp' => '41-17-00147', 
             'section' => 'AUTO S
             PRAY',]);
@@ -1202,7 +1202,7 @@ class UserSeeder extends Seeder
             'username' => '911025026037', 
             'password' => Hash::make('password1'), 
             'role' => 'user', 
-            'status' => 'aktif', 
+            'status' => 'active', 
             'nosmpp' => '66-17-01986', 
             'section' => 'AUTO S
             PRAY',]);
@@ -1214,7 +1214,7 @@ class UserSeeder extends Seeder
             'username' => '880710355251', 
             'password' => Hash::make('password1'), 
             'role' => 'user', 
-            'status' => 'aktif', 
+            'status' => 'active', 
             'nosmpp' => '66-16-00431', 
             'section' => 'ROBOSPRAY',
         ]);
@@ -1224,7 +1224,7 @@ class UserSeeder extends Seeder
             'username' => '960908095037', 
             'password' => Hash::make('password1'), 
             'role' => 'user', 
-            'status' => 'aktif', 
+            'status' => 'active', 
             'nosmpp' => '94-20-00193', 
             'section' => 'ROBOSPRAY',
         ]);
@@ -1234,7 +1234,7 @@ class UserSeeder extends Seeder
             'username' => '920818035843', 
             'password' => Hash::make('password1'), 
             'role' => 'user', 
-            'status' => 'aktif', 
+            'status' => 'active', 
             'nosmpp' => '8-15-02875', 
             'section' => 'ROBOSPRAY',
         ]);
@@ -1244,7 +1244,7 @@ class UserSeeder extends Seeder
             'username' => '870711295431', 
             'password' => Hash::make('password1'), 
             'role' => 'user', 
-            'status' => 'aktif', 
+            'status' => 'active', 
             'nosmpp' => '8-12-02609', 
             'section' => 'ROBOSPRAY',
         ]);
@@ -1254,7 +1254,7 @@ class UserSeeder extends Seeder
             'username' => '820813035379', 
             'password' => Hash::make('password1'), 
             'role' => 'user', 
-            'status' => 'aktif', 
+            'status' => 'active', 
             'nosmpp' => '8-12-00741', 
             'section' => 'ROBOSPRAY',
         ]);
@@ -1264,7 +1264,7 @@ class UserSeeder extends Seeder
             'username' => '980228115557', 
             'password' => Hash::make('password1'), 
             'role' => 'user', 
-            'status' => 'aktif', 
+            'status' => 'active', 
             'nosmpp' => '8-19-03942', 
             'section' => 'ROBOSPRAY',
         ]);
@@ -1274,7 +1274,7 @@ class UserSeeder extends Seeder
             'username' => '940412035171', 
             'password' => Hash::make('password1'), 
             'role' => 'user', 
-            'status' => 'aktif', 
+            'status' => 'active', 
             'nosmpp' => '8-14-02466', 
             'section' => 'ROBOSPRAY',
         ]);
@@ -1284,7 +1284,7 @@ class UserSeeder extends Seeder
             'username' => '930211026173', 
             'password' => Hash::make('password1'), 
             'role' => 'user', 
-            'status' => 'aktif', 
+            'status' => 'active', 
             'nosmpp' => '66-14-01162', 
             'section' => 'ROBOSPRAY',
         ]);
@@ -1294,7 +1294,7 @@ class UserSeeder extends Seeder
             'username' => '870604355355', 
             'password' => Hash::make('password1'), 
             'role' => 'user', 
-            'status' => 'aktif', 
+            'status' => 'active', 
             'nosmpp' => '62-12-00333', 
             'section' => 'ROBOSPRAY',
         ]);
@@ -1304,7 +1304,7 @@ class UserSeeder extends Seeder
             'username' => '891011025759', 
             'password' => Hash::make('password1'), 
             'role' => 'user', 
-            'status' => 'aktif', 
+            'status' => 'active', 
             'nosmpp' => '68-17-01240', 
             'section' => 'ROBOSPRAY',
         ]);
@@ -1314,7 +1314,7 @@ class UserSeeder extends Seeder
             'username' => '830811025475', 
             'password' => Hash::make('password1'), 
             'role' => 'user', 
-            'status' => 'aktif', 
+            'status' => 'active', 
             'nosmpp' => '41-08-02083', 
             'section' => 'ROBOSPRAY',
         ]);
@@ -1324,7 +1324,7 @@ class UserSeeder extends Seeder
             'username' => '860314266013', 
             'password' => Hash::make('password1'), 
             'role' => 'user', 
-            'status' => 'aktif', 
+            'status' => 'active', 
             'nosmpp' => '66-10-00067', 
             'section' => 'ROBOSPRAY',
         ]);
@@ -1334,7 +1334,7 @@ class UserSeeder extends Seeder
             'username' => '740726025957', 
             'password' => Hash::make('password1'), 
             'role' => 'user', 
-            'status' => 'aktif', 
+            'status' => 'active', 
             'nosmpp' => '66-20-00304', 
             'section' => 'ROBOSPRAY',
         ]);
@@ -1344,7 +1344,7 @@ class UserSeeder extends Seeder
             'username' => '900131025587', 
             'password' => Hash::make('password1'), 
             'role' => 'user', 
-            'status' => 'aktif', 
+            'status' => 'active', 
             'nosmpp' => '67-09-00671', 
             'section' => 'ROBOSPRAY',
         ]);
@@ -1354,7 +1354,7 @@ class UserSeeder extends Seeder
             'username' => '900407025749', 
             'password' => Hash::make('password1'), 
             'role' => 'user', 
-            'status' => 'aktif', 
+            'status' => 'active', 
             'nosmpp' => '66-12-00656', 
             'section' => 'ROBOSPRAY',
         ]);
@@ -1364,7 +1364,7 @@ class UserSeeder extends Seeder
             'username' => '921026075761', 
             'password' => Hash::make('password1'), 
             'role' => 'user', 
-            'status' => 'aktif', 
+            'status' => 'active', 
             'nosmpp' => '41-15-01187', 
             'section' => 'ROBOSPRAY',
         ]);
@@ -1374,7 +1374,7 @@ class UserSeeder extends Seeder
             'username' => '900917146647', 
             'password' => Hash::make('password1'), 
             'role' => 'user', 
-            'status' => 'aktif', 
+            'status' => 'active', 
             'nosmpp' => '1-07-06787', 
             'section' => 'ROBOSPRAY',
         ]);
@@ -1384,7 +1384,7 @@ class UserSeeder extends Seeder
             'username' => '870310235905', 
             'password' => Hash::make('password1'), 
             'role' => 'user', 
-            'status' => 'aktif', 
+            'status' => 'active', 
             'nosmpp' => '41-05-00528', 
             'section' => 'ROBOSPRAY',
         ]);
@@ -1394,7 +1394,7 @@ class UserSeeder extends Seeder
             'username' => '870920385089', 
             'password' => Hash::make('password1'), 
             'role' => 'user', 
-            'status' => 'aktif', 
+            'status' => 'active', 
             'nosmpp' => '52-07-00220', 
             'section' => 'ROBOSPRAY',
         ]);
@@ -1404,7 +1404,7 @@ class UserSeeder extends Seeder
             'username' => '770726075185', 
             'password' => Hash::make('password1'), 
             'role' => 'user', 
-            'status' => 'aktif', 
+            'status' => 'active', 
             'nosmpp' => '41-15-01560', 
             'section' => 'ROBOSPRAY',
         ]);
@@ -1414,7 +1414,7 @@ class UserSeeder extends Seeder
             'username' => '820927095169', 
             'password' => Hash::make('password1'), 
             'role' => 'user', 
-            'status' => 'aktif', 
+            'status' => 'active', 
             'nosmpp' => '94-16-00411', 
             'section' => 'ROBOSPRAY',
         ]);
@@ -1424,7 +1424,7 @@ class UserSeeder extends Seeder
             'username' => '870709095043', 
             'password' => Hash::make('password1'), 
             'role' => 'user', 
-            'status' => 'aktif', 
+            'status' => 'active', 
             'nosmpp' => '67-06-01069', 
             'section' => 'ROBOSPRAY',
         ]);
@@ -1434,7 +1434,7 @@ class UserSeeder extends Seeder
             'username' => '820708095249', 
             'password' => Hash::make('password1'), 
             'role' => 'user', 
-            'status' => 'aktif', 
+            'status' => 'active', 
             'nosmpp' => '66-11-01724', 
             'section' => 'ROBOSPRAY',
         ]);
@@ -1446,7 +1446,7 @@ class UserSeeder extends Seeder
             'username' => '960701025381', 
             'password' => Hash::make('password1'), 
             'role' => 'user', 
-            'status' => 'aktif', 
+            'status' => 'active', 
             'nosmpp' => '94-20-00053', 
             'section' => 'WAREHOUSE',
         ]);
@@ -1456,7 +1456,7 @@ class UserSeeder extends Seeder
             'username' => '860903025023', 
             'password' => Hash::make('password1'), 
             'role' => 'user', 
-            'status' => 'aktif', 
+            'status' => 'active', 
             'nosmpp' => '66-11-01804', 
             'section' => 'WAREHOUSE',
         ]);
@@ -1466,7 +1466,7 @@ class UserSeeder extends Seeder
             'username' => '821026055201', 
             'password' => Hash::make('password1'), 
             'role' => 'user', 
-            'status' => 'aktif', 
+            'status' => 'active', 
             'nosmpp' => '66-11-01846', 
             'section' => 'WAREHOUSE',
         ]);
@@ -1476,7 +1476,7 @@ class UserSeeder extends Seeder
             'username' => '920108025325', 
             'password' => Hash::make('password1'), 
             'role' => 'user', 
-            'status' => 'aktif', 
+            'status' => 'active', 
             'nosmpp' => '67-10-00087', 
             'section' => 'WAREHOUSE',
         ]);
@@ -1486,7 +1486,7 @@ class UserSeeder extends Seeder
             'username' => '970412265177', 
             'password' => Hash::make('password1'), 
             'role' => 'user', 
-            'status' => 'aktif', 
+            'status' => 'active', 
             'nosmpp' => '1-19-05282', 
             'section' => 'WAREHOUSE',
         ]);
@@ -1496,7 +1496,7 @@ class UserSeeder extends Seeder
             'username' => '891023026089', 
             'password' => Hash::make('password1'), 
             'role' => 'user', 
-            'status' => 'aktif', 
+            'status' => 'active', 
             'nosmpp' => '68-20-00900', 
             'section' => 'WAREHOUSE',
         ]);
@@ -1506,7 +1506,7 @@ class UserSeeder extends Seeder
             'username' => '950423086053', 
             'password' => Hash::make('password1'), 
             'role' => 'user', 
-            'status' => 'aktif', 
+            'status' => 'active', 
             'nosmpp' => '7-16-01149', 
             'section' => 'WAREHOUSE',
         ]);
@@ -1516,7 +1516,7 @@ class UserSeeder extends Seeder
             'username' => '920229095055', 
             'password' => Hash::make('password1'), 
             'role' => 'user', 
-            'status' => 'aktif', 
+            'status' => 'active', 
             'nosmpp' => '94-20-00247', 
             'section' => 'WAREHOUSE',
         ]);
@@ -1526,7 +1526,7 @@ class UserSeeder extends Seeder
             'username' => '790503075485', 
             'password' => Hash::make('password1'), 
             'role' => 'user', 
-            'status' => 'aktif', 
+            'status' => 'active', 
             'nosmpp' => '41-14-02205', 
             'section' => 'WAREHOUSE',
         ]);
@@ -1536,7 +1536,7 @@ class UserSeeder extends Seeder
             'username' => '820908086419', 
             'password' => Hash::make('password1'), 
             'role' => 'user', 
-            'status' => 'aktif', 
+            'status' => 'active', 
             'nosmpp' => '7-15-01326', 
             'section' => 'WAREHOUSE',
         ]);
@@ -1546,7 +1546,7 @@ class UserSeeder extends Seeder
             'username' => '881203025877', 
             'password' => Hash::make('password1'), 
             'role' => 'user', 
-            'status' => 'aktif', 
+            'status' => 'active', 
             'nosmpp' => '41-16-00434', 
             'section' => 'WAREHOUSE',
         ]);
@@ -1556,7 +1556,7 @@ class UserSeeder extends Seeder
             'username' => '780207075801', 
             'password' => Hash::make('password1'), 
             'role' => 'user', 
-            'status' => 'aktif', 
+            'status' => 'active', 
             'nosmpp' => '41-16-01670', 
             'section' => 'WAREHOUSE',
         ]);
@@ -1566,7 +1566,7 @@ class UserSeeder extends Seeder
             'username' => '990128016825', 
             'password' => Hash::make('password1'), 
             'role' => 'user', 
-            'status' => 'aktif', 
+            'status' => 'active', 
             'nosmpp' => '67-16-00003', 
             'section' => 'WAREHOUSE',
         ]);
@@ -1576,7 +1576,7 @@ class UserSeeder extends Seeder
             'username' => '900126035633', 
             'password' => Hash::make('password1'), 
             'role' => 'user', 
-            'status' => 'aktif', 
+            'status' => 'active', 
             'nosmpp' => '8-18-02625', 
             'section' => 'WAREHOUSE',
         ]);
@@ -1586,7 +1586,7 @@ class UserSeeder extends Seeder
             'username' => '921225036175', 
             'password' => Hash::make('password1'), 
             'role' => 'user', 
-            'status' => 'aktif', 
+            'status' => 'active', 
             'nosmpp' => '8-15-04375', 
             'section' => 'WAREHOUSE',
         ]);
@@ -1596,7 +1596,7 @@ class UserSeeder extends Seeder
             'username' => '880914035241', 
             'password' => Hash::make('password1'), 
             'role' => 'user', 
-            'status' => 'aktif', 
+            'status' => 'active', 
             'nosmpp' => '8-17-02756', 
             'section' => 'WAREHOUSE',
         ]);
@@ -1606,7 +1606,7 @@ class UserSeeder extends Seeder
             'username' => '910814035599', 
             'password' => Hash::make('password1'), 
             'role' => 'user', 
-            'status' => 'aktif', 
+            'status' => 'active', 
             'nosmpp' => '82-19-00270', 
             'section' => 'WAREHOUSE',
         ]);
@@ -1616,7 +1616,7 @@ class UserSeeder extends Seeder
             'username' => '920831115979', 
             'password' => Hash::make('password1'), 
             'role' => 'user', 
-            'status' => 'aktif', 
+            'status' => 'active', 
             'nosmpp' => '1-14-09960', 
             'section' => 'WAREHOUSE',
         ]);
@@ -1626,7 +1626,7 @@ class UserSeeder extends Seeder
             'username' => '900227035683', 
             'password' => Hash::make('password1'), 
             'role' => 'user', 
-            'status' => 'aktif', 
+            'status' => 'active', 
             'nosmpp' => '8-16-03363', 
             'section' => 'WAREHOUSE',
         ]);
@@ -1636,7 +1636,7 @@ class UserSeeder extends Seeder
             'username' => '911125035643', 
             'password' => Hash::make('password1'), 
             'role' => 'user', 
-            'status' => 'aktif', 
+            'status' => 'active', 
             'nosmpp' => '71-11-01611', 
             'section' => 'WAREHOUSE',
         ]);
@@ -1646,7 +1646,7 @@ class UserSeeder extends Seeder
             'username' => '820613036051', 
             'password' => Hash::make('password1'), 
             'role' => 'user', 
-            'status' => 'aktif', 
+            'status' => 'active', 
             'nosmpp' => '8-11-04517', 
             'section' => 'WAREHOUSE',
         ]);
@@ -1656,7 +1656,7 @@ class UserSeeder extends Seeder
             'username' => '880913035821', 
             'password' => Hash::make('password1'), 
             'role' => 'user', 
-            'status' => 'aktif', 
+            'status' => 'active', 
             'nosmpp' => '8-12-02086', 
             'section' => 'WAREHOUSE',
         ]);
@@ -1666,7 +1666,7 @@ class UserSeeder extends Seeder
             'username' => '800403115749', 
             'password' => Hash::make('password1'), 
             'role' => 'user', 
-            'status' => 'aktif', 
+            'status' => 'active', 
             'nosmpp' => '71-10-02943', 
             'section' => 'WAREHOUSE',
         ]);
@@ -1676,7 +1676,7 @@ class UserSeeder extends Seeder
             'username' => '630306107043', 
             'password' => Hash::make('password1'), 
             'role' => 'user', 
-            'status' => 'aktif', 
+            'status' => 'active', 
             'nosmpp' => '3-03-12264', 
             'section' => 'WAREHOUSE',
         ]);
@@ -1686,7 +1686,7 @@ class UserSeeder extends Seeder
             'username' => '770302026689', 
             'password' => Hash::make('password1'), 
             'role' => 'user', 
-            'status' => 'aktif', 
+            'status' => 'active', 
             'nosmpp' => '41-05-02282', 
             'section' => 'WAREHOUSE',
         ]);
@@ -1696,7 +1696,7 @@ class UserSeeder extends Seeder
             'username' => '760427075629', 
             'password' => Hash::make('password1'), 
             'role' => 'user', 
-            'status' => 'aktif', 
+            'status' => 'active', 
             'nosmpp' => '41-09-02774', 
             'section' => 'WAREHOUSE',
         ]);
@@ -1706,7 +1706,7 @@ class UserSeeder extends Seeder
             'username' => '820127025365', 
             'password' => Hash::make('password1'), 
             'role' => 'user', 
-            'status' => 'aktif', 
+            'status' => 'active', 
             'nosmpp' => '66-06-00804', 
             'section' => 'WAREHOUSE',
         ]);
@@ -1716,7 +1716,7 @@ class UserSeeder extends Seeder
             'username' => '761109025719', 
             'password' => Hash::make('password1'), 
             'role' => 'user', 
-            'status' => 'aktif', 
+            'status' => 'active', 
             'nosmpp' => '66-08-01061', 
             'section' => 'WAREHOUSE',
         ]);
@@ -1726,7 +1726,7 @@ class UserSeeder extends Seeder
             'username' => '840105085356', 
             'password' => Hash::make('password1'), 
             'role' => 'user', 
-            'status' => 'aktif', 
+            'status' => 'active', 
             'nosmpp' => '66-07-02077', 
             'section' => 'WAREHOUSE',
         ]);
@@ -1736,7 +1736,7 @@ class UserSeeder extends Seeder
             'username' => '900304025957', 
             'password' => Hash::make('password1'), 
             'role' => 'user', 
-            'status' => 'aktif', 
+            'status' => 'active', 
             'nosmpp' => '67-09-00741', 
             'section' => 'WAREHOUSE',
         ]);
@@ -1746,7 +1746,7 @@ class UserSeeder extends Seeder
             'username' => '920225026001', 
             'password' => Hash::make('password1'), 
             'role' => 'user', 
-            'status' => 'aktif', 
+            'status' => 'active', 
             'nosmpp' => '94-20-00774', 
             'section' => 'WAREHOUSE',
         ]);
@@ -1756,7 +1756,7 @@ class UserSeeder extends Seeder
             'username' => '951024025485', 
             'password' => Hash::make('password1'), 
             'role' => 'user', 
-            'status' => 'aktif', 
+            'status' => 'active', 
             'nosmpp' => '66-19-01195', 
             'section' => 'WAREHOUSE',
         ]);
@@ -1766,7 +1766,7 @@ class UserSeeder extends Seeder
             'username' => '920528075871', 
             'password' => Hash::make('password1'), 
             'role' => 'user', 
-            'status' => 'aktif', 
+            'status' => 'active', 
             'nosmpp' => '62-14-00002', 
             'section' => 'WAREHOUSE',
         ]);
@@ -1776,7 +1776,7 @@ class UserSeeder extends Seeder
             'username' => '700205075637', 
             'password' => Hash::make('password1'), 
             'role' => 'user', 
-            'status' => 'aktif', 
+            'status' => 'active', 
             'nosmpp' => '42-10-00175', 
             'section' => 'WAREHOUSE',
         ]);
@@ -1786,7 +1786,7 @@ class UserSeeder extends Seeder
             'username' => '841008075055', 
             'password' => Hash::make('password1'), 
             'role' => 'user', 
-            'status' => 'aktif', 
+            'status' => 'active', 
             'nosmpp' => '41-10-01214', 
             'section' => 'WAREHOUSE',
         ]);
@@ -1796,7 +1796,7 @@ class UserSeeder extends Seeder
             'username' => '970425075321', 
             'password' => Hash::make('password1'), 
             'role' => 'user', 
-            'status' => 'aktif', 
+            'status' => 'active', 
             'nosmpp' => '67-16-01014', 
             'section' => 'WAREHOUSE',
         ]);
@@ -1806,7 +1806,7 @@ class UserSeeder extends Seeder
             'username' => '970127086049', 
             'password' => Hash::make('password1'), 
             'role' => 'user', 
-            'status' => 'aktif', 
+            'status' => 'active', 
             'nosmpp' => '67-16-00893', 
             'section' => 'WAREHOUSE',
         ]);
@@ -1816,7 +1816,7 @@ class UserSeeder extends Seeder
             'username' => '820322025619', 
             'password' => Hash::make('password1'), 
             'role' => 'user', 
-            'status' => 'aktif', 
+            'status' => 'active', 
             'nosmpp' => '68-19-01424', 
             'section' => 'WAREHOUSE',
         ]);
@@ -1826,7 +1826,7 @@ class UserSeeder extends Seeder
             'username' => '901022026155', 
             'password' => Hash::make('password1'), 
             'role' => 'user', 
-            'status' => 'aktif', 
+            'status' => 'active', 
             'nosmpp' => '66-13-00634', 
             'section' => 'WAREHOUSE',
         ]);
@@ -1836,7 +1836,7 @@ class UserSeeder extends Seeder
             'username' => '881226265179', 
             'password' => Hash::make('password1'), 
             'role' => 'user', 
-            'status' => 'aktif', 
+            'status' => 'active', 
             'nosmpp' => '66-20-01453', 
             'section' => 'WAREHOUSE',
         ]);
@@ -1848,7 +1848,7 @@ class UserSeeder extends Seeder
             'username' => '690817025271', 
             'password' => Hash::make('password1'), 
             'role' => 'user', 
-            'status' => 'aktif', 
+            'status' => 'active', 
             'nosmpp' => '66-05-02660', 
             'section' => 'RIDERTECH',
         ]);
@@ -1858,7 +1858,7 @@ class UserSeeder extends Seeder
             'username' => '730205055051', 
             'password' => Hash::make('password1'), 
             'role' => 'user', 
-            'status' => 'aktif', 
+            'status' => 'active', 
             'nosmpp' => '3-08-03968', 
             'section' => 'RIDERTECH',
         ]);
@@ -1868,7 +1868,7 @@ class UserSeeder extends Seeder
             'username' => '761207025827', 
             'password' => Hash::make('password1'), 
             'role' => 'user', 
-            'status' => 'aktif', 
+            'status' => 'active', 
             'nosmpp' => '7-03-02811', 
             'section' => 'RIDERTECH',
         ]);
@@ -1878,7 +1878,7 @@ class UserSeeder extends Seeder
             'username' => '930923025005', 
             'password' => Hash::make('password1'), 
             'role' => 'user', 
-            'status' => 'aktif', 
+            'status' => 'active', 
             'nosmpp' => '66-19-02391', 
             'section' => 'RIDERTECH',
         ]);
@@ -1888,7 +1888,7 @@ class UserSeeder extends Seeder
             'username' => '901110025427', 
             'password' => Hash::make('password1'), 
             'role' => 'user', 
-            'status' => 'aktif', 
+            'status' => 'active', 
             'nosmpp' => '66-16-01325', 
             'section' => 'RIDERTECH',
         ]);
@@ -1898,7 +1898,7 @@ class UserSeeder extends Seeder
             'username' => '971125095077', 
             'password' => Hash::make('password1'), 
             'role' => 'user', 
-            'status' => 'aktif', 
+            'status' => 'active', 
             'nosmpp' => '94-18-00641', 
             'section' => 'RIDERTECH',
         ]);
@@ -1908,7 +1908,7 @@ class UserSeeder extends Seeder
             'username' => '951110015531', 
             'password' => Hash::make('password1'), 
             'role' => 'user', 
-            'status' => 'aktif', 
+            'status' => 'active', 
             'nosmpp' => '10-15-00031', 
             'section' => 'RIDERTECH',
         ]);
@@ -1918,7 +1918,7 @@ class UserSeeder extends Seeder
             'username' => '951103035841', 
             'password' => Hash::make('password1'), 
             'role' => 'user', 
-            'status' => 'aktif', 
+            'status' => 'active', 
             'nosmpp' => '8-16-00022', 
             'section' => 'RIDERTECH',
         ]);
@@ -1928,7 +1928,7 @@ class UserSeeder extends Seeder
             'username' => '830808015321', 
             'password' => Hash::make('password1'), 
             'role' => 'user', 
-            'status' => 'aktif', 
+            'status' => 'active', 
             'nosmpp' => '71-11-00022', 
             'section' => 'RIDERTECH',
         ]);
@@ -1938,7 +1938,7 @@ class UserSeeder extends Seeder
             'username' => '790319035213', 
             'password' => Hash::make('password1'), 
             'role' => 'user', 
-            'status' => 'aktif', 
+            'status' => 'active', 
             'nosmpp' => '8-06-00349', 
             'section' => 'RIDERTECH',
         ]);
@@ -1948,7 +1948,7 @@ class UserSeeder extends Seeder
             'username' => '920709115609', 
             'password' => Hash::make('password1'), 
             'role' => 'user', 
-            'status' => 'aktif', 
+            'status' => 'active', 
             'nosmpp' => '71-08-01405', 
             'section' => 'RIDERTECH',
         ]);
@@ -1958,7 +1958,7 @@ class UserSeeder extends Seeder
             'username' => '910509036499', 
             'password' => Hash::make('password1'), 
             'role' => 'user', 
-            'status' => 'aktif', 
+            'status' => 'active', 
             'nosmpp' => '94-15-00164', 
             'section' => 'RIDERTECH',
         ]);
@@ -1968,7 +1968,7 @@ class UserSeeder extends Seeder
             'username' => '910818025865', 
             'password' => Hash::make('password1'), 
             'role' => 'user', 
-            'status' => 'aktif', 
+            'status' => 'active', 
             'nosmpp' => '68-17-00311', 
             'section' => 'RIDERTECH',
         ]);
@@ -1978,7 +1978,7 @@ class UserSeeder extends Seeder
             'username' => '920717025697', 
             'password' => Hash::make('password1'), 
             'role' => 'user', 
-            'status' => 'aktif', 
+            'status' => 'active', 
             'nosmpp' => '66-18-00259', 
             'section' => 'RIDERTECH',
         ]);
@@ -1988,7 +1988,7 @@ class UserSeeder extends Seeder
             'username' => '891009025151', 
             'password' => Hash::make('password1'), 
             'role' => 'user', 
-            'status' => 'aktif', 
+            'status' => 'active', 
             'nosmpp' => '66-14-02646', 
             'section' => 'RIDERTECH',
         ]);
@@ -1998,7 +1998,7 @@ class UserSeeder extends Seeder
             'username' => '900222065269', 
             'password' => Hash::make('password1'), 
             'role' => 'user', 
-            'status' => 'aktif', 
+            'status' => 'active', 
             'nosmpp' => '41-15-01222', 
             'section' => 'RIDERTECH',
         ]);
@@ -2008,7 +2008,7 @@ class UserSeeder extends Seeder
             'username' => '950502025363', 
             'password' => Hash::make('password1'), 
             'role' => 'user', 
-            'status' => 'aktif', 
+            'status' => 'active', 
             'nosmpp' => '67-15-00726', 
             'section' => 'RIDERTECH',
         ]);
@@ -2018,7 +2018,7 @@ class UserSeeder extends Seeder
             'username' => '891109026063', 
             'password' => Hash::make('password1'), 
             'role' => 'user', 
-            'status' => 'aktif', 
+            'status' => 'active', 
             'nosmpp' => '68-14-02837', 
             'section' => 'RIDERTECH',
         ]);
@@ -2028,7 +2028,7 @@ class UserSeeder extends Seeder
             'username' => '870422025435', 
             'password' => Hash::make('password1'), 
             'role' => 'user', 
-            'status' => 'aktif', 
+            'status' => 'active', 
             'nosmpp' => '66-12-01049', 
             'section' => 'RIDERTECH',
         ]);
@@ -2038,7 +2038,7 @@ class UserSeeder extends Seeder
             'username' => '901016025383', 
             'password' => Hash::make('password1'), 
             'role' => 'user', 
-            'status' => 'aktif', 
+            'status' => 'active', 
             'nosmpp' => '66-13-01578', 
             'section' => 'RIDERTECH',
         ]);
@@ -2048,7 +2048,7 @@ class UserSeeder extends Seeder
             'username' => '861111355037', 
             'password' => Hash::make('password1'), 
             'role' => 'user', 
-            'status' => 'aktif', 
+            'status' => 'active', 
             'nosmpp' => '66-12-00402', 
             'section' => 'RIDERTECH',
         ]);
@@ -2058,7 +2058,7 @@ class UserSeeder extends Seeder
             'username' => '950907065339', 
             'password' => Hash::make('password1'), 
             'role' => 'user', 
-            'status' => 'aktif', 
+            'status' => 'active', 
             'nosmpp' => '94-17-00621', 
             'section' => 'RIDERTECH',
         ]);
@@ -2068,7 +2068,7 @@ class UserSeeder extends Seeder
             'username' => '910602095055', 
             'password' => Hash::make('password1'), 
             'role' => 'user', 
-            'status' => 'aktif', 
+            'status' => 'active', 
             'nosmpp' => '94-14-00446', 
             'section' => 'RIDERTECH',
         ]);
@@ -2078,7 +2078,7 @@ class UserSeeder extends Seeder
             'username' => '740824025037', 
             'password' => Hash::make('password1'), 
             'role' => 'user', 
-            'status' => 'aktif', 
+            'status' => 'active', 
             'nosmpp' => '41-06-02053', 
             'section' => 'RIDERTECH',
         ]);
@@ -2088,7 +2088,7 @@ class UserSeeder extends Seeder
             'username' => '971114355347', 
             'password' => Hash::make('password1'), 
             'role' => 'user', 
-            'status' => 'aktif', 
+            'status' => 'active', 
             'nosmpp' => '67-16-01684', 
             'section' => 'RIDERTECH',
         ]);
@@ -2098,7 +2098,7 @@ class UserSeeder extends Seeder
             'username' => '991210075917', 
             'password' => Hash::make('password1'), 
             'role' => 'user', 
-            'status' => 'aktif', 
+            'status' => 'active', 
             'nosmpp' => '42-21-00270', 
             'section' => 'RIDERTECH',
         ]);
@@ -2108,7 +2108,7 @@ class UserSeeder extends Seeder
             'username' => '890617025089', 
             'password' => Hash::make('password1'), 
             'role' => 'user', 
-            'status' => 'aktif', 
+            'status' => 'active', 
             'nosmpp' => '66-16-01216', 
             'section' => 'RIDERTECH',
         ]);
@@ -2118,7 +2118,7 @@ class UserSeeder extends Seeder
             'username' => '800728075335', 
             'password' => Hash::make('password1'), 
             'role' => 'user', 
-            'status' => 'aktif', 
+            'status' => 'active', 
             'nosmpp' => '41-09-01439', 
             'section' => 'RIDERTECH',
         ]);
@@ -2128,7 +2128,7 @@ class UserSeeder extends Seeder
             'username' => '820723075297', 
             'password' => Hash::make('password1'), 
             'role' => 'user', 
-            'status' => 'aktif', 
+            'status' => 'active', 
             'nosmpp' => '41-06-01121', 
             'section' => 'RIDERTECH',
         ]);
@@ -2138,7 +2138,7 @@ class UserSeeder extends Seeder
             'username' => '910726085633', 
             'password' => Hash::make('password1'), 
             'role' => 'user', 
-            'status' => 'aktif', 
+            'status' => 'active', 
             'nosmpp' => '41-16-00630', 
             'section' => 'RIDERTECH',
         ]);
@@ -2148,7 +2148,7 @@ class UserSeeder extends Seeder
             'username' => '760614025901', 
             'password' => Hash::make('password1'), 
             'role' => 'user', 
-            'status' => 'aktif', 
+            'status' => 'active', 
             'nosmpp' => '3-03-14080', 
             'section' => 'RIDERTECH',
         ]);
@@ -2158,7 +2158,7 @@ class UserSeeder extends Seeder
             'username' => '830413085181', 
             'password' => Hash::make('password1'), 
             'role' => 'user', 
-            'status' => 'aktif', 
+            'status' => 'active', 
             'nosmpp' => '41-19-01522', 
             'section' => 'RIDERTECH',
         ]);
@@ -2168,7 +2168,7 @@ class UserSeeder extends Seeder
             'username' => '841018075825', 
             'password' => Hash::make('password1'), 
             'role' => 'user', 
-            'status' => 'aktif', 
+            'status' => 'active', 
             'nosmpp' => '41-05-03389', 
             'section' => 'RIDERTECH',
         ]);
@@ -2178,7 +2178,7 @@ class UserSeeder extends Seeder
             'username' => '820926026065', 
             'password' => Hash::make('password1'), 
             'role' => 'user', 
-            'status' => 'aktif', 
+            'status' => 'active', 
             'nosmpp' => '66-13-00644', 
             'section' => 'RIDERTECH',
         ]);
@@ -2188,7 +2188,7 @@ class UserSeeder extends Seeder
             'username' => '840708025281', 
             'password' => Hash::make('password1'), 
             'role' => 'user', 
-            'status' => 'aktif', 
+            'status' => 'active', 
             'nosmpp' => '66-09-00276', 
             'section' => 'RIDERTECH',
         ]);
@@ -2198,7 +2198,7 @@ class UserSeeder extends Seeder
             'username' => '870409075235', 
             'password' => Hash::make('password1'), 
             'role' => 'user', 
-            'status' => 'aktif', 
+            'status' => 'active', 
             'nosmpp' => '41-08-00869', 
             'section' => 'RIDERTECH',
         ]);
@@ -2208,7 +2208,7 @@ class UserSeeder extends Seeder
             'username' => '860128075301', 
             'password' => Hash::make('password1'), 
             'role' => 'user', 
-            'status' => 'aktif', 
+            'status' => 'active', 
             'nosmpp' => '42-20-00334', 
             'section' => 'RIDERTECH',
         ]);
@@ -2218,7 +2218,7 @@ class UserSeeder extends Seeder
             'username' => '910615086959', 
             'password' => Hash::make('password1'), 
             'role' => 'user', 
-            'status' => 'aktif', 
+            'status' => 'active', 
             'nosmpp' => '7-14-01621', 
             'section' => 'RIDERTECH',
         ]);

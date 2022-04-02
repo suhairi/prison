@@ -22,7 +22,7 @@ class DatabaseSeeder extends Seeder
             'username'  => 'suhairi',
             'password'  => Hash::make('password1'),
             'role'      => 'admin',
-            'status'    => 'aktif',
+            'status'    => 'active',
         ]);
 
         User::create([
@@ -30,7 +30,7 @@ class DatabaseSeeder extends Seeder
             'username'  => 'najib',
             'password'  => Hash::make('password1'),
             'role'      => 'admin',
-            'status'    => 'aktif',
+            'status'    => 'active',
         ]);
 
         User::create([
@@ -38,7 +38,7 @@ class DatabaseSeeder extends Seeder
             'username'  => 'rohman',
             'password'  => Hash::make('password1'),
             'role'      => 'admin',
-            'status'    => 'aktif',
+            'status'    => 'active',
         ]);
 
         User::create([
@@ -46,7 +46,7 @@ class DatabaseSeeder extends Seeder
             'username'  => '740224135582',
             'password'  => Hash::make('password1'),
             'role'      => 'hq',
-            'status'    => 'aktif',
+            'status'    => 'active',
         ]);
 
         User::create([
@@ -54,7 +54,7 @@ class DatabaseSeeder extends Seeder
             'username'  => '731015055450',
             'password'  => Hash::make('password1'),
             'role'      => 'hq',
-            'status'    => 'aktif',
+            'status'    => 'active',
         ]);
 
             

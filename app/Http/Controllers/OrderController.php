@@ -15,13 +15,23 @@ class OrderController extends Controller
 {
     public function index() {
 
+        $ordered = false;
+
         $products = Products::all();
 
         // check if user has made the order
         // if yes, disable order form
 
+        $bulanTahun = date('mY');
+        $order = Orders::where('user_id', Auth::user()->id)->where('bulanTahun', $bulanTahun)->get()->toArray();
+
+
+        if(!empty($order))
+            $ordered = true;
+
         return view('users.orders')
-            ->with('products', $products);
+            ->with('products', $products)
+            ->with('ordered', $ordered);
     }
 
     public function create(Request $request) {

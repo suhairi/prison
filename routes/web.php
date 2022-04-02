@@ -33,10 +33,17 @@ Route::middleware(['auth'])->name('admin.')->prefix('admin')->group(function () 
     Route::post('/register', [UsersController::class, 'create'])->name('register');
 
     Route::get('/userList', [UsersController::class, 'userList'])->name('userList');
+    Route::get('/userNotOrderList', [UsersController::class, 'userNotOrderList'])->name('usernotorderlist');
+    Route::get('/inactiveList', [UsersController::class, 'inactiveList'])->name('inactivelist');
+
+    Route::get('/setInactive/{id}', [UsersController::class, 'setInactive'])->name('setInactive');
+    Route::get('/setActive/{id}', [UsersController::class, 'setActive'])->name('setActive');
 
     Route::get('/products', [ProductsController::class, 'index'])->name('products'); // list of products
     Route::get('/registerproducts', [ProductsController::class, 'register'])->name('registerproducts');
     Route::post('/registerproducts', [ProductsController::class, 'create'])->name('registerproducts');
+
+
     
 });
 
