@@ -9,10 +9,11 @@ class Products extends Model
 {
     use HasFactory;
 
-    protected $fillable = [
-        'name',
-        'price',
-    ];
+    protected $fillable = ['name', 'price'];
 
-    public $timestamps = false;
+    // public $timestamps = false;
+
+    public function orders() {
+        return $this->belongsToMany(Orders::class)->withPivot('quantity');
+    }
 }

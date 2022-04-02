@@ -13,3 +13,10 @@
         <strong>Success!</strong> Indicates a successful or positive action.
     </div>
 @endif
+
+@if(Session::has('fail'))
+    <div class="alert alert-error">
+        <strong>Error!</strong> Indicates a failure or negative action.
+    </div>
+@endif
+
