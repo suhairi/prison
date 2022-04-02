@@ -14,6 +14,9 @@
 
         <div class="row">
             <div class="mb-3">
+                <div class="d-flex justify-content-end mb-4">
+                  <a class="btn btn-primary btn-sm" href="{{ route('admin.productsPdf') }}"><i class="fa fa-solid fa-file-pdf"> </i> Export to PDF</a>
+                </div>
                 <table class="table table-striped table-hover">
                 <thead>
                   <th>Bil</th>
@@ -33,11 +36,6 @@
                   </tr>
                 @endforeach
               </table>
-              <div class="container">
-                <div class="d-flex justify-content-center">
-                  {{ $products->render() }}
-                </div>        
-              </div>
                 
             </div>
         </div>

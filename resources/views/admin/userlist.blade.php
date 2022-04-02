@@ -29,6 +29,9 @@
         
       </table>
       
+      <div class="d-flex justify-content-end mb-4">
+            <a class="btn btn-primary btn-sm" href="{{ route('admin.usersPdf') }}"><i class="fa fa-solid fa-file-pdf"> </i> Export to PDF</a>
+      </div>
       <table class="table table-bordered table-striped table-hover">
         <thead>
           <th>Bil</th>

@@ -15,6 +15,9 @@
     <!-- Bootstrap core CSS -->
     <link href="https://getbootstrap.com/docs/5.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" rel="stylesheet">
+
     <!-- Favicons -->
     <link rel="apple-touch-icon" href="{{ url('images/favicons/apple-touch-icon.png') }}" sizes="180x180">
     <link rel="icon" href="{{ url('images/favicons/favicon-32x32.png') }}" sizes="32x32" type="image/png">

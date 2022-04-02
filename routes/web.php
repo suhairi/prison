@@ -44,6 +44,11 @@ Route::middleware(['auth'])->name('admin.')->prefix('admin')->group(function () 
     Route::post('/registerproducts', [ProductsController::class, 'create'])->name('registerproducts');
 
 
+    // PDF
+    Route::get('/usersPdf', [UsersController::class, 'userPdf'])->name('usersPdf');
+    Route::get('/productsPdf', [ProductsController::class, 'productsPdf'])->name('productsPdf');
+
+
     
 });
 
