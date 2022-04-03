@@ -6,6 +6,8 @@ use Illuminate\Http\Request;
 
 use Illuminate\Support\Facades\Auth;
 
+use Illuminate\Support\Facades\DB;
+
 use App\Models\Products;
 use App\Models\Orders;
 
@@ -58,5 +60,33 @@ class OrderController extends Controller
         Session::flash('success', 'Success');
         return redirect()->route('user.order');
 
+    }
+
+    public function orderedList() {
+
+        $users = DB::table('users')
+                    ->join('orders', 'users.id', 'orders.user_id')
+                    ->get();
+
+        // dd($users);
+
+        return view('admin.orderedList')->with('users', $users);
+    }
+
+    public function showOrdered($id) {
+
+        $bulanTahun = date("mY");
+
+        $orderId = Orders::where('id', $id)
+                    ->where('bulanTahun', $bulanTahun)
+                    ->get();
+
+        
+
+        dd($products);
+
+        return;
+
+        return view('admin.showOrdered');
     }
 }

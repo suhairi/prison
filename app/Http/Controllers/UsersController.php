@@ -74,13 +74,14 @@ class UsersController extends Controller
         $bulanTahun = date('mY');
         $totalOrdered = Orders::where('bulanTahun', $bulanTahun)->distinct('user_id')->count();
 
-        $totalUsers = User::where('role', 'user')->count();
+        $totalUsers = User::where('role', 'user')->where('status', 'active')->count();
 
         // dd($totalUsers);
 
         $bulanTahun = date('mY');
         $users = DB::table('users')
                     ->where('role', 'user')
+                    ->where('status', 'active')
                     ->orderBy('name', 'asc')
                     ->whereNotExists(function($query) {
                         $query->select(DB::raw(1))

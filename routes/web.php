@@ -43,6 +43,10 @@ Route::middleware(['auth'])->name('admin.')->prefix('admin')->group(function () 
     Route::get('/registerproducts', [ProductsController::class, 'register'])->name('registerproducts');
     Route::post('/registerproducts', [ProductsController::class, 'create'])->name('registerproducts');
 
+    // Order
+    Route::get('/orderedList', [OrderController::class, 'orderedList'])->name('orderedList');
+    Route::get('/showOrdered/{id}', [OrderController::class, 'showOrdered'])->name('showOrdered');
+
 
     // PDF
     Route::get('/usersPdf', [UsersController::class, 'userPdf'])->name('usersPdf');

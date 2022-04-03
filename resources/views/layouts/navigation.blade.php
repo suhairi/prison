@@ -36,9 +36,16 @@
           <li class="nav-item">
             <a class="nav-link" href="{{ route('admin.usernotorderlist') }}">
               <span data-feather="layers"></span>
-              Report Not Order
+              Users Not Order
             </a>
           </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{{ route('admin.orderedList') }}">
+              <span data-feather="layers"></span>
+              Ordered List
+            </a>
+          </li>
+          
         </ul>
     @endif
 
