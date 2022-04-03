@@ -79,11 +79,12 @@ class OrderController extends Controller
 
         $orderId = Orders::where('id', $id)
                     ->where('bulanTahun', $bulanTahun)
-                    ->get();
+                    ->with('products')
+                    ->get();        
 
-        
+        // dd($orderId);
 
-        dd($products);
+        dd($orderId->products);
 
         return;
 
