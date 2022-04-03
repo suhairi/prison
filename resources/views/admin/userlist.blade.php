@@ -19,7 +19,7 @@
           <td>{{ count($users) }}</td>
         </tr>
         <tr>
-          <td><strong>Active User</strong></td>
+          <td><strong>Active User (ACTIVE)</strong></td>
           <td><a href="{{ route('admin.userList') }}">{{ $totalActive }}</td>
         </tr>
         <tr>

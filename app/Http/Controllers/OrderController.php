@@ -8,6 +8,7 @@ use Illuminate\Support\Facades\Auth;
 
 use Illuminate\Support\Facades\DB;
 
+use App\Models\User;
 use App\Models\Products;
 use App\Models\Orders;
 
@@ -77,21 +78,16 @@ class OrderController extends Controller
 
         $bulanTahun = date("mY");
 
-        $order = Orders::where('id', $id)
+        $user = User::find($id);
+        $order = Orders::where('user_id', $id)
                     ->where('bulanTahun', $bulanTahun)
                     ->with('products')
                     ->first();
 
-        // $order = Orders::first();        
+        // dd($order->products);
 
-        // dd($orderId);
-
-        dd($order);
-
-        dd($order->products);
-
-        return;
-
-        return view('admin.showOrdered');
+        return view('admin.showOrdered')
+                ->with('user', $user)
+                ->with('order', $order);
     }
 }

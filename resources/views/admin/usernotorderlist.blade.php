@@ -15,12 +15,12 @@
 
 		<table class="table table-bordered table-striped table-hover">
 			<tr>
-				<td width="150px"><strong>Total Users</strong></td>
-				<td><a href="{{ route('admin.userList') }}">{{ $totalUsers }}</a></td>
+				<td width="150px" valign="middle"><strong>Total Users (ACTIVE)</strong></td>
+				<td valign="middle"><a href="{{ route('admin.userList') }}">{{ $totalUsers }}</a></td>
 			</tr>
 			<tr>
 				<td width="100px"><strong>Total Ordered</strong></td>
-				<td><a href="#">{{ $totalOrdered }}</a></td>
+				<td><a href="{{ route('admin.orderedList') }}">{{ $totalOrdered }}</a></td>
 			</tr>
 			<tr>
 				<td width="100px"><strong>Total Not Ordered</strong></td>

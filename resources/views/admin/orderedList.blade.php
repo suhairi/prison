@@ -14,7 +14,7 @@
     <div class="mb-3">
       
       <div class="d-flex justify-content-end mb-4">
-            <a class="btn btn-primary btn-sm" href="{{ route('admin.usersPdf') }}"><i class="fa fa-solid fa-file-pdf"> </i> Export to PDF</a>
+            <a class="btn btn-primary btn-sm" href="#"><i class="fa fa-solid fa-file-pdf"> </i> Export All to PDF</a>
       </div>
       <table class="table table-bordered table-striped table-hover">
         <thead>
@@ -27,11 +27,11 @@
         @foreach($users as $user)
           <tr>
             <td valign="middle">{{ $loop->iteration }}</td>
-            <td valign="middle"><a href="{{ route('admin.showOrdered', ['id' => $user->id]) }}" >{{ strtoupper($user->name) }}</a></td>
+            <td valign="middle"><a href="{{ route('admin.showOrdered', ['id' => $user->user_id]) }}" >{{ strtoupper($user->name) }}</a></td>
             <td valign="middle">{{ $user->username }}</td>
             <td valign="middle">{{ strtoupper($user->role) }}</td>
             <td valign="middle">
-              <a class="btn btn-primary btn-sm" href="{{ route('admin.usersPdf') }}"><i class="fa fa-solid fa-file-pdf"> </i> Export to PDF</a>
+              <a class="btn btn-primary btn-sm" href="#"><i class="fa fa-solid fa-file-pdf"> </i> Export to PDF</a>
             </td>
           </tr>
         @endforeach
