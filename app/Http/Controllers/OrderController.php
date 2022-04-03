@@ -77,14 +77,18 @@ class OrderController extends Controller
 
         $bulanTahun = date("mY");
 
-        $orderId = Orders::where('id', $id)
+        $order = Orders::where('id', $id)
                     ->where('bulanTahun', $bulanTahun)
                     ->with('products')
-                    ->get();        
+                    ->first();
+
+        // $order = Orders::first();        
 
         // dd($orderId);
 
-        dd($orderId->products);
+        dd($order);
+
+        dd($order->products);
 
         return;
 
