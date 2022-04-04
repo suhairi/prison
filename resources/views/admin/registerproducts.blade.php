@@ -6,7 +6,8 @@
 
     @include('layouts.messages')
     <div class="row">
-        <h4>Register a Product</h4>
+
+        <h4> <a href="{{ url()->previous() }}"> <i class="bx bx-arrow-back bx-fade-left"> </i></a> Register a Product..</h4>
     </div>
     <hr />
 
