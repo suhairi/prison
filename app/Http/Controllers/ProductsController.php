@@ -40,21 +40,5 @@ class ProductsController extends Controller
         return redirect()->route('admin.registerproducts');
     }
 
-    public function productsPdf() {
-
-        $products = Products::all();
-
-
-        $dompdf = new Dompdf();
-        $options = $dompdf->getOptions();
-        $options->setDefaultFont('Arial');
-        $dompdf->setOptions($options);
-        $dompdf->setPaper('A4', 'landscape');
-        
-        view()->share('products',$products);
-
-        $pdf = PDF::loadview('admin.pdf.productsPdf', ['products' => $products]);
-
-        return $pdf->download('products - ' . Carbon::now() . '.pdf');
-    }
+    
 }

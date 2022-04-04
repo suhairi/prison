@@ -7,7 +7,7 @@
 <div class="row">
   @include('layouts.messages')
   <div class="row">
-    <h4> <a href="{{ url()->previous() }}"> <i class="bx bx-arrow-back bx-fade-left-hover"> </i></a>Order Details</h4>
+    <h4> <a href="{{ url()->previous() }}"> <i class="bx bx-arrow-back bx-fade-left-hover"> </i></a> Order Details</h4>
   </div>
   <hr />
 
@@ -32,7 +32,11 @@
       </tr>
       <tr>
         <td><strong>Date </strong></td>
-        <td>{{ Carbon::now()->format('d-m-Y') }}</td>
+        <td>
+          @foreach($user->orders as $order)
+            {{ $order->created_at }}
+          @endforeach
+        </td>
       </tr>
     </table>
 
@@ -65,7 +69,7 @@
             <td align="right"><strong>{{ number_format($grandTotal, 2) }}</strong></td>
           </tr>
           <tr>
-            <td colspan="4" align="right">Baki Lebihan Belanja</td>
+            <td colspan="4" align="right"><strong>Baki Lebihan Belanja</strong></td>
             <td align="right"><strong>{{ number_format(100 - $grandTotal, 2) }}</strong></td>
           </tr>
         </tfoot>

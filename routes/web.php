@@ -4,6 +4,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\UsersController;
 use App\Http\Controllers\ProductsController;
 use App\Http\Controllers\OrderController;
+use App\Http\Controllers\PdfController;
 
 /*
 |--------------------------------------------------------------------------
@@ -49,8 +50,9 @@ Route::middleware(['auth'])->name('admin.')->prefix('admin')->group(function () 
 
 
     // PDF
-    Route::get('/usersPdf', [UsersController::class, 'userPdf'])->name('usersPdf');
-    Route::get('/productsPdf', [ProductsController::class, 'productsPdf'])->name('productsPdf');
+    Route::get('/usersPdf', [PdfController::class, 'userPdf'])->name('usersPdf');
+    Route::get('/productsPdf', [PdfController::class, 'productsPdf'])->name('productsPdf');
+    Route::get('/orderedReport', [PdfController::class, 'orderedReportPdf'])->name('orderedReportPdf');
 
 
     
