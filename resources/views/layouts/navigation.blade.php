@@ -52,31 +52,31 @@
     @endif
 
     @if(Auth::user()->role == 'user')
-        <ul class="nav flex-column">
-          <li class="nav-item">
-            <a class="nav-link" aria-current="page" href="{{ route('admin.dashboard') }}">
-              <span data-feather="home"></span>
-              Dashboard
-            </a>
-          </li><li class="nav-item">
-            <a class="nav-link" aria-current="page" href="{{ route('admin.dashboard') }}">
-              <span data-feather="home"></span>
-              Dashboard
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="{{ route('user.order') }}">
-                <span data-feather="file"></span>
-                Order
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">
-                <span data-feather="file"></span>
-                Orders List
-            </a>
-          </li>
-        </ul>
+      <ul class="nav flex-column">
+        <li class="nav-item">
+          <a class="nav-link" aria-current="page" href="{{ route('admin.dashboard') }}">
+            <span data-feather="home"></span>
+            Dashboard
+          </a>
+        </li><li class="nav-item">
+          <a class="nav-link" aria-current="page" href="{{ route('admin.dashboard') }}">
+            <span data-feather="home"></span>
+            Dashboard
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="{{ route('user.order') }}">
+              <span data-feather="file"></span>
+              Order
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">
+              <span data-feather="file"></span>
+              Orders List
+          </a>
+        </li>
+      </ul>
     @endif
 
     @if(Auth::user()->role == 'hq')

@@ -47,8 +47,8 @@
             </div>
 
             <button type="submit" class="btn btn-primary btn-sm">
-                <span data-feather="user-plus"></span> 
-                Register User
+                <i class="bx bx-user-plus"></i> 
+                Add a User
             </button>
         </form>
     </div>
