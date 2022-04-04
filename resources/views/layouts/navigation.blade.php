@@ -1,47 +1,49 @@
 <nav id="sidebarMenu" class="col-md-2 col-lg-2 d-md-block bg-light sidebar collapse">
-  <div class="position-sticky pt-4">    
+  <div class="position-sticky pt-4">
+
+
 
     @if(Auth::user()->role == 'admin')
         <ul class="nav flex-column">
           <li class="nav-item">
             <a class="nav-link" aria-current="page" href="{{ route('admin.dashboard') }}">
-              <span data-feather="home"></span>
+              <i class="bx bxs-dashboard"> </i>
               Dashboard
             </a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="{{ route('admin.register') }}">
-                <span data-feather="user-plus"></span>
-                User Register
+          <li class="nav-item">            
+            <a class="nav-link" href="{{ route('admin.register') }}">      
+              <i class='bx bx-user-plus' animation="flip"> </i>          
+              User Register
             </a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="{{ route('admin.userList') }}">
-                <span data-feather="users"></span>
-                Users List
+                <i class='bx bxs-user-detail'> </i> 
+                Users List.
             </a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="{{ route('admin.registerproducts') }}">
-                <span data-feather="file-plus"></span>
-                Product Register
+              <i class='bx bx-qr-scan'> </i> 
+                Product Register..
             </a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="{{ route('admin.products') }}">
-                <span data-feather="tablet"></span>
+                <i class='bx bx-list-check'> </i> 
                 Products Lists
             </a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="{{ route('admin.usernotorderlist') }}">
-              <span data-feather="layers"></span>
+              <i class="bx bx-user-x"> </i>
               Users Not Order
             </a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="{{ route('admin.orderedList') }}">
-              <span data-feather="layers"></span>
+              <i class="bx bx-list-ol"> </i>
               Ordered List
             </a>
           </li>
@@ -52,6 +54,11 @@
     @if(Auth::user()->role == 'user')
         <ul class="nav flex-column">
           <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="{{ route('admin.dashboard') }}">
+              <span data-feather="home"></span>
+              Dashboard
+            </a>
+          </li><li class="nav-item">
             <a class="nav-link" aria-current="page" href="{{ route('admin.dashboard') }}">
               <span data-feather="home"></span>
               Dashboard
@@ -95,7 +102,7 @@
         </ul>
     @endif
 
-    
+<!--     
     <hr />
     <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
       <span>Saved reports</span>
@@ -128,7 +135,7 @@
           Year-end sale
         </a>
       </li>
-    </ul>
+    </ul> -->
 
     <hr />
 
@@ -139,7 +146,8 @@
           @csrf          
         </form>
         <a class="nav-link" href="{{ route('logout') }}" onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
-            <span data-feather="log-out"></span>Logout
+            <i class="bx bx-log-out-circle"> </i>
+            Logout
         </a>
       </li>
     </ul>

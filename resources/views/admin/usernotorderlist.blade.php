@@ -15,7 +15,7 @@
 
 		<table class="table table-bordered table-striped table-hover">
 			<tr>
-				<td width="150px" valign="middle"><strong>Total Users (ACTIVE)</strong></td>
+				<td width="150px" valign="middle"><strong>Total Users</strong></td>
 				<td valign="middle"><a href="{{ route('admin.userList') }}">{{ $totalUsers }}</a></td>
 			</tr>
 			<tr>

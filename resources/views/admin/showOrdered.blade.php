@@ -64,8 +64,13 @@
             <td colspan="4" align="right"><strong>JUMLAH BESAR (RM)</strong></td>
             <td align="right"><strong>{{ number_format($grandTotal, 2) }}</strong></td>
           </tr>
+          <tr>
+            <td colspan="4" align="right">Baki Lebihan Belanja</td>
+            <td align="right"><strong>{{ number_format(100 - $grandTotal, 2) }}</strong></td>
+          </tr>
         </tfoot>
       </table>
+
       <div align="right">
         <a href="#" class="btn btn-primary btn-sm" id="btnSubmit">
           <i class="fa-solid fa-print"> </i> 
