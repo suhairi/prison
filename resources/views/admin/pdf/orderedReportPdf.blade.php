@@ -2,14 +2,17 @@
 
 @section('content')
 <?php use Carbon\Carbon; ?>
-    <style>
-        .page-break {
-            page-break-after: always;
-        }
-    </style>
+    
 
     @foreach($orders as $order)
-        <div class="row">
+        <div class="container mt-6">
+        <div>
+            <strong>
+                SENARAI ODER BARANG KANTIN ODS <br />
+                PUSAT REINTEGRASI PENGHUNI INDUSTRI (PRPI) <br />
+                SUNGAI PETANI, KEDAH. <br /><br />
+            </strong>
+        </div>
         <table class="table table-bordered">
           <tr>
             <td width="100px"><strong>Name </strong></td>
@@ -29,7 +32,7 @@
           </tr>
           <tr>
             <td><strong>Date </strong></td>
-            <td>{{ Carbon::now()->format('d-m-Y') }}</td>
+            <td>{{ $order->created_at }}</td>
           </tr>
         </table>
 
@@ -60,13 +63,15 @@
                 <td align="right"><strong>{{ number_format($grandTotal, 2) }}</strong></td>
               </tr>
               <tr>
-                <td colspan="4" align="right">Baki Lebihan Belanja</td>
+                <td colspan="4" align="right"><strong>Baki Lebihan Belanja</strong></td>
                 <td align="right"><strong>{{ number_format(100 - $grandTotal, 2) }}</strong></td>
               </tr>
             </tfoot>
           </table>
         </div>
-        <div class="page-break"></div>
+        @if(!$loop->last)
+            <div class="page-break"></div>
+        @endif
     @endforeach
 
 

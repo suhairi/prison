@@ -9,12 +9,20 @@
     <link href="{{ asset('css/app.css') }}" rel="stylesheet" type="text/css" />
 
     <style>
+
         @page { 
             margin-top:20px;
             margin-bottom: 20px;
             margin-left: 10px;
             margin-right: 10px;
+            font-family: Arial;
+            font-size: 10px;
         }
+
+        .page-break {
+            page-break-after: always;
+        }
+
     </style>
 
 
