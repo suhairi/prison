@@ -18,7 +18,7 @@ class DatabaseSeeder extends Seeder
     public function run()
     {
         User::create([
-            'name'      => 'Suhairi Abdul Hamid',
+            'name'      => strtoupper('Suhairi Abdul Hamid'),
             'username'  => 'suhairi',
             'password'  => Hash::make('password1'),
             'role'      => 'admin',
@@ -26,7 +26,7 @@ class DatabaseSeeder extends Seeder
         ]);
 
         User::create([
-            'name'      => 'Mohd Najib bin Ruslah',
+            'name'      => strtoupper('Mohd Najib bin Ruslah'),
             'username'  => 'najib',
             'password'  => Hash::make('password1'),
             'role'      => 'admin',
@@ -34,7 +34,7 @@ class DatabaseSeeder extends Seeder
         ]);
 
         User::create([
-            'name'      => 'Mohd Rohman bin Mohd Nor',
+            'name'      => strtoupper('Mohd Rohman bin Mohd Nor'),
             'username'  => 'rohman',
             'password'  => Hash::make('password1'),
             'role'      => 'admin',
@@ -42,7 +42,7 @@ class DatabaseSeeder extends Seeder
         ]);
 
         User::create([
-            'name'      => 'Shirley a/k Jungot',
+            'name'      => strtoupper('Shirley a/k Jungot'),
             'username'  => '740224135582',
             'password'  => Hash::make('password1'),
             'role'      => 'hq',
@@ -50,7 +50,7 @@ class DatabaseSeeder extends Seeder
         ]);
 
         User::create([
-            'name'      => 'Noor Sazlawati Bt Zakaria',
+            'name'      => strtoupper('Noor Sazlawati Bt Zakaria'),
             'username'  => '731015055450',
             'password'  => Hash::make('password1'),
             'role'      => 'hq',
