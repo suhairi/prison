@@ -7,7 +7,7 @@
 <div class="row">
   @include('layouts.messages')
   <div class="row">
-    <h4> <a href="{{ url()->previous() }}"> <i class="bx bx-arrow-back bx-fade-left"> </i></a>Order Details</h4>
+    <h4> <a href="{{ url()->previous() }}"> <i class="bx bx-arrow-back bx-fade-left-hover"> </i></a>Order Details</h4>
   </div>
   <hr />
 

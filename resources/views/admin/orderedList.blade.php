@@ -6,7 +6,9 @@
 
   @include('layouts.messages')
   <div class="row">
-      <h4>Active Users List</h4>
+    <div class="mb-3">
+      <h4><!-- <a href="{{ url()->previous() }}"><i class="bx bx-arrow-back bx-fade-left-hover"> </i></a> --> User Ordered List</h4>
+    </div>
   </div>
   <hr />
 

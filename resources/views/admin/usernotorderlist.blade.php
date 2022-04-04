@@ -7,7 +7,9 @@
 <div class="row">
 	@include('layouts.messages')
 	<div class="row">
-		<h4>User Not Order List</h4>
+		<div class="mb-3">
+			<h4> <!-- <a href="{{ url()->previous() }}"> <i class="bx bx-arrow-back bx-fade-left-hover"> </i></a> --> User Not Order List</h4>
+		</div>
 	</div>
 	<hr />
 

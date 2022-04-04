@@ -36,11 +36,18 @@
             </a>
           </li>
           <li class="nav-item">
+            <a class="nav-link" href="{{ route('admin.orderedList') }}">
+              <i class="bx bx-user-x"> </i>
+              Orders
+            </a>
+          </li>
+          <li class="nav-item">
             <a class="nav-link" href="{{ route('admin.usernotorderlist') }}">
               <i class="bx bx-user-x"> </i>
               Users Not Order
             </a>
           </li>
+          
           <li class="nav-item">
             <a class="nav-link" href="{{ route('admin.orderedList') }}">
               <i class="bx bx-list-ol"> </i>
