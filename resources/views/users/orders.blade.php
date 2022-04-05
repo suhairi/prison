@@ -16,23 +16,23 @@
 		<table class="table table-bordered">
 			<tr>
 				<td width="25%"><strong>Name </strong></td>
-				<td>{{ $order->users->name }}</td>
+				<td>{{ $user->name }}</td>
 			</tr>
 			<tr>
 				<td><strong>No KP </strong> </td>
-				<td>{{ $order->users->username }}</td>
+				<td>{{ $user->username }}</td>
 			</tr>
 			<tr>
 				<td><strong>No SMPP </strong> </td>
-				<td>{{ $order->users->nosmpp }}</td>
+				<td>{{ $user->nosmpp }}</td>
 			</tr>
 			<tr>
 				<td><strong>Status </strong></td>
-				<td>{{ strtoupper($order->users->status) }}</td>
+				<td>{{ strtoupper($user->status) }}</td>
 			</tr>
 			<tr>
 				<td><strong>Date </strong></td>
-				<td>{{ $order->created_at }}</td>
+				<td></td>
 			</tr>
 			@if($ordered)
 				<tr>

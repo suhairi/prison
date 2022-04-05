@@ -63,7 +63,7 @@ class ProductSeeder extends Seeder
         Products::create(['name' => 'BEKAS SABUN', 'price' => 2]);
         Products::create(['name' => 'BERUS KAIN', 'price' => 2]);
         Products::create(['name' => 'BERUS GIGI', 'price' => 2.5]);
-        Products::create(['name' => 'GULA-GULA (13 BIJI)', 'price' => 1]);
+        Products::create(['name' => 'GULA-GULA', 'price' => 0.10]);
         
     }
 }

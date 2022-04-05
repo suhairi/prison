@@ -30,8 +30,11 @@ class OrderController extends Controller
         if(!empty($order)) 
             $ordered = true;
 
+        $user = User::find(Auth::user()->id);
+
         return view('users.orders')
             ->with('order', $order)
+            ->with('user', $user)
             ->with('products', $products)
             ->with('ordered', $ordered);     
         
