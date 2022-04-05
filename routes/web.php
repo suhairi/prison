@@ -27,6 +27,7 @@ Route::middleware(['auth'])->name('admin.')->prefix('admin')->group(function () 
             return view('dashboard');
     })->name('dashboard');
 
+    // Users
     Route::get('/register', function() {
         return view('register');
     })->name('register');
@@ -40,9 +41,17 @@ Route::middleware(['auth'])->name('admin.')->prefix('admin')->group(function () 
     Route::get('/setInactive/{id}', [UsersController::class, 'setInactive'])->name('setInactive');
     Route::get('/setActive/{id}', [UsersController::class, 'setActive'])->name('setActive');
 
+    Route::get('/editUser/{id}', [UsersController::class, 'editUser'])->name('editUser');
+    Route::post('/updateUser', [UsersController::class, 'updateUser'])->name('updateUser');
+
+
+    // Products
     Route::get('/products', [ProductsController::class, 'index'])->name('products'); // list of products
     Route::get('/registerproducts', [ProductsController::class, 'register'])->name('registerproducts');
     Route::post('/registerproducts', [ProductsController::class, 'create'])->name('registerproducts');
+
+    Route::get('editProduct/{id}', [ProductsController::class, 'editProduct'])->name('editProduct');
+    Route::post('updateProduct', [ProductsController::class, 'updateProduct'])->name('updateProduct');
 
     // Order
     Route::get('/orderedList', [OrderController::class, 'orderedList'])->name('orderedList');
@@ -62,6 +71,8 @@ Route::middleware(['auth'])->name('user.')->prefix('user')->group(function () {
 
     Route::get('/order', [OrderController::class, 'index'])->name('order');
     Route::post('/order', [OrderController::class, 'create'])->name('order');
+
+    Route::get('/userShowOrdered/{id}', [OrderController::class, 'UserShowOrdered'])->name('userShowOrdered');
 
 });
 

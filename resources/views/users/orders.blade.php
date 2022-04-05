@@ -16,28 +16,28 @@
 		<table class="table table-bordered">
 			<tr>
 				<td width="25%"><strong>Name </strong></td>
-				<td>{{ Auth::user()->name }}</td>
+				<td>{{ $order->users->name }}</td>
 			</tr>
 			<tr>
 				<td><strong>No KP </strong> </td>
-				<td>{{ Auth::user()->username }}</td>
+				<td>{{ $order->users->username }}</td>
 			</tr>
 			<tr>
 				<td><strong>No SMPP </strong> </td>
-				<td>{{ Auth::user()->nosmpp }}</td>
+				<td>{{ $order->users->nosmpp }}</td>
 			</tr>
 			<tr>
 				<td><strong>Status </strong></td>
-				<td>{{ strtoupper(Auth::user()->status) }}</td>
+				<td>{{ strtoupper($order->users->status) }}</td>
 			</tr>
 			<tr>
 				<td><strong>Date </strong></td>
-				<td>{{ Carbon::now()->format('d-m-Y') }}</td>
+				<td>{{ $order->created_at }}</td>
 			</tr>
 			@if($ordered)
 				<tr>
 					<td><strong>Order </strong></td>
-					<td><font color="green"><strong>Ordered!</strong></font></td>
+					<td><font color="green"><strong><a href="{{ route('user.userShowOrdered', ['id' => $order->id]) }}"> Ordered!</a></strong></font></td>
 				</tr>
 			@endif
 		</table>

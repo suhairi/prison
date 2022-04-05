@@ -40,5 +40,25 @@ class ProductsController extends Controller
         return redirect()->route('admin.registerproducts');
     }
 
+    public function editProduct($id) {
+
+        $product = Products::find($id);
+
+        // dd($product);
+
+        return view('admin.editProduct')->with('product', $product);
+    }
+
+    public function updateProduct(Request $request) {
+
+        $product = Products::find($request->id);
+        $product->price = $request->price;
+        $product->save();
+
+        Session::flash('success', 'Success');
+
+        return redirect()->back();
+    }
+
     
 }

@@ -40,8 +40,8 @@
                     <td valign="middle">{{ strtoupper($product->name) }}</td>
                     <td valign="middle">{{ number_format($product->price, 2) }}</td>
                     <td valign="middle" align="center">
-                      <button type="button" class="btn btn-warning btn-sm" href="#"> <i class='bx bx-edit-alt bx-spin-hover'> </i> Edit</button>
-                      <button type="button" class="btn btn-danger btn-sm" href="#"> <i class="bx bx-trash bx-spin-hover"> </i>Delete</button>
+                      <a href="{{ route('admin.editProduct', ['id' => $product->id]) }}"> <button type="button" class="btn btn-warning btn-sm" href="#"> <i class='bx bx-edit-alt bx-spin-hover'> </i> Edit</button></a>
+                      <button type="button" class="btn btn-danger btn-sm" href="#" disabled> <i class="bx bx-trash bx-spin-hover"> </i>Delete</button>
                     </td>
                   </tr>
                 @endforeach

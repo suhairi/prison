@@ -24,17 +24,17 @@ class OrderController extends Controller
 
         // check if user has made the order
         // if yes, disable order form
-
         $bulanTahun = date('mY');
-        $order = Orders::where('user_id', Auth::user()->id)->where('bulanTahun', $bulanTahun)->get()->toArray();
+        $order = Orders::where('user_id', Auth::user()->id)->where('bulanTahun', $bulanTahun)->first();
 
-
-        if(!empty($order))
+        if(!empty($order)) 
             $ordered = true;
 
         return view('users.orders')
+            ->with('order', $order)
             ->with('products', $products)
-            ->with('ordered', $ordered);
+            ->with('ordered', $ordered);     
+        
     }
 
     public function create(Request $request) {
@@ -90,4 +90,12 @@ class OrderController extends Controller
                 ->with('user', $user)
                 ->with('order', $order);
     }
+
+    public function userShowOrdered($id) {
+
+        $order = Orders::find($id);
+
+        return view('users.showOrdered')->with('order', $order);
+    }
+
 }

@@ -58,7 +58,7 @@
             <td valign="middle">{{ $user->username }}</td>
             <td valign="middle">{{ strtoupper($user->role) }}</td>
             <td valign="middle">
-              <button type="button" class="btn btn-warning btn-sm" href="#">Edit</button>
+              <a href="{{ route('admin.editUser', ['id' => $user->id]) }}"><button type="button" class="btn btn-warning btn-sm">Edit</button></a>
               <a href="{{ route('admin.setInactive', ['id' => $user->id]) }}"><button type="button" class="btn btn-danger btn-sm">Inactive</button></a>
             </td>
           </tr>

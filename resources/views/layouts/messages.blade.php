@@ -10,13 +10,13 @@
 
 @if(Session::has('success'))
     <div class="alert alert-success">
-        <strong>Success!</strong> Indicates a successful or positive action.
+        <strong>Success!</strong> {{ Session::get('success') }}
     </div>
 @endif
 
 @if(Session::has('fail'))
-    <div class="alert alert-error">
-        <strong>Error!</strong> Indicates a failure or negative action.
+    <div class="alert alert-danger">
+        <strong>Error!</strong> {{ Session::get('fail') }}
     </div>
 @endif
 

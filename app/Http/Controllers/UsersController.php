@@ -149,6 +149,33 @@ class UsersController extends Controller
 
     }
 
+    public function editUser($id) {
+
+        $user = User::find($id);
+
+        return view('admin.editUser')->with('user', $user);
+    }
+
+    public function updateUser(Request $request) {
+
+        if($request->password != $request->password_confirmation) {
+
+            Session::flash('fail', 'Password and confirmation does not match');
+            return redirect()->back();
+        }
+
+
+        $user = User::find($request->id);
+        $user->name = $request->name;
+        $user->password = Hash::make($request->password);
+        $user->save();
+
+        Session::flash('success', 'User Updated');
+
+        return redirect()->back();
+
+    }
+
     
 
     
