@@ -44,8 +44,6 @@ class ProductsController extends Controller
 
         $product = Products::find($id);
 
-        // dd($product);
-
         return view('admin.editProduct')->with('product', $product);
     }
 
@@ -58,6 +56,32 @@ class ProductsController extends Controller
         Session::flash('success', 'Success');
 
         return redirect()->back();
+    }
+
+    public function deactivateProduct($id) {
+
+        $product = Products::find($id);
+        $product->status = 'inactive';
+
+        $product->save();
+
+        Session::flash('success', 'Product has been deactivated.');
+
+        return redirect()->back();
+
+    }
+
+    public function activateProduct($id) {
+
+        $product = Products::find($id);
+        $product->status = 'active';
+
+        $product->save();
+
+        Session::flash('success', 'Product has been activated.');
+
+        return redirect()->back();
+
     }
 
     

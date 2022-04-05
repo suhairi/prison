@@ -39,9 +39,13 @@
                     <td valign="middle">{{ $loop->iteration }}</td>
                     <td valign="middle">{{ strtoupper($product->name) }}</td>
                     <td valign="middle">{{ number_format($product->price, 2) }}</td>
-                    <td valign="middle" align="center">
-                      <a href="{{ route('admin.editProduct', ['id' => $product->id]) }}"> <button type="button" class="btn btn-warning btn-sm" href="#"> <i class='bx bx-edit-alt bx-spin-hover'> </i> Edit</button></a>
-                      <button type="button" class="btn btn-danger btn-sm" href="#" disabled> <i class="bx bx-trash bx-spin-hover"> </i>Delete</button>
+                    <td valign="middle">
+                      <a href="{{ route('admin.editProduct', ['id' => $product->id]) }}"> <button type="button" class="btn btn-warning btn-sm"> <i class='bx bx-edit-alt bx-spin-hover'> </i> Edit</button></a>
+                      @if($product->status == 'active')
+                        <a href="{{ route('admin.deactivateProduct', ['id' => $product->id]) }}"> <button type="button" class="btn btn-danger btn-sm"> <i class="bx bx-trash bx-spin-hover"> </i> Deactivate </button>
+                      @else
+                        <a href="{{ route('admin.activateProduct', ['id' => $product->id]) }}"> <button type="button" class="btn btn-success btn-sm"> <i class="bx bx-trash bx-spin-hover"> </i> Activate </button>
+                      @endif
                     </td>
                   </tr>
                 @endforeach

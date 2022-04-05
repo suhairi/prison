@@ -28,9 +28,8 @@
 				<td width="100px"><strong>Total Not Ordered</strong></td>
 				<td><a href="{{ route('admin.usernotorderlist') }}">{{ count($users) }}</a></td>
 			</tr>
-			
-			
 		</table>
+		
 		<table class="table table-bordered table-striped table-hover">
 			<thead>
 				<th>No</th>

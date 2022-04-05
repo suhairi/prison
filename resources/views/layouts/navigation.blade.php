@@ -11,12 +11,12 @@
               Dashboard
             </a>
           </li>
-<!--           <li class="nav-item">            
+          <li class="nav-item">            
             <a class="nav-link" href="{{ route('admin.register') }}">      
-              <i class='bx bx-user-plus' animation="flip"> </i>          
-              User Register
+              <i class='bx bx-lock-alt' animation="flip"> </i>          
+              Lock Order
             </a>
-          </li> -->
+          </li>
           <li class="nav-item">
             <a class="nav-link" href="{{ route('admin.userList') }}">
                 <i class='bx bxs-user-detail'> </i> 
@@ -54,11 +54,6 @@
     @if(Auth::user()->role == 'user')
       <ul class="nav flex-column">
         <li class="nav-item">
-          <a class="nav-link" aria-current="page" href="{{ route('admin.dashboard') }}">
-            <span data-feather="home"></span>
-            Dashboard
-          </a>
-        </li><li class="nav-item">
           <a class="nav-link" aria-current="page" href="{{ route('admin.dashboard') }}">
             <span data-feather="home"></span>
             Dashboard

@@ -11,6 +11,7 @@ use Illuminate\Support\Facades\DB;
 use App\Models\User;
 use App\Models\Products;
 use App\Models\Orders;
+use App\Models\Ordersetting;
 
 use Session;
 
@@ -20,7 +21,7 @@ class OrderController extends Controller
 
         $ordered = false;
 
-        $products = Products::all();
+        $products = Products::where('status', 'active')->get();
 
         // check if user has made the order
         // if yes, disable order form
@@ -68,13 +69,23 @@ class OrderController extends Controller
 
     public function orderedList() {
 
+        $bulanTahun = date('mY');
+        $orderSetting = Ordersetting::where('bulanTahun', $bulanTahun)->first();
+        $locked = $orderSetting->lock;
+
+        $totalOrdered = Orders::where('bulanTahun', $bulanTahun)->distinct('user_id')->count();
+
+        $totalUsers = User::where('role', 'user')->where('status', 'active')->count();
+
         $users = DB::table('users')
                     ->join('orders', 'users.id', 'orders.user_id')
                     ->get();
 
-        // dd($users);
-
-        return view('admin.orderedList')->with('users', $users);
+        return view('admin.orderedList')
+                ->with('totalOrdered', $totalOrdered)
+                ->with('totalUsers', $totalUsers)
+                ->with('locked', $locked)
+                ->with('users', $users);
     }
 
     public function showOrdered($id) {
@@ -117,23 +128,6 @@ class OrderController extends Controller
 
         $order = Orders::find($id);
 
-        // foreach($products as $product) {
-
-
-        //     if($order->products->contains('id', $product->id)) {
-        //         $prod = $order->products->where('id', $product->id)->first();
-        //         return $prod->pivot->quantity;
-        //     }
-            
-
-        //     if($orderedProduct != null) {
-        //         return 'Quantity : ' . $orderedProduct->quantity;
-        //         echo 'Product Name : ' . $product->name . '<br />';
-        //         echo 'Quantity : ' . $quantity . '<br /><br />';
-        //     }
-        // }
-
-        // return;
         return view('users.editOrdered')
                 ->with('products', $products)
                 ->with('ordered', $ordered)

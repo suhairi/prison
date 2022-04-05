@@ -4,6 +4,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\UsersController;
 use App\Http\Controllers\ProductsController;
 use App\Http\Controllers\OrderController;
+use App\Http\Controllers\OrdersettingController;
 use App\Http\Controllers\PdfController;
 
 /*
@@ -50,12 +51,20 @@ Route::middleware(['auth'])->name('admin.')->prefix('admin')->group(function () 
     Route::get('/registerproducts', [ProductsController::class, 'register'])->name('registerproducts');
     Route::post('/registerproducts', [ProductsController::class, 'create'])->name('registerproducts');
 
-    Route::get('editProduct/{id}', [ProductsController::class, 'editProduct'])->name('editProduct');
-    Route::post('updateProduct', [ProductsController::class, 'updateProduct'])->name('updateProduct');
+    Route::get('/editProduct/{id}', [ProductsController::class, 'editProduct'])->name('editProduct');
+    Route::post('/updateProduct', [ProductsController::class, 'updateProduct'])->name('updateProduct');
+
+    Route::get('/deactivateProduct/{id}', [ProductsController::class, 'deactivateProduct'])->name('deactivateProduct');
+    Route::get('/activateProduct/{id}', [ProductsController::class, 'activateProduct'])->name('activateProduct');
+
 
     // Order
     Route::get('/orderedList', [OrderController::class, 'orderedList'])->name('orderedList');
     Route::get('/showOrdered/{id}', [OrderController::class, 'showOrdered'])->name('showOrdered');
+
+    // OrderSettings
+    Route::get('/orderSettings', [OrdersettingController::class, 'index'])->name('orderSettings');
+    Route::get('/orderLock', [OrdersettingController::class, 'lock'])->name('orderLock');
 
 
     // PDF
@@ -63,8 +72,6 @@ Route::middleware(['auth'])->name('admin.')->prefix('admin')->group(function () 
     Route::get('/productsPdf', [PdfController::class, 'productsPdf'])->name('productsPdf');
 
     Route::get('/orderPdf', [PdfController::class, 'orderPdf'])->name('orderPdf');
-
-
 
     Route::get('/orderedReport', [PdfController::class, 'orderedReportPdf'])->name('orderedReportPdf'); // All Users Ordered
 
