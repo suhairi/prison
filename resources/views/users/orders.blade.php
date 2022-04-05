@@ -45,9 +45,16 @@
 					<td>{{ Carbon::now() }}</td>
 				</tr>
 			@endif
+			@if($locker->lock == 'yes')
+				<tr>
+					<td><strong>Message </strong></td>
+					<td class="alert alert-danger"><strong>Order has been locked!</strong></td>
+				</tr>
+			@endif
+
 		</table>
 
-		@if(!$ordered)
+		@if(!$ordered && $locker->lock == 'no')
 			<form method="POST" action="{{ route('user.order') }}"> 
 				@csrf
 				<input type="hidden" name="countProducts" value="{{ count($products) }}">

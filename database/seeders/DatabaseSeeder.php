@@ -5,7 +5,7 @@ namespace Database\Seeders;
 use Illuminate\Database\Seeder;
 use App\Models\Products;
 use App\Models\User;
-// use App\Models\Ordersetting;
+use App\Models\Setting;
 
 use Illuminate\Support\Facades\Hash;
 
@@ -58,10 +58,10 @@ class DatabaseSeeder extends Seeder
             'status'    => 'active',
         ]);
 
-        // Ordersetting::create([
-        //     'bulanTahun'=> date('mY'),
-        //     'lock'      => 'no',
-        // ]);
+        Setting::create([
+            'bulanTahun'=> date('mY'),
+            'lock'      => 'no',
+        ]);
 
 
         $this->call([

@@ -11,12 +11,6 @@
               Dashboard
             </a>
           </li>
-          <li class="nav-item">            
-            <a class="nav-link" href="{{ route('admin.register') }}">      
-              <i class='bx bx-lock-alt' animation="flip"> </i>          
-              Lock Order
-            </a>
-          </li>
           <li class="nav-item">
             <a class="nav-link" href="{{ route('admin.userList') }}">
                 <i class='bx bxs-user-detail'> </i> 

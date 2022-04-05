@@ -4,8 +4,8 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\UsersController;
 use App\Http\Controllers\ProductsController;
 use App\Http\Controllers\OrderController;
-use App\Http\Controllers\OrdersettingController;
 use App\Http\Controllers\PdfController;
+use App\Http\Controllers\SettingsController;
 
 /*
 |--------------------------------------------------------------------------
@@ -62,11 +62,6 @@ Route::middleware(['auth'])->name('admin.')->prefix('admin')->group(function () 
     Route::get('/orderedList', [OrderController::class, 'orderedList'])->name('orderedList');
     Route::get('/showOrdered/{id}', [OrderController::class, 'showOrdered'])->name('showOrdered');
 
-    // OrderSettings
-    Route::get('/orderSettings', [OrdersettingController::class, 'index'])->name('orderSettings');
-    Route::get('/orderLock', [OrdersettingController::class, 'lock'])->name('orderLock');
-
-
     // PDF
     Route::get('/usersPdf', [PdfController::class, 'userPdf'])->name('usersPdf');
     Route::get('/productsPdf', [PdfController::class, 'productsPdf'])->name('productsPdf');
@@ -74,6 +69,9 @@ Route::middleware(['auth'])->name('admin.')->prefix('admin')->group(function () 
     Route::get('/orderPdf', [PdfController::class, 'orderPdf'])->name('orderPdf');
 
     Route::get('/orderedReport', [PdfController::class, 'orderedReportPdf'])->name('orderedReportPdf'); // All Users Ordered
+
+    // Settings
+    Route::get('lockOrder', [SettingsController::class, 'lockOrder'])->name('lockOrder');
 
 
     
@@ -88,6 +86,13 @@ Route::middleware(['auth'])->name('user.')->prefix('user')->group(function () {
     Route::post('/modifyOrder', [OrderController::class, 'modifyOrder'])->name('modifyOrder');
 
     Route::get('/userShowOrdered/{id}', [OrderController::class, 'UserShowOrdered'])->name('userShowOrdered');
+
+});
+
+Route::middleware(['auth'])->name('hq.')->prefix('hq')->group(function () {
+
+    // Download all orders in PDF - if admin locked order then enable this feature
+    // Products delay
 
 });
 

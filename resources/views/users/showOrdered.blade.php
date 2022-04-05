@@ -71,12 +71,14 @@
         </tfoot>
       </table>
 
-      <div align="right">
-        <a href="{{ route('user.editOrdered', ['id' => $order->id]) }}" class="btn btn-primary btn-sm" id="btnSubmit">
-          <i class="bx bx-edit-alt"> </i> 
-          Modify Order
-        </a>
-      </div>
+      @if($locker->lock == 'no')
+        <div align="right">
+          <a href="{{ route('user.editOrdered', ['id' => $order->id]) }}" class="btn btn-primary btn-sm" id="btnSubmit">
+            <i class="bx bx-edit-alt"> </i> 
+            Modify Order
+          </a>
+        </div>
+      @endif
 
     </form>
   </div>

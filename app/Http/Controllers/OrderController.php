@@ -11,7 +11,7 @@ use Illuminate\Support\Facades\DB;
 use App\Models\User;
 use App\Models\Products;
 use App\Models\Orders;
-use App\Models\Ordersetting;
+use App\Models\Setting;
 
 use Session;
 
@@ -31,12 +31,20 @@ class OrderController extends Controller
         if(!empty($order)) 
             $ordered = true;
 
+        $locker = Setting::where('bulanTahun', $bulanTahun)->first();
+
+        if($locker == null) {
+            Setting::query()->update(['lock' => 'yes']);
+            $locker = Setting::create(['bulanTahun' => $bulanTahun, 'lock' => 'no']);
+        }        
+
         $user = User::find(Auth::user()->id);
 
         return view('users.orders')
             ->with('order', $order)
             ->with('user', $user)
             ->with('products', $products)
+            ->with('locker', $locker)
             ->with('ordered', $ordered);     
         
     }
@@ -70,8 +78,7 @@ class OrderController extends Controller
     public function orderedList() {
 
         $bulanTahun = date('mY');
-        $orderSetting = Ordersetting::where('bulanTahun', $bulanTahun)->first();
-        $locked = $orderSetting->lock;
+        $locker = Setting::where('bulanTahun', $bulanTahun)->first();
 
         $totalOrdered = Orders::where('bulanTahun', $bulanTahun)->distinct('user_id')->count();
 
@@ -84,13 +91,14 @@ class OrderController extends Controller
         return view('admin.orderedList')
                 ->with('totalOrdered', $totalOrdered)
                 ->with('totalUsers', $totalUsers)
-                ->with('locked', $locked)
+                ->with('locker', $locker)
                 ->with('users', $users);
     }
 
     public function showOrdered($id) {
 
         $bulanTahun = date("mY");
+        $locker = Setting::where('bulanTahun', $bulanTahun)->first();
 
         $user = User::find($id);
         $order = Orders::where('user_id', $id)
@@ -109,7 +117,11 @@ class OrderController extends Controller
 
         $order = Orders::find($id);
 
-        return view('users.showOrdered')->with('order', $order);
+        $locker = Setting::where('bulanTahun', date('mY'))->first();
+
+        return view('users.showOrdered')
+                ->with('locker', $locker)
+                ->with('order', $order);
     }
 
     public function editOrdered($id) {
