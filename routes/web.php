@@ -61,7 +61,12 @@ Route::middleware(['auth'])->name('admin.')->prefix('admin')->group(function () 
     // PDF
     Route::get('/usersPdf', [PdfController::class, 'userPdf'])->name('usersPdf');
     Route::get('/productsPdf', [PdfController::class, 'productsPdf'])->name('productsPdf');
-    Route::get('/orderedReport', [PdfController::class, 'orderedReportPdf'])->name('orderedReportPdf');
+
+    Route::get('/orderPdf', [PdfController::class, 'orderPdf'])->name('orderPdf');
+
+
+
+    Route::get('/orderedReport', [PdfController::class, 'orderedReportPdf'])->name('orderedReportPdf'); // All Users Ordered
 
 
     
