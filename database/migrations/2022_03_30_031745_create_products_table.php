@@ -17,6 +17,7 @@ class CreateProductsTable extends Migration
             $table->id();
             $table->string('name')->unique();
             $table->float('price', 7, 2);
+            $table->string('status');
             $table->timestamps();
         });
     }

@@ -101,4 +101,64 @@ class OrderController extends Controller
         return view('users.showOrdered')->with('order', $order);
     }
 
+    public function editOrdered($id) {
+
+        $ordered = false;
+
+        $products = Products::all();
+
+        // check if user has made the order
+        // if yes, disable order form
+        $bulanTahun = date('mY');
+        $order = Orders::where('user_id', Auth::user()->id)->where('bulanTahun', $bulanTahun)->first();
+
+        if(!empty($order)) 
+            $ordered = true;
+
+        $order = Orders::find($id);
+
+        // foreach($products as $product) {
+
+
+        //     if($order->products->contains('id', $product->id)) {
+        //         $prod = $order->products->where('id', $product->id)->first();
+        //         return $prod->pivot->quantity;
+        //     }
+            
+
+        //     if($orderedProduct != null) {
+        //         return 'Quantity : ' . $orderedProduct->quantity;
+        //         echo 'Product Name : ' . $product->name . '<br />';
+        //         echo 'Quantity : ' . $quantity . '<br /><br />';
+        //     }
+        // }
+
+        // return;
+        return view('users.editOrdered')
+                ->with('products', $products)
+                ->with('ordered', $ordered)
+                ->with('order', $order);
+    }
+
+    public function modifyOrder(Request $request) {
+
+        $order = Orders::find($request->id);
+        $order->products()->detach();
+
+        // Filter through chosen products only
+        $qtyCollection = collect($request->qty);
+        $quantity = $qtyCollection->filter(function($value, $key) {
+            return $value >  0;
+        });
+
+        // assigning products_id array
+        foreach($quantity->all() as $product_id => $qty) {
+            $order->products()->attach($product_id, ['quantity' => $qty, 'delayed' => 'NO']);
+        }
+
+        Session::flash('success', 'Order has been modified.');
+
+        return redirect()->back();
+    }
+
 }

@@ -18,6 +18,7 @@ class CreateOrdersProductsTable extends Migration
             $table->unsignedBigInteger('orders_id');
             $table->unsignedBigInteger('products_id');
             $table->integer('quantity');
+            $table->string('delayed')->nullable();
             $table->timestamps();
 
             $table->unique(['orders_id', 'products_id']);

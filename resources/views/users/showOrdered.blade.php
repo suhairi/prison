@@ -72,9 +72,9 @@
       </table>
 
       <div align="right">
-        <a href="#" class="btn btn-primary btn-sm" id="btnSubmit">
-          <i class="fa-solid fa-print"> </i> 
-          Print
+        <a href="{{ route('user.editOrdered', ['id' => $order->id]) }}" class="btn btn-primary btn-sm" id="btnSubmit">
+          <i class="bx bx-edit-alt"> </i> 
+          Modify Order
         </a>
       </div>
 

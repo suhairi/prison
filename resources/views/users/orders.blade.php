@@ -29,15 +29,20 @@
 			<tr>
 				<td><strong>Status </strong></td>
 				<td>{{ strtoupper($user->status) }}</td>
-			</tr>
-			<tr>
-				<td><strong>Date </strong></td>
-				<td></td>
-			</tr>
+			</tr>			
 			@if($ordered)
+				<tr>
+					<td><strong>Date </strong></td>
+					<td>{{ $order->created_at }}</td>
+				</tr>
 				<tr>
 					<td><strong>Order </strong></td>
 					<td><font color="green"><strong><a href="{{ route('user.userShowOrdered', ['id' => $order->id]) }}"> Ordered!</a></strong></font></td>
+				</tr>
+			@else
+				<tr>
+					<td><strong>Date </strong></td>
+					<td>{{ Carbon::now() }}</td>
 				</tr>
 			@endif
 		</table>
