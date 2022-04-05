@@ -52,14 +52,14 @@
           <th>Role</th>         
           <th>Options</th>         
         </thead>
-        @foreach($users as $user)
+        @foreach($users as $user) <!-- ($users = $order) -->
           <tr>
             <td valign="middle">{{ $loop->iteration }}</td>
             <td valign="middle"><a href="{{ route('admin.showOrdered', ['id' => $user->user_id]) }}" >{{ strtoupper($user->name) }}</a></td>
             <td valign="middle">{{ $user->username }}</td>
             <td valign="middle">{{ strtoupper($user->role) }}</td>
             <td valign="middle">
-              <a class="btn btn-primary btn-sm" href="#"><i class="fa fa-solid fa-file-pdf"> </i> Export to PDF</a>
+              <a class="btn btn-primary btn-sm" href="{{ route('admin.orderPdf', ['id' => $user->id]) }}"><i class="fa fa-solid fa-file-pdf"> </i> Export to PDF</a>
             </td>
           </tr>
         @endforeach

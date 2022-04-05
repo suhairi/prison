@@ -85,21 +85,6 @@ class PdfController extends Controller
 
         $orders = Orders::where('bulanTahun', date('mY'))->get();
 
-
-        // foreach($orders as $order) {
-        //     echo 'Name : ' . $order->users->name . '<br />';
-        //     echo 'No KP : ' . $order->users->nokp . '<br />';
-        //     echo 'No SMPP : ' . $order->users->nosmpp . '<br />';
-        //     echo 'Status : ' . $order->users->status . '<br />';
-        //     echo 'Order Date : ' . $order->created_at . '<br />';
-        //     foreach($order->products as $product) {
-        //         echo 'Products Name : ' . $product->name . '<br />';
-        //         echo 'Products Price : ' . $product->price . '<br />';
-        //     }
-            
-        //     echo '<br />';
-        // }
-
         $dompdf = new Dompdf();
         $options = $dompdf->getOptions();
         $options->setDefaultFont('Arial');
@@ -114,6 +99,25 @@ class PdfController extends Controller
 
         return view('admin.pdf.orderedReportPdf')->with('orders', $orders);
 
+    }
+
+    public function orderPdf($id) {
+
+        $order = Orders::find($id);
+
+        $dompdf = new Dompdf();
+        $options = $dompdf->getOptions();
+        $options->setDefaultFont('Arial');
+        $dompdf->setOptions($options);
+        $dompdf->setPaper('A4', 'landscape');
+        
+        view()->share('order', $order);
+
+        $pdf = PDF::loadview('admin.pdf.orderPdf', ['OrderedReport' => $order]);
+
+        return $pdf->download('Ordered Report - ' . Carbon::now() . '.pdf');
+
+        return view('admin.pdf.orderPdf')->with('order', $order);
 
     }
 
