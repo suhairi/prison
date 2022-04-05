@@ -97,18 +97,18 @@ class OrderController extends Controller
 
     public function showOrdered($id) {
 
-        $bulanTahun = date("mY");
-        $locker = Setting::where('bulanTahun', $bulanTahun)->first();
-
         $user = User::find($id);
-        $order = Orders::where('user_id', $id)
-                    ->where('bulanTahun', $bulanTahun)
-                    ->with('products')
+
+        $locker = Setting::where('lock', 'no')->first();
+
+        $order = Orders::where('user_id', $user->id)
+                    ->where('bulanTahun', $locker->bulanTahun)
                     ->first();
 
-        // dd($order->products);
+        $locker = Setting::where('bulanTahun', date('mY'))->first();
 
-        return view('admin.showOrdered')
+        return view('users.showOrdered')
+                ->with('locker', $locker)
                 ->with('user', $user)
                 ->with('order', $order);
     }
