@@ -167,4 +167,13 @@ class OrderController extends Controller
         return redirect()->back();
     }
 
+    public function ordersList() {
+
+        $user = Auth::user();
+
+        $orders = Orders::where('user_id', $user->id)->get();
+
+        dd($orders);
+    }
+
 }
