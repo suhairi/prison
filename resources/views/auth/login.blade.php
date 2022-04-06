@@ -41,8 +41,8 @@
       @include('layouts.messages')
       <form method="POST" action="{{ route('login') }}">
         @csrf
-        <img class="mb-4" src="https://getbootstrap.com/docs/5.1/assets/brand/bootstrap-logo.svg" alt="" width="72" height="57">
-        <h1 class="h3 mb-3 fw-normal">Prison Grocery Ordering System</h1>
+        <img class="mb-4" src="{{ url('/images/logo.jpg') }}" alt="" width="72" height="67">
+        <h1 class="h3 mb-3 fw-normal">Prison Grocery Ordering System (PGOS)</h1>
 
         <div class="form-floating">
           <input type="text" class="form-control" id="floatingInput" name="username" placeholder="Username">
