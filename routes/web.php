@@ -85,6 +85,8 @@ Route::middleware(['auth'])->name('user.')->prefix('user')->group(function () {
     Route::get('/editOrdered/{id}', [OrderController::class, 'editOrdered'])->name('editOrdered');
     Route::post('/modifyOrder', [OrderController::class, 'modifyOrder'])->name('modifyOrder');
 
+    Route::get('/ordersList', [OrderController::class, 'ordersList'])->name('ordersList');
+
     Route::get('/userShowOrdered/{id}', [OrderController::class, 'UserShowOrdered'])->name('userShowOrdered');
 
 });
