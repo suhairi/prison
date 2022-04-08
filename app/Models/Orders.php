@@ -19,6 +19,6 @@ class Orders extends Model
     }
 
     public function products() {
-        return $this->belongsToMany(Products::class)->withPivot('quantity')->withTimestamps();
+        return $this->belongsToMany(Products::class)->withPivot('quantity', 'delayed')->withTimestamps();
     }
 }

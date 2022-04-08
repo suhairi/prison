@@ -99,6 +99,8 @@ Route::middleware(['auth'])->name('hq.')->prefix('hq')->group(function () {
     Route::get('/hqList', [OrderController::class, 'hqList'])->name('hqList');
     Route::get('/delayProducts', [OrderController::class, 'delayProducts'])->name('delayProducts');
 
+    Route::post('/updateDelayProducts', [OrderController::class, 'updateDelayProducts'])->name('updateDelayProducts');
+
 });
 
 

@@ -159,7 +159,7 @@ class OrderController extends Controller
 
         // assigning products_id array
         foreach($quantity->all() as $product_id => $qty) {
-            $order->products()->attach($product_id, ['quantity' => $qty, 'delayed' => 'NO']);
+            $order->products()->attach($product_id, ['quantity' => $qty]);
         }
 
         Session::flash('success', 'Order has been modified.');
@@ -210,9 +210,54 @@ class OrderController extends Controller
 
     public function delayProducts() {
 
-        $products = Products::all();
+        $bulanTahun = date('mY');
+        $setting = Setting::where('bulanTahun', $bulanTahun)->first();
 
-        dd($products->toArray());
+        if($setting->lock == 'no') {
+            
+            Session::flash('fail', 'Oder bulan ' . date('m') . ' dan tahun ' . date('Y') . ' belum ditutup diperingkat PRPI.');
+            return redirect()->back();
+        }
+
+
+        $products = Products::where('status', 'active')->orderBy('name', 'asc')->get();
+
+        // dd($products->toArray());
+
+        return view('hq.delayProducts')->with('products', $products);
+    }
+
+    public function updateDelayProducts(Request $request) {
+
+        $bulanTahun = date('mY');
+        $setting = Setting::where('bulanTahun', $bulanTahun)->first();
+
+        if($setting->lock == 'no') {
+            
+            Session::flash('fail', 'Oder bulan ' . date('m') . ' dan tahun ' . date('Y') . ' belum ditutup diperingkat PRPI.');
+            return redirect()->back();
+        }
+
+        // Check if user has make delay before
+        // if yes, nullify the order first
+
+        foreach($request->delay as $key => $value) {
+            
+            $product = Products::find($key);
+
+            foreach($product->orders as $order) {
+
+                if($order->bulanTahun == $bulanTahun) {
+                    $order->pivot->delayed = 'on';
+                    $order->pivot->save();
+                }
+            }            
+        }
+
+        Session::flash('success', 'Delay Products has been updated.');
+
+        return redirect()->back();
+        dd($request->all());
     }
 
 }

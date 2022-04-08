@@ -6,7 +6,7 @@
 
 	<div class="row">		
 		<div class="mb-3">
-			<h4>Welcome Dashboard</h4>
+			<h4>Welcome Dashboard</h4> {{ Auth::user()->name }}
 		</div>
 	</div>
 
