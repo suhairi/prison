@@ -96,6 +96,9 @@ Route::middleware(['auth'])->name('hq.')->prefix('hq')->group(function () {
     // Download all orders in PDF - if admin locked order then enable this feature
     // Products delay
 
+    Route::get('/hqList', [OrderController::class, 'hqList'])->name('hqList');
+    Route::get('/delayProducts', [OrderController::class, 'delayProducts'])->name('delayProducts');
+
 });
 
 

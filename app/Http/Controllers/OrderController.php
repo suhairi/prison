@@ -176,4 +176,43 @@ class OrderController extends Controller
         dd($orders);
     }
 
+    public function hqList() {
+
+        // check if the current 'mY' has been closed
+        // if yes, then display the order list
+
+        $bulanTahun = date('mY');
+        $setting = Setting::where('bulanTahun', $bulanTahun)->first();
+
+        if($setting->lock == 'no') {
+            
+            Session::flash('fail', 'Oder bulan ' . date('m') . ' dan tahun ' . date('Y') . ' belum ditutup diperingkat PRPI.');
+            return redirect()->back();
+        }
+
+        $orders = Orders::where('bulanTahun', $bulanTahun)->distinct('user_id')->get();
+
+        // dd($orders);
+        $totalOrdered = Orders::where('bulanTahun', $bulanTahun)->distinct('user_id')->count();
+
+        $totalUsers = User::where('role', 'user')->where('status', 'active')->count();
+
+        $users = DB::table('users')
+                    ->join('orders', 'users.id', 'orders.user_id')
+                    ->get();
+
+        return view('hq.hqList')
+                ->with('totalUsers', $totalUsers)
+                ->with('users', $users)
+                ->with('totalOrdered', $totalOrdered)
+                ->with('orders', $orders);
+    }
+
+    public function delayProducts() {
+
+        $products = Products::all();
+
+        dd($products->toArray());
+    }
+
 }

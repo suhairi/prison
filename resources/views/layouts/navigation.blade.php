@@ -77,17 +77,18 @@
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">
-                <span data-feather="file"></span>
-                Order List
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">
+            <a class="nav-link" href="{{ route('hq.hqList') }}">
                 <span data-feather="file"></span>
                 Orders List
             </a>
-          </li>         
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{{ route('hq.delayProducts') }}">
+                <span data-feather="file"></span>
+                Delay Products
+            </a>
+          </li>
+                
         </ul>
     @endif
 
