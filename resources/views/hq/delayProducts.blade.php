@@ -12,6 +12,32 @@
           </div>
         </div>       
         <hr />
+
+        <div class="row">
+          <div class="mb-3">
+            <h5>Delayed Products</h5>
+            <table class="table table-bordered table-striped table-hover">
+              <thead>
+                <th>Bil</th>
+                <th>Product Name</th>
+                <th>Price</th>
+                <th align="center">Delayed</th>
+              </thead>
+              @foreach($products as $product)
+                @foreach($product->orders as $order)
+                  @if($order->pivot->delayed == 'on')
+                    <tr>
+                      <td>{{ $loop->iteration }}</td>
+                      <td>{{ $product->name }}</td>
+                      <td>{{ number_format($product->price, 2) }}</td>
+                      <td align="center">{{ strtoupper($order->pivot->delayed) }}</td>
+                    </tr>
+                  @endif
+                @endforeach
+              @endforeach
+            </table>
+          </div>
+        </div>
       
         <div class="row">
             <div class="mb-3">

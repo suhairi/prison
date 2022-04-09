@@ -222,7 +222,14 @@ class OrderController extends Controller
 
         $products = Products::where('status', 'active')->orderBy('name', 'asc')->get();
 
-        // dd($products->toArray());
+        // foreach($products as $product) {
+        //     foreach($product->orders as $order) {
+        //         if($order->pivot->delayed == 'on')
+        //             echo $product->name . ' : ' . $order->pivot->delayed . '<br />';
+        //     }
+        // }
+
+        // return;
 
         return view('hq.delayProducts')->with('products', $products);
     }
@@ -240,6 +247,10 @@ class OrderController extends Controller
 
         // Check if user has make delay before
         // if yes, nullify the order first
+
+        $prevOrders = Orders::where('bulanTahun', $bulanTahun)->get();
+
+        dd($prevOrders);
 
         foreach($request->delay as $key => $value) {
             
