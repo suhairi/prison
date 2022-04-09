@@ -250,7 +250,15 @@ class OrderController extends Controller
 
         $prevOrders = Orders::where('bulanTahun', $bulanTahun)->get();
 
-        dd($prevOrders);
+        foreach($prevOrders as $order) {
+
+            foreach($order->products as $product) {
+                if($product->pivot->delayed == 'on') {
+                    $product->pivot->delayed = null;
+                    $product->pivot->save();
+                }
+            }
+        }
 
         foreach($request->delay as $key => $value) {
             
@@ -269,6 +277,13 @@ class OrderController extends Controller
 
         return redirect()->back();
         dd($request->all());
+    }
+
+    // Dedicated to 'root user'
+    public function resetOrder() {
+        // 1. set setting->lock = null
+        // 2. delete all order for current monthYear
+        // 3. set orders_products->delayed = null for the current monthYear
     }
 
 }

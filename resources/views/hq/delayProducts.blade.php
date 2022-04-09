@@ -56,7 +56,16 @@
                     <td valign="middle">{{ strtoupper($product->name) }}</td>
                     <td valign="middle">{{ number_format($product->price, 2) }}</td>
                     <td valign="middle">
-                      <input type="checkbox" name="delay[{{ $product->id }}]">
+                      <?php $checked = false; ?>
+                      @foreach($product->orders as $order)
+                        @if($product->id == $order->pivot->products_id && $order->pivot->delayed == 'on')
+                          <input type="checkbox" name="delay[{{ $product->id }}]" checked>
+                          <?php $checked = true; ?>
+                        @endif
+                      @endforeach
+                      @if($checked == false)
+                        <input type="checkbox" name="delay[{{ $product->id }}]">
+                      @endif                  
                     </td>
                   </tr>
                 @endforeach                

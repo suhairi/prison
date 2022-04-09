@@ -41,6 +41,12 @@
               Users Not Order
             </a>
           </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+                <i class="bx bx-edit-alt"> </i>
+                Delay Products
+            </a>
+          </li>
       
         </ul>
     @endif
@@ -65,6 +71,7 @@
               Orders List
           </a>
         </li>
+        
       </ul>
     @endif
 
