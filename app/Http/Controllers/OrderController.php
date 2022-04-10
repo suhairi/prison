@@ -282,11 +282,6 @@ class OrderController extends Controller
         dd($request->all());
     }
 
-    // Dedicated to 'root user'
-    public function resetOrder() {
-        // 1. set setting->lock = null
-        // 2. delete all order for current monthYear
-        // 3. set orders_products->delayed = null for the current monthYear
-    }
+    
 
 }

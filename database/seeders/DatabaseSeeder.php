@@ -23,7 +23,7 @@ class DatabaseSeeder extends Seeder
             'name'      => strtoupper('Suhairi Abdul Hamid'),
             'username'  => 'suhairi',
             'password'  => Hash::make('password1'),
-            'role'      => 'admin',
+            'role'      => 'root',
             'status'    => 'active',
         ]);
 

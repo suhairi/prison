@@ -14,7 +14,7 @@
   <div class="row">
     <div class="mb-3">
       <div class="d-flex justify-content-end mb-4">
-        <a class="btn btn-primary btn-sm" href="{{ route('admin.register') }}"><i class='bx bx-qr-scan'> </i> Add a User</a>
+        <a class="btn btn-primary btn-sm" href="{{ route('admin.register') }}"><i class='bx bx-user-plus'> </i> Add a User</a>
       </div>
     </div>
   </div> 

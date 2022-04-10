@@ -4,6 +4,8 @@ namespace Database\Seeders;
 
 use Illuminate\Database\Seeder;
 
+use Illuminate\Support\Str;
+
 use App\Models\Orders;
 use App\Models\User;
 
@@ -17,7 +19,12 @@ class OrderSeeder extends Seeder
     public function run()
     {
         $bulanTahun = date('mY');
-        $users = User::where('role', 'user')->where('status', 'active')->get();              
+        $users = User::where('role', 'user')->where('status', 'active')->get();
+
+        $users = $users->filter(function($item) {
+                    if(!Str::startsWith($item->username, 77))
+                        return $item;
+                });
 
         foreach($users as $user) {
             // 1. table orders->save()

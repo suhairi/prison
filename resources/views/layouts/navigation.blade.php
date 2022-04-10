@@ -1,9 +1,7 @@
 <nav id="sidebarMenu" class="col-md-2 col-lg-2 d-md-block bg-light sidebar collapse">
   <div class="position-sticky pt-4">
 
-
-
-    @if(Auth::user()->role == 'admin')
+    @if(Auth::user()->role == 'admin' || Auth::user()->role == 'root')
         <ul class="nav flex-column">
           <li class="nav-item">
             <a class="nav-link" aria-current="page" href="{{ route('admin.dashboard') }}">
@@ -17,12 +15,6 @@
                 Users
             </a>
           </li>
-          <!-- <li class="nav-item">
-            <a class="nav-link" href="{{ route('admin.registerproducts') }}">
-              <i class='bx bx-qr-scan'> </i> 
-                Product Register
-            </a>
-          </li> -->
           <li class="nav-item">
             <a class="nav-link" href="{{ route('admin.products') }}">
                 <i class='bx bx-list-check'> </i> 
@@ -49,6 +41,41 @@
           </li>
       
         </ul>
+    @endif
+
+    @if(Auth::user()->role == 'root')
+      <hr />
+      <div class="nav flex-column float-center"><strong><u>Root</u></strong></div>
+      <ul class="nav flex-column">
+        <li class="nav-item">
+          <a class="nav-link" aria-current="page" href="{{ route('root.resetOrder') }}">
+            <i class="bx bx-reset"> </i>
+            Reset Order
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" aria-current="page" href="{{ route('root.productOrderedReport') }}">
+            <i class="bx bx-reset"> </i>
+            Report - Product Ordered
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" aria-current="page" href="{{ route('root.lessAmountOrdered') }}">
+            <i class="bx bx-reset"> </i>
+            Report - Less Amount
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" aria-current="page" href="{{ route('root.overAmountOrdered') }}">
+            <i class="bx bx-reset"> </i>
+            Report - Over Amount
+          </a>
+        </li>
+        
+        
+        
+
+      </ul>
     @endif
 
     @if(Auth::user()->role == 'user')

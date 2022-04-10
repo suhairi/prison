@@ -6,6 +6,7 @@ use App\Http\Controllers\ProductsController;
 use App\Http\Controllers\OrderController;
 use App\Http\Controllers\PdfController;
 use App\Http\Controllers\SettingsController;
+use App\Http\Controllers\RootController;
 
 /*
 |--------------------------------------------------------------------------
@@ -100,6 +101,20 @@ Route::middleware(['auth'])->name('hq.')->prefix('hq')->group(function () {
     Route::get('/delayProducts', [OrderController::class, 'delayProducts'])->name('delayProducts');
 
     Route::post('/updateDelayProducts', [OrderController::class, 'updateDelayProducts'])->name('updateDelayProducts');
+
+});
+
+// ##############################
+// #########   ROOT   ###########
+// ##############################
+
+
+Route::middleware(['auth'])->name('root.')->prefix('root')->group(function () {
+
+    Route::get('resetOrder', [RootController::class, 'resetOrder'])->name('resetOrder');
+    Route::get('productOrderedReport', [RootController::class, 'productOrderedReport'])->name('productOrderedReport');
+    Route::get('lessAmountOrdered', [RootController::class, 'lessAmountOrdered'])->name('lessAmountOrdered');
+    Route::get('overAmountOrdered', [RootController::class, 'overAmountOrdered'])->name('overAmountOrdered');
 
 });
 
