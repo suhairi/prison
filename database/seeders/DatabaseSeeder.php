@@ -5,6 +5,7 @@ namespace Database\Seeders;
 use Illuminate\Database\Seeder;
 use App\Models\Products;
 use App\Models\User;
+use App\Models\Orders;
 use App\Models\Setting;
 
 use Illuminate\Support\Facades\Hash;
@@ -37,6 +38,7 @@ class DatabaseSeeder extends Seeder
         User::create([
             'name'      => strtoupper('Mohd Rohman bin Mohd Nor'),
             'username'  => 'rohman',
+            'nosmpp'    => '850924075661',
             'password'  => Hash::make('password1'),
             'role'      => 'admin',
             'status'    => 'active',
@@ -67,6 +69,7 @@ class DatabaseSeeder extends Seeder
         $this->call([
             ProductSeeder::class,
             UserSeeder::class,
+            OrderSeeder::class,
         ]);
         
     }

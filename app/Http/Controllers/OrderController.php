@@ -65,6 +65,8 @@ class OrderController extends Controller
             return $value >  0;
         });
 
+        dd($quantity->all());
+
         // assigning products_id array
         foreach($quantity->all() as $product_id => $qty) {
             $order->products()->attach($product_id, ['quantity' => $qty]);
@@ -86,7 +88,8 @@ class OrderController extends Controller
 
         $users = DB::table('users')
                     ->join('orders', 'users.id', 'orders.user_id')
-                    ->get();
+                    ->orderBy('users.name', 'asc')
+                    ->paginate(10);
 
         return view('admin.orderedList')
                 ->with('totalOrdered', $totalOrdered)

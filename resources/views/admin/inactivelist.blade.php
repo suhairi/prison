@@ -50,7 +50,10 @@
           </tr>
         @endforeach
       </table>
-      <div class="d-flex justify-content-center">
+      <div class="row">
+        <div class="mb-3">
+          {!! $users->links() !!}
+        </div>
       </div>
       
 

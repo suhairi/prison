@@ -49,9 +49,14 @@
                     </td>
                   </tr>
                 @endforeach
-              </table>
-                
+              </table>                
             </div>
+            
+        </div>
+        <div class="row">
+          <div class="mb-3">
+            {!! $products->links() !!}
+          </div>
         </div>
 
     </div>

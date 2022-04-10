@@ -63,7 +63,8 @@ class UsersController extends Controller
         $users = User::where('username', '!=', 'suhairi')
                     ->where('role', 'user')
                     ->where('status', 'active')
-                    ->orderBy('name', 'asc')->get();
+                    ->orderBy('name', 'asc')
+                    ->paginate(15);
 
         return view('admin.userlist')
             ->with('totalActive', $totalActive)
@@ -117,7 +118,7 @@ class UsersController extends Controller
 
         $users = User::where('role', 'user')
                         ->where('status', 'inactive')
-                        ->get();
+                        ->paginate(10);
 
         return view('admin.inactivelist')
                 ->with('totalActive', $totalActive)
