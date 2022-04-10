@@ -60,6 +60,12 @@
           </a>
         </li>
         <li class="nav-item">
+          <a class="nav-link" aria-current="page" href="{{ route('root.perfectAmountOrdered') }}">
+            <i class="bx bx-reset"> </i>
+            Report - <sup>**</sup>Perfect Amount
+          </a>
+        </li>
+        <li class="nav-item">
           <a class="nav-link" aria-current="page" href="{{ route('root.lessAmountOrdered') }}">
             <i class="bx bx-reset"> </i>
             Report - Less Amount

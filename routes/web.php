@@ -115,6 +115,7 @@ Route::middleware(['auth'])->name('root.')->prefix('root')->group(function () {
     Route::get('productOrderedReport', [RootController::class, 'productOrderedReport'])->name('productOrderedReport');
     Route::get('lessAmountOrdered', [RootController::class, 'lessAmountOrdered'])->name('lessAmountOrdered');
     Route::get('overAmountOrdered', [RootController::class, 'overAmountOrdered'])->name('overAmountOrdered');
+    Route::get('perfectAmountOrdered', [RootController::class, 'perfectAmountOrdered'])->name('perfectAmountOrdered');
 
 });
 

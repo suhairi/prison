@@ -48,14 +48,80 @@ class RootController extends Controller
         // root:YFRWj0Gow5N6e8r8y6
         // root:YFRWjOG0w5N6e8r8y6
         // 7838+VCytn4jp3R
-        
-        
 
+        $settings = Setting::where('lock', 'no')->first();
+        $orders = Orders::where('bulanTahun', $settings->bulanTahun)->get();
 
+        $orderFiltered = collect([]);
+        foreach($orders as $order) {
+            // check order sum less than RM 100
+            // dd($order);
+            $subtotal = 0;
+            foreach($order->products as $product) {
+                $subtotal += $product->price * $product->pivot->quantity;                
+            }
+
+            if($subtotal < 100.00)
+                $orderFiltered->push($order);
+        }
+
+        $orderFiltered = $orderFiltered->sortBy(function($order) {
+                            return $order->users->name;
+                        });
+
+        return view('root.lessAmountOrdered')->with('orderFiltered', $orderFiltered);
     }
 
     public function overAmountOrdered() {
         // list of users  that order more than RM 100
+        $settings = Setting::where('lock', 'no')->first();
+        $orders = Orders::where('bulanTahun', $settings->bulanTahun)->get();
+
+        $orderFiltered = collect([]);
+        foreach($orders as $order) {
+            // check order sum less than RM 100
+            // dd($order);
+            $subtotal = 0;
+            foreach($order->products as $product) {
+                $subtotal += $product->price * $product->pivot->quantity;                
+            }
+
+            if($subtotal > 100.00)
+                $orderFiltered->push($order);
+        }
+
+        $orderFiltered = $orderFiltered->sortBy(function($order) {
+                            return $order->users->name;
+                        });
+
+        return view('root.lessAmountOrdered')->with('orderFiltered', $orderFiltered);
 
     }
+
+    public function perfectAmountOrdered() {
+        // list of users  that order more than RM 100
+        $settings = Setting::where('lock', 'no')->first();
+        $orders = Orders::where('bulanTahun', $settings->bulanTahun)->get();
+
+        $orderFiltered = collect();
+        foreach($orders as $order) {
+            // check order sum less than RM 100
+            // dd($order);
+            $subtotal = 0;
+            foreach($order->products as $product) {
+                $subtotal += $product->price * $product->pivot->quantity;                
+            }
+
+            if($subtotal == 100.00)
+                $orderFiltered->push($order);
+        }
+
+        $orderFiltered = $orderFiltered->sortBy(function($order) {
+                            return $order->users->name;
+                        });
+
+        return view('root.perfectAmountOrdered')->with('orderFiltered', $orderFiltered);
+
+    }
+
 }
