@@ -42,6 +42,15 @@ class RootController extends Controller
 
     public function lessAmountOrdered() {
         // list of users that order less than RM 100
+        // *bwZfbBg6b6y1v)T6I0Py98xs
+        // root:YFRWj0G0w5N6e8r8y6
+        // root:YFRWjOGow5N6e8r8y6
+        // root:YFRWj0Gow5N6e8r8y6
+        // root:YFRWjOG0w5N6e8r8y6
+        // 7838+VCytn4jp3R
+        
+        
+
 
     }
 
