@@ -33,14 +33,16 @@ class RootController extends Controller
     public function productOrderedReport() {
         // list of products name, price, quantity, subtotal and grandtotal of all orders
         $orders = Orders::where('bulanTahun', date('mY'))->get();
+        $products = Products::where('status', 'active')->withCount('orders')->get();
 
-        $products = collect();
 
-        foreach($orders as $order) {
-            $products->push($order->products);
+        $items = [];
+        foreach($products as $product) {
+            echo 'Product ID : ' . $product->id . '<br />';
+            echo 'Count : ' . $product->orders_count . '<br />';
+            echo 'Total Price : RM ' . number_format($product->price * $product->orders_count, 2) . '<br /><br />';
         }
 
-        dd($products->take(3));
         return;
 
         return view('root.productOrdered')->with('orders', $orders);
