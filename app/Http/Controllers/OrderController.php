@@ -65,7 +65,21 @@ class OrderController extends Controller
             return $value >  0;
         });
 
-        dd($quantity->all());
+        // If order is not RM100
+        $subtotal = 0;
+        foreach($quantity->all() as $product_id => $qty) {
+            $product = Products::find($product_id);
+            $subtotal += $product->price * $qty;
+        }
+
+        if($subtotal != 100) {
+            
+            $order = Orders::find($order->id);
+            $order->delete();
+
+            Session::flash('fail', 'Sila cukupkan jumlah oder RM 100.00');
+            return redirect()->route('user.order');
+        }
 
         // assigning products_id array
         foreach($quantity->all() as $product_id => $qty) {
@@ -173,10 +187,14 @@ class OrderController extends Controller
     public function ordersList() {
 
         $user = Auth::user();
-
         $orders = Orders::where('user_id', $user->id)->get();
 
-        dd($orders);
+        if($orders->isEmpty()) {
+            Session::flash('fail', 'Tiada oder pernah dibuat.');
+            return redirect()->back();
+        }
+
+        return view('users.orderedList')->with('orders', $orders);
     }
 
     public function hqList() {

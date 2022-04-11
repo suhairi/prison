@@ -50,7 +50,7 @@
         <li class="nav-item">
           <a class="nav-link" aria-current="page" href="{{ route('root.resetOrder') }}">
             <i class="bx bx-reset"> </i>
-            Reset Order
+            <font color='red'><sup>**</sup>Reset Order</font>
           </a>
         </li>
         <li class="nav-item">
@@ -62,7 +62,7 @@
         <li class="nav-item">
           <a class="nav-link" aria-current="page" href="{{ route('root.perfectAmountOrdered') }}">
             <i class="bx bx-reset"> </i>
-            Report - <sup>**</sup>Perfect Amount
+            Report - Perfect Amount
           </a>
         </li>
         <li class="nav-item">

@@ -34,9 +34,16 @@ class RootController extends Controller
         // list of products name, price, quantity, subtotal and grandtotal of all orders
         $orders = Orders::where('bulanTahun', date('mY'))->get();
 
+        $products = collect();
+
         foreach($orders as $order) {
-            dd($order->products);
+            $products->push($order->products);
         }
+
+        dd($products->take(3));
+        return;
+
+        return view('root.productOrdered')->with('orders', $orders);
 
     }
 
