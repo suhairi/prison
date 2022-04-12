@@ -37,12 +37,10 @@ class RootController extends Controller
         $bulanTahun = date('mY');
         $orders = Orders::where('bulanTahun', date('mY'))->get();
         $products = Products::where('status', 'active')
-                        ->join('orders')
-                        ->where('orders.bulanTahun', $bulanTahun)
-                        // ->withCount('orders')
+                        ->withCount('orders')
                         ->get();
 
-        dd($products);
+        // dd($products);
 
 
         // $products = $products->whereHas('orders', function($query) {
