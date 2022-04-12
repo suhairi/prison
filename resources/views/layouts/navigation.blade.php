@@ -56,9 +56,16 @@
         <li class="nav-item">
           <a class="nav-link" aria-current="page" href="{{ route('root.productOrderedReport') }}">
             <i class="bx bx-reset"> </i>
-            Report - Product Ordered
+            Summary - Product Ordered
           </a>
         </li>
+        <li class="nav-item">
+          <a class="nav-link" aria-current="page" href="#">
+            <i class="bx bx-reset"> </i>
+            Summary - Product Ordered Delayed
+          </a>
+        </li>
+        
         <li class="nav-item">
           <a class="nav-link" aria-current="page" href="{{ route('root.perfectAmountOrdered') }}">
             <i class="bx bx-reset"> </i>
