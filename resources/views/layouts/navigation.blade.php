@@ -43,7 +43,7 @@
         </ul>
     @endif
 
-    @if(Auth::user()->role == 'root')
+    @if(Auth::user()->role == 'root' || Auth::user()->role == 'admin')
       <hr />
       <div class="nav flex-column float-center"><strong><u>Root</u></strong></div>
       <ul class="nav flex-column">
@@ -60,7 +60,7 @@
           </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" aria-current="page" href="#">
+          <a class="nav-link" aria-current="page" href="{{ route('root.productsDelayed') }}">
             <i class="bx bx-reset"> </i>
             Summary - Product Ordered Delayed
           </a>

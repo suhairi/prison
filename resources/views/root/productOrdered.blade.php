@@ -30,7 +30,12 @@
           ?>
           <tr>
             <td width="10px" valign="middle" align="center">{{ $loop->iteration }}</td>
-            <td width="200px" valign="middle">{{ $product->name }}</td>
+            <td width="200px" valign="middle">
+                {{ $product->name }}
+                @if($productsDelayed->contains('id', $product->id))
+                  <font color=red><strong>(Delayed)</strong></font>
+                @endif
+            </td>
             <td width="200px" valign="middle" align="right">{{ number_format($product->price, 2) }}</td>
             <td width="200px" valign="middle" align="center">{{ $product->orders_count }}</td>
             <td width="200px" valign="middle" align="right">{{ number_format($subtotal, 2) }}</td>

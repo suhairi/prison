@@ -40,23 +40,63 @@ class RootController extends Controller
                         ->withCount('orders')
                         ->get();
 
-        // dd($products);
+        $orders = Orders::where('bulanTahun', $bulanTahun)->get();
 
+        $productsDelayed = collect([]);
+        foreach($orders as $order) {
+            foreach($order->products as $product) {
+                if($product->pivot->delayed == 'on') {
+                    $productsD = $product->toArray();
+                    $productsDelayed->push($productsD);
+                }
+            }
+        }
 
-        // $products = $products->whereHas('orders', function($query) {
-        //                 $query->where('bulanTahun', date('mY'));
-        //             })->get();
+        $productsDelayed = $productsDelayed->unique('id');
 
-        // foreach($products as $product) {
-        //     echo 'Product ID : ' . $product->id . '<br />';
-        //     echo 'Count : ' . $product->orders_count . '<br />';
-        //     echo 'Total Price : RM ' . number_format($product->price * $product->orders_count, 2) . '<br /><br />';
+        // dd($productsDelayed);
+
+        return view('root.productOrdered')
+                ->with('productsDelayed', $productsDelayed)
+                ->with('products', $products);
+    }
+
+    public function productsDelayed() {
+
+        $bulanTahun = date('mY');
+        $setting = Setting::where('bulanTahun', $bulanTahun)->first();
+
+        if($setting->lock == 'no') {
+            
+            Session::flash('fail', 'Oder bulan ' . date('m') . ' dan tahun ' . date('Y') . ' belum ditutup diperingkat PRPI.');
+            return redirect()->back();
+        }
+
+        $products = Products::where('status', 'active')->get();
+
+        $orders = Orders::where('bulanTahun', $setting->bulanTahun)->get();
+
+        $productsDelayed = collect([]);
+        foreach($orders as $order) {
+            foreach($order->products as $product) {
+                if($product->pivot->delayed == 'on') {
+                    $productsD = $product->toArray();
+                    $productsDelayed->push($productsD);
+                }
+            }
+        }
+
+        $productsDelayed = $productsDelayed->unique('id');
+
+        // foreach($productsDelayed as $productDelayed) {
+        //     dd($productDelayed['pivot']['delayed']);
         // }
 
         // return;
 
-        return view('root.productOrdered')->with('products', $products);
-
+        return view('root.productsDelayed')
+                ->with('productsDelayed', $productsDelayed)
+                ->with('products', $products);
     }
 
     public function lessAmountOrdered() {
