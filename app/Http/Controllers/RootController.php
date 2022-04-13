@@ -86,7 +86,9 @@ class RootController extends Controller
             }
         }
 
+
         $productsDelayed = $productsDelayed->unique('id');
+        // dd($productsDelayed);
 
         // foreach($productsDelayed as $productDelayed) {
         //     dd($productDelayed['pivot']['delayed']);

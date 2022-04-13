@@ -52,15 +52,12 @@
                     <td valign="middle">{{ strtoupper($product->name) }} {{ $product->id }}</td>
                     <td valign="middle">{{ number_format($product->price, 2) }}</td>
                     <td valign="middle">
-                      <?php $checked = 'checked = false'; ?>
-                      @foreach($productsDelayed as $productDelayed)
-                        @if($product->id == $productDelayed['id'])
-                          <?php $checked = 'checked = true'; break;?>
-                        @else
-                          <?php $checked = 'checked = false'; ?>
-                        @endif
-                      @endforeach
-                      <input type="checkbox" name="delay[{{ $product->id }}]" {{ $checked }}> {{ $productDelayed['id'] }}
+                      @if($productsDelayed->contains('id', $product->id))
+                        <input type="checkbox" name="delay[{{ $product->id }}]" checked>
+                      @else
+                        <input type="checkbox" name="delay[{{ $product->id }}]">
+                      @endif
+                      
                     </td>
                   </tr>
                 @endforeach                
