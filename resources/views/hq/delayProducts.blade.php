@@ -23,17 +23,13 @@
                 <th>Price</th>
                 <th align="center">Delayed</th>
               </thead>
-              @foreach($products as $product)
-                @foreach($product->orders as $order)
-                  @if($order->pivot->delayed == 'on')
-                    <tr>
-                      <td>{{ $loop->iteration }}</td>
-                      <td>{{ $product->name }}</td>
-                      <td>{{ number_format($product->price, 2) }}</td>
-                      <td align="center">{{ strtoupper($order->pivot->delayed) }}</td>
-                    </tr>
-                  @endif
-                @endforeach
+              @foreach($productsDelayed as $productDelayed)
+                <tr>
+                  <td>{{ $loop->iteration }}</td>
+                  <td>{{ $productDelayed['name'] }}</td>
+                  <td>{{ number_format($productDelayed['price'], 2) }}</td>
+                  <td align="center">{{ strtoupper($productDelayed['pivot']['delayed']) }}</td>
+                </tr>
               @endforeach
             </table>
           </div>
@@ -53,19 +49,18 @@
                 @foreach($products as $product)
                   <tr>
                     <td valign="middle">{{ $loop->iteration }}</td>
-                    <td valign="middle">{{ strtoupper($product->name) }}</td>
+                    <td valign="middle">{{ strtoupper($product->name) }} {{ $product->id }}</td>
                     <td valign="middle">{{ number_format($product->price, 2) }}</td>
                     <td valign="middle">
-                      <?php $checked = false; ?>
-                      @foreach($product->orders as $order)
-                        @if($product->id == $order->pivot->products_id && $order->pivot->delayed == 'on')
-                          <input type="checkbox" name="delay[{{ $product->id }}]" checked>
-                          <?php $checked = true; ?>
+                      <?php $checked = 'checked = false'; ?>
+                      @foreach($productsDelayed as $productDelayed)
+                        @if($product->id == $productDelayed['id'])
+                          <?php $checked = 'checked = true'; break;?>
+                        @else
+                          <?php $checked = 'checked = false'; ?>
                         @endif
                       @endforeach
-                      @if($checked == false)
-                        <input type="checkbox" name="delay[{{ $product->id }}]">
-                      @endif                  
+                      <input type="checkbox" name="delay[{{ $product->id }}]" {{ $checked }}> {{ $productDelayed['id'] }}
                     </td>
                   </tr>
                 @endforeach                

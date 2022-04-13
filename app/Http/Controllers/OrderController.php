@@ -240,19 +240,31 @@ class OrderController extends Controller
             return redirect()->back();
         }
 
+        $products = Products::where('status', 'active')->get();
 
-        $products = Products::where('status', 'active')->orderBy('name', 'asc')->get();
+        $orders = Orders::where('bulanTahun', $setting->bulanTahun)->get();
 
-        // foreach($products as $product) {
-        //     foreach($product->orders as $order) {
-        //         if($order->pivot->delayed == 'on')
-        //             echo $product->name . ' : ' . $order->pivot->delayed . '<br />';
-        //     }
+        $productsDelayed = collect([]);
+        foreach($orders as $order) {
+            foreach($order->products as $product) {
+                if($product->pivot->delayed == 'on') {
+                    $productsD = $product->toArray();
+                    $productsDelayed->push($productsD);
+                }
+            }
+        }
+
+        $productsDelayed = $productsDelayed->unique('id');
+
+        // foreach($productsDelayed as $productDelayed) {
+        //     dd($productDelayed['pivot']['delayed']);
         // }
 
         // return;
 
-        return view('hq.delayProducts')->with('products', $products);
+        return view('hq.delayProducts')
+                ->with('productsDelayed', $productsDelayed)
+                ->with('products', $products);
     }
 
     public function updateDelayProducts(Request $request) {
