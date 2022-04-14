@@ -73,6 +73,11 @@ Route::middleware(['auth'])->name('admin.')->prefix('admin')->group(function () 
     Route::get('/orderPdf/{id}', [PdfController::class, 'orderPdf'])->name('orderPdf');
 
     Route::get('/orderedReport', [PdfController::class, 'orderedReportPdf'])->name('orderedReportPdf'); // All Users Ordered
+    Route::get('/productOrderedSummaryPdf', [PdfController::class, 'productOrderedSummaryPdf'])->name('productOrderedSummaryPdf');
+
+    Route::get('/productOrderedPdf/{id}', [PdfController::class, 'productOrderedPdf'])->name('productOrderedPdf');
+
+
 
     // Settings
     Route::get('lockOrder', [SettingsController::class, 'lockOrder'])->name('lockOrder');

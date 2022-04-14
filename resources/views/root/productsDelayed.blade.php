@@ -31,9 +31,9 @@
                   <td>{{ $loop->iteration }}</td>
                   <td>{{ $productDelayed['name'] }}</td>
                   <td>{{ number_format($productDelayed['price'], 2) }}</td>
-                  <td align="center">{{ $productDelayed['pivot']['quantity'] }}</td>
+                  <td align="center">{{ $productDelayed['quantity'] }}</td>
                   <?php 
-                    $subtotal = $productDelayed['price'] * $productDelayed['pivot']['quantity'];
+                    $subtotal = $productDelayed['price'] * $productDelayed['quantity'];
                     $grandTotal += $subtotal;
                   ?>
                   <td align="right">{{ number_format($subtotal, 2) }}</td>

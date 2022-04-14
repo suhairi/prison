@@ -37,12 +37,28 @@ class RootController extends Controller
     public function productOrderedReport() {
         // list of products name, price, quantity, subtotal and grandtotal of all orders
         $bulanTahun = date('mY');
-        $orders = Orders::where('bulanTahun', date('mY'))->get();
-        $products = Products::where('status', 'active')
-                        ->withCount('orders')
-                        ->get();
-
         $orders = Orders::where('bulanTahun', $bulanTahun)->get();
+        $products = Products::where('status', 'active')->orderBy('name', 'asc')->get();
+
+        $quantityProducts = collect([]);
+        foreach($orders as $order) {
+
+            foreach($order->products as $product) {
+
+                if(!$quantityProducts->contains('id', $product->id)) {
+
+                    $quantity = 0;
+                    foreach($product->orders as $ord) {
+                        $quantity += $ord->pivot->quantity;
+                    }
+
+                    $prod = $product->toArray();
+                    $prod['quantity'] = $quantity;
+
+                    $quantityProducts->push($prod);
+                } 
+            }
+        }
 
         $productsDelayed = collect([]);
         foreach($orders as $order) {
@@ -56,9 +72,8 @@ class RootController extends Controller
 
         $productsDelayed = $productsDelayed->unique('id');
 
-        // dd($productsDelayed);
-
         return view('root.productOrdered')
+                ->with('quantityProducts', $quantityProducts)
                 ->with('productsDelayed', $productsDelayed)
                 ->with('products', $products);
     }
@@ -75,29 +90,31 @@ class RootController extends Controller
         }
 
         $products = Products::where('status', 'active')->get();
-
         $orders = Orders::where('bulanTahun', $setting->bulanTahun)->get();
+
 
         $productsDelayed = collect([]);
         foreach($orders as $order) {
+
             foreach($order->products as $product) {
-                if($product->pivot->delayed == 'on') {
-                    $productsD = $product->toArray();
-                    $productsDelayed->push($productsD);
-                }
+
+                if(!$productsDelayed->contains('id', $product->id) && $product->pivot->delayed == 'on') {
+
+                    $quantity = 0;
+                    foreach($product->orders as $ord) {
+                        $quantity += $ord->pivot->quantity;
+                    }
+
+                    $prod = $product->toArray();
+                    $prod['quantity'] = $quantity;
+
+                    $productsDelayed->push($prod);
+                } 
             }
         }
 
-
-        $productsDelayed = $productsDelayed->unique('id');
         // dd($productsDelayed);
-
-        // foreach($productsDelayed as $productDelayed) {
-        //     dd($productDelayed['pivot']['delayed']);
-        // }
-
-        // return;
-
+        
         return view('root.productsDelayed')
                 ->with('productsDelayed', $productsDelayed)
                 ->with('products', $products);
@@ -150,13 +167,6 @@ class RootController extends Controller
                 ->with('users', $users);
 
     }
-
-
-
-
-
-
-
 
     public function lessAmountOrdered() {
         // list of users that order less than RM 100

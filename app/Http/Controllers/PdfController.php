@@ -121,5 +121,77 @@ class PdfController extends Controller
 
     }
 
+    public function productOrderedSummaryPdf() {
+        $bulanTahun = date('mY');
+        $orders = Orders::where('bulanTahun', $bulanTahun)->get();
+        $products = Products::where('status', 'active')->orderBy('name', 'asc')->get();
+
+        $quantityProducts = collect([]);
+        foreach($orders as $order) {
+
+            foreach($order->products as $product) {
+
+                if(!$quantityProducts->contains('id', $product->id)) {
+
+                    $quantity = 0;
+                    foreach($product->orders as $ord) {
+                        $quantity += $ord->pivot->quantity;
+                    }
+
+                    $prod = $product->toArray();
+                    $prod['quantity'] = $quantity;
+
+                    $quantityProducts->push($prod);
+                } 
+            }
+        }
+
+        $productsDelayed = collect([]);
+        foreach($orders as $order) {
+            foreach($order->products as $product) {
+                if($product->pivot->delayed == 'on') {
+                    $productsD = $product->toArray();
+                    $productsDelayed->push($productsD);
+                }
+            }
+        }
+
+        $productsDelayed = $productsDelayed->unique('id');
+
+        $dompdf = new Dompdf();
+        $options = $dompdf->getOptions();
+        $options->setDefaultFont('Arial');
+        $dompdf->setOptions($options);
+        $dompdf->setPaper('A4', 'landscape');
+        
+        // view()->share('order', $order);
+
+        $pdf = PDF::loadview('admin.pdf.productOrderedSummaryPdf', ['quantityProducts' => $quantityProducts, 'productsDelayed' => $productsDelayed, 'products' => $products]);
+
+        return $pdf->download('Product Ordered Summary - ' . Carbon::now() . '.pdf');
+
+    }
+
+    public function productOrderedPdf($id) {
+        $users = collect([]);
+        $product = Products::find($id);
+
+        foreach ($product->orders as $order) {
+            $users->push($order->users);
+        }
+
+        $dompdf = new Dompdf();
+        $options = $dompdf->getOptions();
+        $options->setDefaultFont('Arial');
+        $dompdf->setOptions($options);
+        $dompdf->setPaper('A4', 'landscape');
+        
+        $pdf = PDF::loadview('admin.pdf.productOrderedPdf', ['product' => $product, 'users' => $users]);
+
+        return $pdf->download('List Users by Product Ordered  - ' . Carbon::now() . '.pdf');
+
+    }
+
+
 
 }

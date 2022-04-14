@@ -20,7 +20,7 @@ class OrderSeeder extends Seeder
     public function run()
     {
         $bulanTahun = date('mY');
-        $users = User::where('role', 'user')->where('status', 'active')->get();
+        $users = User::where('role', 'user')->where('status', 'active')->orderBy('name', 'asc')->get();
 
         // $users = $users->filter(function($item) {
         //             if(!Str::startsWith($item->username, 77))

@@ -23,7 +23,12 @@
                 @endforeach
             </tbody>
         </table>
+
+        <div align="center">
+            <hr />
+            <strong>END</strong> <br />
+            <hr />
+        </div>
     </div>
-    <script src="{{ asset('js/app.js') }}" type="text/js"></script>
 
 @endsection
