@@ -52,7 +52,7 @@ class OrderSeeder extends Seeder
 
                 if($subtotal == 100) {
                     $count++;
-                    $this->command->info($user->name . ' : Ordered');
+                    $this->command->info($count . '. ' . $user->name . ' --> Ordered');
                 }
 
 
@@ -68,9 +68,11 @@ class OrderSeeder extends Seeder
 
         }
 
+        $this->command->info('');
         $this->command->info('##########################');
         $this->command->info('#######  Completed  ######');
         $this->command->info('##########################');
+        $this->command->info('');
     }
 
 }

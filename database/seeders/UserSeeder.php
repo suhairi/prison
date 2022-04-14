@@ -1342,10 +1342,10 @@ class UserSeeder extends Seeder
             'role' => 'user', 
             'status' => 'active', 
             'nosmpp' => '66-19-02404', 
-            'section' => 'AUTO S
-            PRAY
+            'section' => 'AUTO SPRAY',
+        ]);
             $count++;
-            $this->command->info($count . '. ' . $user->name);',]);
+            $this->command->info($count . '. ' . $user->name);
         
         $user = User::create([
             'name' => 'MOHD HAMIRUL ZAIMIE BIN ZAINON', 
@@ -1354,10 +1354,10 @@ class UserSeeder extends Seeder
             'role' => 'user', 
             'status' => 'active', 
             'nosmpp' => '66-09-00455', 
-            'section' => 'AUTO S
-            PRAY
+            'section' => 'AUTO SPRAY',
+        ]);
             $count++;
-            $this->command->info($count . '. ' . $user->name);',]);
+            $this->command->info($count . '. ' . $user->name);
         
         $user = User::create([
             'name' => 'MOHAMMAD FARIS BIN MAT ESA', 
@@ -1366,10 +1366,10 @@ class UserSeeder extends Seeder
             'role' => 'user', 
             'status' => 'active', 
             'nosmpp' => '8-18-00895', 
-            'section' => 'AUTO S
-            PRAY
+            'section' => 'AUTO SPRAY',
+        ]);
             $count++;
-            $this->command->info($count . '. ' . $user->name);',]);
+            $this->command->info($count . '. ' . $user->name);
         
         $user = User::create([
             'name' => 'ABDULLAH BIN AHMAD', 
@@ -1378,10 +1378,10 @@ class UserSeeder extends Seeder
             'role' => 'user', 
             'status' => 'active', 
             'nosmpp' => '8-11-04186', 
-            'section' => 'AUTO S
-            PRAY
+            'section' => 'AUTO SPRAY',
+        ]);
             $count++;
-            $this->command->info($count . '. ' . $user->name);',]);
+            $this->command->info($count . '. ' . $user->name);
         
         $user = User::create([
             'name' => 'WAN ZAMRI BIN WAN ALI', 
@@ -1390,10 +1390,10 @@ class UserSeeder extends Seeder
             'role' => 'user', 
             'status' => 'active', 
             'nosmpp' => '8-09-00027', 
-            'section' => 'AUTO S
-            PRAY
+            'section' => 'AUTO SPRAY',
+        ]);
             $count++;
-            $this->command->info($count . '. ' . $user->name);',]);
+            $this->command->info($count . '. ' . $user->name);
         
         $user = User::create([
             'name' => 'SHEIFUL HELMI BIN AHMAD SUHAIMI', 
@@ -1402,10 +1402,10 @@ class UserSeeder extends Seeder
             'role' => 'user', 
             'status' => 'active', 
             'nosmpp' => '8-11-02753', 
-            'section' => 'AUTO S
-            PRAY
+            'section' => 'AUTO SPRAY',
+        ]);
             $count++;
-            $this->command->info($count . '. ' . $user->name);',]);
+            $this->command->info($count . '. ' . $user->name);
         
         $user = User::create([
             'name' => 'MUHAMMAD FARID BIN ABD. RAHIM', 
@@ -1414,10 +1414,10 @@ class UserSeeder extends Seeder
             'role' => 'user', 
             'status' => 'active', 
             'nosmpp' => '66-17-00905', 
-            'section' => 'AUTO S
-            PRAY
+            'section' => 'AUTO SPRAY',
+        ]);
             $count++;
-            $this->command->info($count . '. ' . $user->name);',]);
+            $this->command->info($count . '. ' . $user->name);
         
         $user = User::create([
             'name' => 'AHMAD ADILAS B SULAIMAN', 
@@ -1426,10 +1426,10 @@ class UserSeeder extends Seeder
             'role' => 'user', 
             'status' => 'active', 
             'nosmpp' => '41-17-00147', 
-            'section' => 'AUTO S
-            PRAY
+            'section' => 'AUTO SPRAY',
+        ]);
             $count++;
-            $this->command->info($count . '. ' . $user->name);',]);
+            $this->command->info($count . '. ' . $user->name);
         
         $user = User::create([
             'name' => 'MOHD HANIF BIN SAAD', 
@@ -1438,10 +1438,10 @@ class UserSeeder extends Seeder
             'role' => 'user', 
             'status' => 'active', 
             'nosmpp' => '66-17-01986', 
-            'section' => 'AUTO S
-            PRAY
+            'section' => 'AUTO SPRAY',
+        ]);
             $count++;
-            $this->command->info($count . '. ' . $user->name);',]);
+            $this->command->info($count . '. ' . $user->name);
         
 
         // ROBO SPRAY

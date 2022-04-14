@@ -23,6 +23,10 @@ Route::get('/', function () {
     return view('auth.login');
 });
 
+// ##############################
+// #########   ADMIN   ##########
+// ##############################
+
 Route::middleware(['auth'])->name('admin.')->prefix('admin')->group(function () {
 
     Route::get('/dashboard', function () {
@@ -58,7 +62,6 @@ Route::middleware(['auth'])->name('admin.')->prefix('admin')->group(function () 
     Route::get('/deactivateProduct/{id}', [ProductsController::class, 'deactivateProduct'])->name('deactivateProduct');
     Route::get('/activateProduct/{id}', [ProductsController::class, 'activateProduct'])->name('activateProduct');
 
-
     // Order
     Route::get('/orderedList', [OrderController::class, 'orderedList'])->name('orderedList');
     Route::get('/showOrdered/{id}', [OrderController::class, 'showOrdered'])->name('showOrdered');
@@ -78,6 +81,10 @@ Route::middleware(['auth'])->name('admin.')->prefix('admin')->group(function () 
     
 });
 
+// ##############################
+// #########   USER   ###########
+// ##############################
+
 Route::middleware(['auth'])->name('user.')->prefix('user')->group(function () {
 
     Route::get('/order', [OrderController::class, 'index'])->name('order');
@@ -91,6 +98,11 @@ Route::middleware(['auth'])->name('user.')->prefix('user')->group(function () {
     Route::get('/userShowOrdered/{id}', [OrderController::class, 'UserShowOrdered'])->name('userShowOrdered');
 
 });
+
+
+// ##############################
+// ##########   HQ    ###########
+// ##############################
 
 Route::middleware(['auth'])->name('hq.')->prefix('hq')->group(function () {
 
@@ -112,8 +124,13 @@ Route::middleware(['auth'])->name('hq.')->prefix('hq')->group(function () {
 Route::middleware(['auth'])->name('root.')->prefix('root')->group(function () {
 
     Route::get('resetOrder', [RootController::class, 'resetOrder'])->name('resetOrder');
+
     Route::get('productOrderedReport', [RootController::class, 'productOrderedReport'])->name('productOrderedReport');
     Route::get('productsDelayed', [RootController::class, 'productsDelayed'])->name('productsDelayed');
+
+    Route::get('usersOrderedSummary', [RootController::class, 'usersOrderedSummary'])->name('usersOrderedSummary');
+    Route::get('/productBelongs/{id}', [RootController::class, 'productBelongs'])->name('productBelongs');
+
     Route::get('lessAmountOrdered', [RootController::class, 'lessAmountOrdered'])->name('lessAmountOrdered');
     Route::get('overAmountOrdered', [RootController::class, 'overAmountOrdered'])->name('overAmountOrdered');
     Route::get('perfectAmountOrdered', [RootController::class, 'perfectAmountOrdered'])->name('perfectAmountOrdered');

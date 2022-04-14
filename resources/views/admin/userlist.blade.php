@@ -27,7 +27,7 @@
       <table class="table table-bordered table-striped table-hover">
         <tr>
           <td width="150px"><strong>Total User</strong></td>
-          <td>{{ count($users) }}</td>
+          <td>{{ $totalUsers }}</td>
         </tr>
         <tr>
           <td><strong>Active User</strong></td>
@@ -47,7 +47,8 @@
         <thead>
           <th>Bil</th>
           <th>Name</th>
-          <th>Username</th>
+          <th>No KP</th>
+          <th>Section</th>
           <th>Role</th>         
           <th>Options</th>         
         </thead>
@@ -56,6 +57,7 @@
             <td valign="middle">{{ $loop->iteration }}</td>
             <td valign="middle">{{ strtoupper($user->name) }}</td>
             <td valign="middle">{{ $user->username }}</td>
+            <td valign="middle">{{ $user->section }}</td>
             <td valign="middle">{{ strtoupper($user->role) }}</td>
             <td valign="middle">
               <a href="{{ route('admin.editUser', ['id' => $user->id]) }}"><button type="button" class="btn btn-warning btn-sm"> <i class='bx bx-edit-alt bx-spin-hover'> </i> Edit</button></a>

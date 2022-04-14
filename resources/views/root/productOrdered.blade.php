@@ -31,7 +31,7 @@
           <tr>
             <td width="10px" valign="middle" align="center">{{ $loop->iteration }}</td>
             <td width="200px" valign="middle">
-                {{ $product->name }}
+                <a href="{{ route('root.productBelongs', ['id' => $product->id]) }}">{{ $product->name }}</a>
                 @if($productsDelayed->contains('id', $product->id))
                   <font color=red><strong>(Delayed)</strong></font>
                 @endif

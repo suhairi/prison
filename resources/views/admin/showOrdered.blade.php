@@ -71,7 +71,7 @@
           <tbody>
             <tr>
               <td width="10px" valign="middle" align="center">{{ $loop->iteration }}</td>
-              <td width="200px" valign="middle">{{ $product->name }}</td>
+              <td width="200px" valign="middle">{{ $product->name }} {{ $product->id }}...</td>
               <td width="80px" align="right" valign="middle">{{ number_format($product->price, 2) }}</td>
               <td width="80px" align="center">{{ $product->pivot->quantity }}</td>
               <td align="right" valign="middle" width="10%">{{ number_format($product->price * $product->pivot->quantity, 2) }}</td>

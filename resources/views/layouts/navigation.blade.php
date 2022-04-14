@@ -65,6 +65,13 @@
             Summary - Product Ordered Delayed
           </a>
         </li>
+        <li class="nav-item">
+          <a class="nav-link" aria-current="page" href="{{ route('root.usersOrderedSummary') }}">
+            <i class="bx bx-reset"> </i>
+            Summary - Users Ordered
+          </a>
+        </li>
+        
         
         <li class="nav-item">
           <a class="nav-link" aria-current="page" href="{{ route('root.perfectAmountOrdered') }}">
@@ -127,6 +134,18 @@
             <a class="nav-link" href="{{ route('hq.hqList') }}">
                 <span data-feather="file"></span>
                 Orders List
+            </a>
+          </li>
+          <li class="nav-item">
+          <a class="nav-link" aria-current="page" href="{{ route('root.productOrderedReport') }}">
+            <i class="bx bx-reset"> </i>
+            Products Ordered
+          </a>
+        </li>
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="{{ route('root.productsDelayed') }}">
+              <i class="bx bx-reset"> </i>
+              Product Ordered Delayed
             </a>
           </li>
           <li class="nav-item">

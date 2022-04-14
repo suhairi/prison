@@ -47,10 +47,12 @@ class UsersController extends Controller
 
     public function userList() {
 
+        $totalUsers = User::where('role', 'user')
+                        ->count();
+
         $totalActive = User::where('username', '!=', 'suhairi')
                     ->where('role', 'user')
                     ->where('status', 'active')
-                    ->orderBy('name', 'asc')
                     ->count();
 
         $totalInActive = User::where('username', '!=', 'suhairi')
@@ -59,14 +61,13 @@ class UsersController extends Controller
                     ->orderBy('name', 'asc')
                     ->count();
 
-        // $users = User::where('username', '!=', 'suhairi')->paginate(15);
-        $users = User::where('username', '!=', 'suhairi')
-                    ->where('role', 'user')
+        $users = User::where('role', 'user')
                     ->where('status', 'active')
                     ->orderBy('name', 'asc')
                     ->paginate(15);
 
         return view('admin.userlist')
+            ->with('totalUsers', $totalUsers)
             ->with('totalActive', $totalActive)
             ->with('totalInActive', $totalInActive)
             ->with('users', $users);

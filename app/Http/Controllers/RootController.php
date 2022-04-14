@@ -4,6 +4,8 @@ namespace App\Http\Controllers;
 
 use Illuminate\Database\Eloquent\Builder;
 
+use Illuminate\Support\Facades\DB;
+
 use Illuminate\Http\Request;
 
 use Session;
@@ -100,6 +102,61 @@ class RootController extends Controller
                 ->with('productsDelayed', $productsDelayed)
                 ->with('products', $products);
     }
+
+
+    public function usersOrderedSummary() {
+
+        $bulanTahun = date('mY');
+        $locker = Setting::where('bulanTahun', $bulanTahun)->first();
+
+        $totalOrdered = Orders::where('bulanTahun', $bulanTahun)->distinct('user_id')->count();
+        $totalUsers = User::where('role', 'user')->where('status', 'active')->count();
+        $users = DB::table('users')
+                    ->join('orders', 'users.id', 'orders.user_id')
+                    ->orderBy('users.name', 'asc')
+                    ->paginate(10);
+
+        $orders = Orders::where('bulanTahun', date('mY'))->get();
+
+        foreach($orders as $order) {
+            $subtotal = 0;
+            foreach($order->products as $product) {
+                $subtotal += $product->price * $product->pivot->quantity;
+            }
+
+        }
+
+
+        return view('root.usersOrderedSummary')
+                ->with('totalOrdered', $totalOrdered)
+                ->with('totalUsers', $totalUsers)
+                ->with('locker', $locker)
+                ->with('users', $users)
+                ->with('orders', $orders);
+
+    }
+
+    public function productBelongs($id) {
+
+        $users = collect([]);
+        $product = Products::find($id);
+
+        foreach ($product->orders as $order) {
+            $users->push($order->users);
+        }
+
+        return view('root.productBelongs')
+                ->with('product', $product)
+                ->with('users', $users);
+
+    }
+
+
+
+
+
+
+
 
     public function lessAmountOrdered() {
         // list of users that order less than RM 100
