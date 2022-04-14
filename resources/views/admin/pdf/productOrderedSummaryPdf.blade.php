@@ -2,8 +2,9 @@
 
 @section('content')
 
-    <!-- <div class="container mt-6 mr-12"> -->
+    <div class="container mt-6 ">
         <h2 class="text-left mb-3">Products Ordered List Summary</h2>
+        <h2 class="text-left mb-3">{{ date('m-Y') }}</h2>
         <table class="table table-bordered table-striped" style="table-layout: fixed;">
             <thead>
                 <tr class="table-danger">
@@ -12,7 +13,7 @@
                     <th scope="col" width="5px">Price</th>
                     <th scope="col" width="5px">Quantity</th>
                     <th scope="col" width="8px">Subtotal</th>
-                    <th scope="col" width="80px">Catatan</th>
+                    <th scope="col" width="100px">Catatan</th>
                 </tr>
             </thead>
             <?php $grandTotal = 0; ?>
@@ -43,6 +44,6 @@
               <td align="right"><strong></strong></td>
             </tr>
         </table>
-    <!-- </div> -->
+    </div>
 
 @endsection
