@@ -19,13 +19,9 @@
       
       <div class="d-flex justify-content-end mb-4">
             <a class="btn btn-primary btn-sm" href="{{ route('admin.orderPdf', ['id' => Auth::user()->id]) }}"><i class="fa fa-solid fa-file-pdf"> </i> Export All to PDF</a>
+            &nbsp;&nbsp;
             @if($locker->lock == 'no')
-              <?php $disabled = ''; ?>
-              @if($totalUsers - $totalOrdered != 0)
-                $disabled = 'disabled'
-              @endif
-              &nbsp;&nbsp;
-              <a class="btn btn-warning btn-sm {{ $disabled }}" href="{{ route('admin.lockOrder') }}"><i class="bx bx-lock-open-alt"> </i> Lock Order</a>
+              <a class="btn btn-warning btn-sm" href="{{ route('admin.lockOrder') }}"><i class="bx bx-lock-open-alt"> </i> Lock Order</a>
             @else
               &nbsp;&nbsp;
               <a class="btn btn-danger btn-sm disabled" href="#"><i class="bx bx-lock-alt"> </i> Order Locked!!</a>
