@@ -8,6 +8,8 @@ use App\Providers\RouteServiceProvider;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 
+use App\Models\Setting;
+
 class AuthenticatedSessionController extends Controller
 {
     /**
@@ -28,6 +30,14 @@ class AuthenticatedSessionController extends Controller
      */
     public function store(LoginRequest $request)
     {
+        $bulanTahun = date('mY');
+        $settings = Setting::where('bulanTahun', $bulanTahun)->first();
+        
+        if($settings == null) {
+            $updateSettings = Setting::where('id', '>', 0)->update(['lock' => 'yes']);
+            Setting::create(['bulanTahun' => $bulanTahun, 'lock' => 'no']);
+        } 
+
         $request->authenticate();
 
         $request->session()->regenerate();

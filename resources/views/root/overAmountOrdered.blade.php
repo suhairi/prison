@@ -20,7 +20,7 @@
           <th>Bil</th>
           <th>Name</th>
           <th>Username</th>
-          <th>Role</th>         
+          <th>No KP</th>         
           <th>Options</th>         
         </thead>
         @foreach($orderFiltered as $order)
@@ -35,12 +35,6 @@
           </tr>
         @endforeach
       </table>
-
-      <div class="row">
-        <div class="mb-3">
-          <!-- {!! $orderFiltered->links() !!} -->
-        </div>
-      </div>
       
 
     </div>    

@@ -95,31 +95,30 @@ class OrderController extends Controller
 
         $bulanTahun = date('mY');
         $locker = Setting::where('bulanTahun', $bulanTahun)->first();
-
         $totalOrdered = Orders::where('bulanTahun', $bulanTahun)->distinct('user_id')->count();
-
         $totalUsers = User::where('role', 'user')->where('status', 'active')->count();
 
-        $users = DB::table('users')
-                    ->join('orders', 'users.id', 'orders.user_id')
-                    ->orderBy('users.name', 'asc')
-                    ->paginate(10);
+        $orders = Orders::where('bulanTahun', $bulanTahun)->distinct('user_id')->paginate(10);
+
+        // foreach($orders as $order) {
+        //     dd($order->users->name);
+        // }
 
         return view('admin.orderedList')
                 ->with('totalOrdered', $totalOrdered)
                 ->with('totalUsers', $totalUsers)
                 ->with('locker', $locker)
-                ->with('users', $users);
+                ->with('orders', $orders);
     }
 
     public function showOrdered($id) {
 
+        $bulanTahun = date('mY');
         $user = User::find($id);
-
         $locker = Setting::where('lock', 'no')->first();
 
         $order = Orders::where('user_id', $user->id)
-                    ->where('bulanTahun', $locker->bulanTahun)
+                    ->where('bulanTahun', $bulanTahun)
                     ->first();
 
         $locker = Setting::where('bulanTahun', date('mY'))->first();

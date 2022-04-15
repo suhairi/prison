@@ -27,7 +27,7 @@
                 <div class="d-flex justify-content-end mb-4">
                   <a class="btn btn-primary btn-sm" href="{{ route('admin.productsPdf') }}"><i class="fa fa-solid fa-file-pdf"> </i> Export All to PDF</a>
                 </div>
-                <div class="alert alert-warning">Edit/Deactivate sebelum order baru dibuat.</div>
+                <div class="alert alert-warning">Edit/Deactivate dilakukan sebelum order baru dibuat.</div>
                 <table class="table table-striped table-hover">
                 <thead>
                   <th>Bil</th>

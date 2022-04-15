@@ -23,7 +23,7 @@
 
   <div class="row">
     <div class="mb-3">
-      <div class="alert alert-warning">Edit/Deactivate sebelum order baru dibuat.</div>
+      <div class="alert alert-warning">Edit/Deactivate dilakukan sebelum order baru dibuat.</div>
       <table class="table table-bordered table-striped table-hover">
         <tr>
           <td width="150px"><strong>Total User</strong></td>

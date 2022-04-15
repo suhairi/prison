@@ -77,25 +77,20 @@ class UsersController extends Controller
 
         $bulanTahun = date('mY');
         $totalOrdered = Orders::where('bulanTahun', $bulanTahun)->distinct('user_id')->count();
-
         $totalUsers = User::where('role', 'user')->where('status', 'active')->count();
 
-        // dd($totalUsers);
+        $orders = Orders::where('bulanTahun', $bulanTahun)->distinct('user_id')->pluck('user_id');
+        $users = User::where('role', 'user')->where('status', 'active')->pluck('id');
 
-        $bulanTahun = date('mY');
-        $users = DB::table('users')
-                    ->where('role', 'user')
-                    ->where('status', 'active')
-                    ->orderBy('name', 'asc')
-                    ->whereNotExists(function($query) {
-                        $query->select(DB::raw(1))
-                            ->from('orders')
-                            ->whereColumn('users.id', 'orders.user_id');
-                    })->get();
+        $diffs = $users->diff($orders);
 
-        // $users = DB::table('users')
-        //             ->join('orders', 'users.id', 'orders.user_id')
-        //             ->get();
+        $usersNotOrder = collect([]);
+        foreach($diffs as $diff) {
+            $user = User::find($diff);
+            $usersNotOrder->push($user);
+        }
+
+        $users = $usersNotOrder;
 
         return view('admin.usernotorderlist')
                 ->with('totalUsers', $totalUsers)
