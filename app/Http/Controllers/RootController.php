@@ -177,9 +177,9 @@ class RootController extends Controller
         // root:YFRWjOG0w5N6e8r8y6
         // 7838+VCytn4jp3R
         
-
+        $bulanTahun = date('mY');
         $settings = Setting::where('lock', 'no')->first();
-        $orders = Orders::where('bulanTahun', $settings->bulanTahun)->get();
+        $orders = Orders::where('bulanTahun', $bulanTahun)->get();
 
         $orderFiltered = collect([]);
         foreach($orders as $order) {
@@ -203,13 +203,12 @@ class RootController extends Controller
 
     public function overAmountOrdered() {
         // list of users  that order more than RM 100
+        $bulanTahun = date('mY');
         $settings = Setting::where('lock', 'no')->first();
-        $orders = Orders::where('bulanTahun', $settings->bulanTahun)->get();
+        $orders = Orders::where('bulanTahun', $bulanTahun)->get();
 
         $orderFiltered = collect([]);
         foreach($orders as $order) {
-            // check order sum less than RM 100
-            // dd($order);
             $subtotal = 0;
             foreach($order->products as $product) {
                 $subtotal += $product->price * $product->pivot->quantity;                
@@ -229,13 +228,12 @@ class RootController extends Controller
 
     public function perfectAmountOrdered() {
         // list of users  that order more than RM 100
+        $bulanTahun = date('mY');
         $settings = Setting::where('lock', 'no')->first();
-        $orders = Orders::where('bulanTahun', $settings->bulanTahun)->get();
+        $orders = Orders::where('bulanTahun', $bulanTahun)->get();
 
         $orderFiltered = collect();
         foreach($orders as $order) {
-            // check order sum less than RM 100
-            // dd($order);
             $subtotal = 0;
             foreach($order->products as $product) {
                 $subtotal += $product->price * $product->pivot->quantity;                

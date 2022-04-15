@@ -17,13 +17,13 @@
       <a class="btn btn-primary btn-sm" href="{{ route('admin.productOrderedSummaryPdf') }}"><i class="fa fa-solid fa-file-pdf"> </i> Export All to PDF</a>
     </div>
 
-    <table class="table table-bordered table-striped table-hover" id="tblProducts" width="50%">
+    <table class="table table-bordered table-striped table-hover" id="tblProducts" style="table-layout: fixed;">
       <thead>
-        <th>Bil</th>
-        <th>Product Name</th>
-        <th>Price</th>
-        <th>Quantity</th>
-        <th>Subtotal</th>
+        <th width="8px">Bil</th>
+        <th width="100px">Product Name</th>
+        <th width="100px">Price</th>
+        <th width="100px">Quantity</th>
+        <th width="10%">Subtotal</th>
       </thead>
       <?php $grandTotal = 0; ?>
       @foreach($quantityProducts as $product)
@@ -33,16 +33,16 @@
         ?>
         <tbody>
           <tr>
-            <td width="10px" valign="middle" align="center">{{ $loop->iteration }}</td>
-            <td width="200px" valign="middle">
+            <td valign="middle" align="center">{{ $loop->iteration }}</td>
+            <td valign="middle">
                 <a href="{{ route('root.productBelongs', ['id' => $product['id']]) }}">{{ $product['name'] }}</a>
                 @if($productsDelayed->contains('id', $product['id']))
                   <font color=red><strong>(Delayed)</strong></font>
                 @endif
             </td>
-            <td width="200px" valign="middle" align="right">{{ number_format($product['price'], 2) }}</td>
-            <td width="200px" valign="middle" align="center">{{ $product['quantity'] }}</td>
-            <td width="200px" valign="middle" align="right">{{ number_format($subtotal, 2) }}</td>
+            <td valign="middle" align="right">{{ number_format($product['price'], 2) }}</td>
+            <td valign="middle" align="center">{{ $product['quantity'] }}</td>
+            <td valign="middle" align="right">{{ number_format($subtotal, 2) }}</td>
           </tr>
         </tbody>
       @endforeach

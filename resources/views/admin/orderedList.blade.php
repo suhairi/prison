@@ -52,7 +52,7 @@
         <thead>
           <th>Bil</th>
           <th>Name</th>
-          <th>Username</th>
+          <th>No KP</th>
           <th>Role</th>         
           <th>Options</th>         
         </thead>

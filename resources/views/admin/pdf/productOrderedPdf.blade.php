@@ -4,7 +4,7 @@
 
   <div class="container mt-5">
     <h2 class="text-left mb-3">{{ $product->name }}</h2>
-    <table class="table table-bordered table-striped w-50">
+    <table class="table table-bordered table-striped" style="table-layout: fixed;">
       <thead>
           <tr class="table-primary">
               <th scope="col" width="2px">Bil</th>

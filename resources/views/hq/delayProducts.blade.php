@@ -49,7 +49,7 @@
                 @foreach($products as $product)
                   <tr>
                     <td valign="middle">{{ $loop->iteration }}</td>
-                    <td valign="middle">{{ strtoupper($product->name) }} {{ $product->id }}</td>
+                    <td valign="middle">{{ strtoupper($product->name) }}</td>
                     <td valign="middle">{{ number_format($product->price, 2) }}</td>
                     <td valign="middle">
                       @if($productsDelayed->contains('id', $product->id))
