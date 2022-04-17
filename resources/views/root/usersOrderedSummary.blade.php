@@ -65,7 +65,7 @@
         @endforeach
         <tr>
             <td colspan="4" align="right"><strong>GrandTotal</strong></td>
-            <td align="right">{{ number_format($grandTotal, 2) }}</td>
+            <td align="right"><strong>{{ number_format($grandTotal, 2) }}</strong></td>
       </table>
       
 

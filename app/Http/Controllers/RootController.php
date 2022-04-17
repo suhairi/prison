@@ -9,6 +9,7 @@ use Illuminate\Support\Facades\DB;
 use Illuminate\Http\Request;
 
 use Session;
+use Illuminate\Support\Facades\Auth;
 
 use App\Models\Delay;
 use App\Models\Orders;
@@ -24,8 +25,11 @@ class RootController extends Controller
         // 2. delete all order for current monthYear
         // 3. set orders_products->delayed = null for the current monthYear
 
-        $settings = Setting::where('lock', 'no')->first();
+        if(Auth::user()->role != 'admin' || Auth::user()->role != 'root')
+            return redirect()->back();
 
+
+        $settings = Setting::where('lock', 'no')->first();
         $orders = Orders::where('bulanTahun', $settings->bulanTahun)->delete();
 
         Session::flash('success', 'All Orders for current month has been wiped.');
@@ -35,6 +39,10 @@ class RootController extends Controller
     }
 
     public function productOrderedReport() {
+
+        if(Auth::user()->role != 'admin' || Auth::user()->role != 'root')
+            return redirect()->back();
+
         // list of products name, price, quantity, subtotal and grandtotal of all orders
         $bulanTahun = date('mY');
         $orders = Orders::where('bulanTahun', $bulanTahun)->get();
@@ -80,6 +88,9 @@ class RootController extends Controller
 
     public function productsDelayed() {
 
+        if(Auth::user()->role != 'admin' || Auth::user()->role != 'root')
+            return redirect()->back();
+
         $bulanTahun = date('mY');
         $setting = Setting::where('bulanTahun', $bulanTahun)->first();
 
@@ -123,6 +134,9 @@ class RootController extends Controller
 
     public function usersOrderedSummary() {
 
+        if(Auth::user()->role != 'admin' || Auth::user()->role != 'root')
+            return redirect()->back();
+
         $bulanTahun = date('mY');
         $locker = Setting::where('bulanTahun', $bulanTahun)->first();
 
@@ -155,6 +169,9 @@ class RootController extends Controller
 
     public function productBelongs($id) {
 
+        if(Auth::user()->role != 'admin' || Auth::user()->role != 'root')
+            return redirect()->back();
+
         $users = collect([]);
         $product = Products::find($id);
 
@@ -169,6 +186,10 @@ class RootController extends Controller
     }
 
     public function lessAmountOrdered() {
+
+        if(Auth::user()->role != 'admin' || Auth::user()->role != 'root')
+            return redirect()->back();
+
         // list of users that order less than RM 100
         // *bwZfbBg6b6y1v)T6I0Py98x
         // root:YFRWj0G0w5N6e8r8y6
@@ -202,6 +223,10 @@ class RootController extends Controller
     }
 
     public function overAmountOrdered() {
+
+        if(Auth::user()->role != 'admin' || Auth::user()->role != 'root')
+            return redirect()->back();
+
         // list of users  that order more than RM 100
         $bulanTahun = date('mY');
         $settings = Setting::where('lock', 'no')->first();
@@ -227,6 +252,10 @@ class RootController extends Controller
     }
 
     public function perfectAmountOrdered() {
+
+        if(Auth::user()->role != 'admin' || Auth::user()->role != 'root')
+            return redirect()->back();
+        
         // list of users  that order more than RM 100
         $bulanTahun = date('mY');
         $settings = Setting::where('lock', 'no')->first();
