@@ -62,6 +62,8 @@
             <td valign="middle">
               <a href="{{ route('admin.editUser', ['id' => $user->id]) }}"><button type="button" class="btn btn-warning btn-sm"> <i class='bx bx-edit-alt bx-spin-hover'> </i> Edit</button></a>
               <a href="{{ route('admin.setInactive', ['id' => $user->id]) }}"><button type="button" class="btn btn-danger btn-sm"> <i class="bx bx-trash bx-spin-hover"> </i> Deactivate</button></a>
+
+              <i class="bx bx-info-circle bx-spin-hover" alt="here"> </i>
             </td>
           </tr>
         @endforeach
