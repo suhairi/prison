@@ -31,8 +31,9 @@ class ProductsController extends Controller
     public function create(Request $request) {
 
         Products::create([
-            'name'  => ucfirst($request->name),
-            'price' => $request->price,
+            'name'      => ucfirst($request->name),
+            'price'     => $request->price,
+            'status'    => 'active',
         ]);
 
         Session::flash('success', 'Product Registration Success');
