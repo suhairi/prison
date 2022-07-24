@@ -38,11 +38,12 @@ class UsersController extends Controller
             'username'  => $request->username,
             'role'      => $request->role,
             'password'  => Hash::make($request->password),
+            'status'    => 'active',
         ]);
 
         Session::flash('success', 'Success');
 
-        return view('admin.register');
+        return redirect()->back();
     }
 
     public function userList() {

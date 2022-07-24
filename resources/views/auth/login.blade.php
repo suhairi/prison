@@ -5,7 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="csrf-token" content="{{ csrf_token() }}">
 
-        <title>{{ config('app.name', 'Prison Kedah') }}</title>
+        <title>{{ config('app.name', 'ODSI - Canteen Ordering System (E-COS)') }}</title>
 
         <!-- Fonts -->
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap">
@@ -42,7 +42,7 @@
       <form method="POST" action="{{ route('login') }}">
         @csrf
         <img class="mb-4" src="{{ url('/images/logo.jpg') }}" alt="" width="72" height="67">
-        <h1 class="h3 mb-3 fw-normal">Prison Grocery Ordering System (PGOS)</h1>
+        <h1 class="h3 mb-3 fw-normal">ODSI - Canteen Ordering System (E-COS)</h1>
 
         <div class="form-floating">
           <input type="text" class="form-control" id="floatingInput" name="username" placeholder="Username">
